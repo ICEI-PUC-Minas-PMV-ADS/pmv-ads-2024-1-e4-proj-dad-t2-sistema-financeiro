@@ -36,6 +36,17 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+        .password-toggle {
+            position: relative;
+            width: 100%;
+        }
+        .password-toggle .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
         input[type="submit"] {
             width: 100%;
             padding: 10px;
@@ -58,9 +69,25 @@
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+            <div class="password-toggle">
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <img src="eye-icon.png" alt="Toggle Password">
+                </span>
+            </div>
             <input type="submit" value="Entrar">
         </form>
     </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
 </body>
 </html>
