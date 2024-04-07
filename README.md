@@ -6,7 +6,7 @@ O projeto "Sistema Financeiro" tem como objetivo desenvolver uma aplicação abr
 ## Integrantes
 - Lucas Delmasquio Silva
 - Samuel Ferreira de Oliveira 
-- Frederico Gonçalves da Silva Junior
+- Frederico Gonçalves da Silva Junior.
 - Nicolas
 
 ## Orientador
