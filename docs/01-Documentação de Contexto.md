@@ -1,4 +1,4 @@
-# Introdução teste
+# Introdução
 
 No mundo atual, onde a tecnologia desempenha um papel fundamental em quase todos os aspectos de nossas vidas, a gestão financeira pessoal e empresarial tornou-se mais do que uma simples necessidade. Com a crescente complexidade das transações financeiras e a ampla gama de serviços disponíveis, é crucial contar com sistemas eficientes que facilitem o controle, a organização e a análise das finanças.
 
