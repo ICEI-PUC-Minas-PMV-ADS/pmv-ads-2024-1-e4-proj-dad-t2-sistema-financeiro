@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Nesta seção, vamos descrever a arquitetura da solução para o sistema financeiro, incluindo os principais componentes do sistema, as tecnologias utilizadas, o ambiente de hospedagem e as diretrizes de qualidade de software.
+Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
 ## Componentes da Solução
 
@@ -11,7 +11,7 @@ O sistema financeiro será composto pelos seguintes componentes:
 - **Frontend Web**: Interface de usuário acessível por navegadores web. Desenvolvido utilizando React.js.
 - **Frontend Mobile**: Interface de usuário acessível por dispositivos móveis. Desenvolvido utilizando React Native.
 - **Backend API**: Responsável por fornecer os dados para o frontend e executar a lógica de negócios. Desenvolvido em C# utilizando ASP.NET Core.
-- **Banco de Dados**: Armazenará os dados do sistema. Utilizaremos o MongoDB, um banco de dados NoSQL.
+- **Banco de Dados**: Utilizaremos o MongoDB, um banco de dados NoSQ, para armazenar os dados.
 
 ## Tecnologias Utilizadas
 
