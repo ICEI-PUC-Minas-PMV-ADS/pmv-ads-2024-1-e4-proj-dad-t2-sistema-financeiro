@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Puc_Sistema_Financeiro.props" />
+</Project>

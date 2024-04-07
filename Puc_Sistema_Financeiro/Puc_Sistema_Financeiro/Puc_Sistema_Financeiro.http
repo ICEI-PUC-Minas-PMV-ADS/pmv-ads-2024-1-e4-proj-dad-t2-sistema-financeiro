@@ -1,0 +1,6 @@
+@Puc_Sistema_Financeiro_HostAddress = http://localhost:5054
+
+GET {{Puc_Sistema_Financeiro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

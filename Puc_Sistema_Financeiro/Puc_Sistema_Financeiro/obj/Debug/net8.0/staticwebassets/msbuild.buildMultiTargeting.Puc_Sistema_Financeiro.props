@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Puc_Sistema_Financeiro.props" />
+</Project>
