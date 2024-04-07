@@ -10,7 +10,7 @@ O projeto "Sistema Financeiro" tem como objetivo desenvolver uma aplicação abr
 - Nicolas Patrick Teixeira Da Silva
 
 ## Orientador
-- Leonardo
+- Leonardo Vilela Cardoso
 
 # Documentação
 
