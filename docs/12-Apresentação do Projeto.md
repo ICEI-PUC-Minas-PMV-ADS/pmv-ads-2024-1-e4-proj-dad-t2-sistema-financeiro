@@ -1,27 +1,91 @@
-# Apresentação
+# Apresentação do Projeto
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+## Título: Sistema de Gerenciamento Financeiro
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+![Logo do Projeto](caminho_para_logo.png)
 
-## Título do Projeto
+---
 
-Nome e marca do projeto
+## Identidade Visual
 
-## Identidade Visual (Marca, Design)
+- Marca do Projeto
+- Design Coerente com a Solução Proposta
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+![Identidade Visual](caminho_para_identidade_visual.png)
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+---
 
-## Conjunto de Slides (Estrutura)
+## Objetivo do Projeto
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+- O Sistema de Gerenciamento Financeiro tem como objetivo oferecer uma solução eficiente para o controle financeiro pessoal e empresarial. Através de uma interface intuitiva e funcionalidades avançadas, buscamos proporcionar uma experiência positiva para os usuários, ajudando-os a gerir suas finanças de forma mais organizada e eficaz.
+
+---
+
+## Especificação do Projeto
+
+- A Especificação do Projeto detalha os requisitos e funcionalidades do sistema. Entre eles:
+  - Cadastro de Despesas e Receitas
+  - Categorização de Movimentações Financeiras
+  - Relatórios de Gastos por Categoria
+  - Controle de Contas a Pagar e a Receber
+
+---
+
+## Projeto de Interface
+
+- Protótipos de Interface desenvolvidos de acordo com as necessidades do projeto.
+- Elementos de Interface intuitivos e acessíveis.
+
+![Protótipos de Interface](caminho_para_prototipos.png)
+
+---
+
+## Arquitetura da Solução
+
+- Arquitetura de Software baseada em microserviços.
+- Utilização de tecnologias modernas como React, Node.js e MongoDB para garantir escalabilidade e desempenho.
+
+---
+
+## Plano de Testes de Software
+
+- Testes automatizados para garantir a qualidade do código.
+- Testes manuais para validar a experiência do usuário.
+
+---
+
+## Plano de Testes de Usabilidade
+
+- Testes de Usabilidade realizados com usuários reais.
+- Avaliação da experiência do usuário e identificação de pontos de melhoria.
+
+---
+
+## Apresentação dos Resultados
+
+- Pontos Fortes:
+  - Interface intuitiva e amigável.
+  - Funcionalidades abrangentes para controle financeiro.
+- Áreas de Melhoria:
+  - Melhorar a performance em dispositivos móveis.
+  - Aumentar a integração com outros sistemas.
+
+---
+
+## Conclusão
+
+- Recapitulação dos principais resultados do projeto.
+- Agradecimentos à equipe e aos colaboradores.
+- Convite para contribuições e feedback da comunidade.
+
+---
+
+## Dúvidas?
+
+- Tempo para Perguntas e Discussão.
+
+---
+
+## Obrigado!
+
+- Contato: [Seu Email ou Outros Contatos]
