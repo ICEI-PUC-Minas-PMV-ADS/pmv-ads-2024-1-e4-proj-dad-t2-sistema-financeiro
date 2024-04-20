@@ -30,41 +30,18 @@ Nesta seção, apresentaremos a visão geral da interação do usuário pelas te
 
 Os wireframes são protótipos usados em design de interface para sugerir a estrutura de um site web e seus relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
+### Tela inicial
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f5da4cda-518e-433f-8431-197d41668d62)
+
+
 ### Tela de Login
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d28e8ff1-a30d-43ce-bdd1-974151aa8b5c)
 
+### Tela de cadastro
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/4b8f7b1b-0577-4f50-8685-ea395a48ecea)
 
 ### Dashboard Principal
-+------------------------+
-|   [Logo]               |
-|                        |
-|   Bem-vindo, Usuário!  |
-|                        |
-|   [Resumo Financeiro]  |
-|   [Transações Recentes]|
-+------------------------+
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/6d33e953-cf6c-46b7-9a25-9159df9366e6)
 
-### Tela de Transações
-+------------------------+
-|   [Logo]               |
-|                        |
-|   Transações Recentes  |
-|                        |
-|   [Detalhes] [Filtrar] |
-|                        |
-|   [Voltar]             |
-+------------------------+
-
-
-### Tela de Perfil do Usuário
-+------------------------+
-|   [Logo]               |
-|                        |
-|   Dados do Usuário     |
-|                        |
-|   [Editar Perfil]      |
-|                        |
-|   [Sair]               |
-+------------------------+
 
