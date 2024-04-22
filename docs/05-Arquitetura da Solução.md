@@ -51,13 +51,7 @@ A arquitetura da solução foi cuidadosamente planejada para atender às necessi
 
 ## Diagrama de Classes
 
-+---------------------------------------+ +-----------------------------------------+
-| Web Frontend | | Mobile Frontend |
-+---------------------------------------+ +-----------------------------------------+
-| React Componentes | | React Native Componentes |
-| | | |
-| API Client (fetch) | | API Client (fetch) |
-+---------------------------------------+ +-----------------------------------------+
+
 
 
 ## Modelo ER
