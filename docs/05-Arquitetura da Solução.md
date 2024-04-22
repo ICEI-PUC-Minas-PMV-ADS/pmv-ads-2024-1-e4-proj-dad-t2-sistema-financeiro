@@ -78,7 +78,7 @@ Relacionamentos:
 - Uma Compra é associada a um SistemaFinanceiro
 - Uma Compra é associada a um UsuarioSistemaFinanceiro
 - Uma Compra pode ter vários Itens de Compra
-- Um Item de Compra está associado a uma Compra
+- Um Item de Compra está associado a uma Compra (?)
 
 
 ## Esquema Relacional
