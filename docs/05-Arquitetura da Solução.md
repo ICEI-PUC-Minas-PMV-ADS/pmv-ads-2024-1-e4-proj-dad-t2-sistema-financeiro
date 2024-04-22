@@ -61,6 +61,7 @@ A arquitetura da solução foi cuidadosamente planejada para atender às necessi
 
 
 ## Modelo ER
+![Modelo ER](img/modeloER.png)
 
 Entidades:
 - Despesa
