@@ -1,61 +1,45 @@
-## Implementação das Funcionalidades
+## Descrição do Projeto
 
-### Requisito Funcional 1: Cadastro de Usuários
+Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, utilizando MongoDB como banco de dados. O sistema permite que os usuários cadastrem suas despesas, gerenciem categorias e visualizem relatórios detalhados das despesas cadastradas.
 
-#### Descrição
-Permite que novos usuários se cadastrem no sistema financeiro.
+### Funcionalidades Implementadas
 
-#### Artefatos Criados
-- **Código-fonte da página de cadastro de usuários:** `cadastro_usuario.html`
-- **Script para validar e enviar dados do formulário de cadastro de usuários:** `cadastro_usuario.js`
-- **Estrutura de dados:** Tabela `usuarios` no banco de dados
-- **Instruções de acesso e verificação:**
-  1. Acesse a página de cadastro de usuários através do link fornecido.
-  2. Preencha os campos obrigatórios do formulário com as informações do novo usuário.
-  3. Clique no botão de cadastro para enviar os dados.
-  4. Verifique se o usuário foi cadastrado com sucesso no banco de dados.
+#### Cadastro de Usuários
+- Permite que novos usuários se cadastrem no sistema financeiro.
+- Página de cadastro de usuários: `cadastro_usuario.html`
+- Script para validar e enviar dados do formulário de cadastro de usuários: `cadastro_usuario.js`
+- Estrutura de dados: Tabela `usuarios` no banco de dados
 
-### Requisito Funcional 2: Login de Usuários
+#### Login de Usuários
+- Permite que usuários cadastrados façam login no sistema financeiro.
+- Página de login: `login.html`
+- Script para validar e enviar dados do formulário de login: `login.js`
+- Estrutura de dados: Tabela `usuarios` no banco de dados
 
-#### Descrição
-Permite que usuários cadastrados façam login no sistema financeiro.
+#### Cadastro de Despesas
+- Permite que os usuários cadastrem suas despesas no sistema financeiro.
+- Página de cadastro de despesas: `cadastro_despesa.html`
+- Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
+- Estrutura de dados: Tabela `despesas` no banco de dados
 
-#### Artefatos Criados
-- **Código-fonte da página de login:** `login.html`
-- **Script para validar e enviar dados do formulário de login:** `login.js`
-- **Estrutura de dados:** Tabela `usuarios` no banco de dados
-- **Instruções de acesso e verificação:**
-  1. Acesse a página de login através do link fornecido.
-  2. Insira seu nome de usuário e senha nos campos correspondentes.
-  3. Clique no botão de login para enviar os dados.
-  4. Verifique se o login foi bem-sucedido e se o usuário é redirecionado para a página principal.
+#### Visualização de Relatórios de Despesas
+- Permite que os usuários visualizem relatórios detalhados de suas despesas cadastradas no sistema financeiro.
+- Página de visualização de relatórios de despesas: `relatorios_despesas.html`
+- Script para recuperar e exibir os dados das despesas cadastradas: `relatorios_despesas.js`
+- Estrutura de dados: Tabela `despesas` no banco de dados
 
-### Requisito Funcional 3: Cadastro de Despesas
+#### Cadastro de Categorias
+- Permite que os usuários cadastrem categorias para classificar suas despesas.
+- Controller para manipulação das categorias: `SistemaFinanceiroController.cs`
+- Estrutura de dados: Tabela `categorias` no banco de dados
 
-#### Descrição
-Permite que os usuários cadastrem suas despesas no sistema financeiro.
+### Como Utilizar o Projeto
 
-#### Artefatos Criados
-- **Código-fonte da página de cadastro de despesas:** `cadastro_despesa.html`
-- **Script para validar e enviar dados do formulário de cadastro de despesas:** `cadastro_despesa.js`
-- **Estrutura de dados:** Tabela `despesas` no banco de dados
-- **Instruções de acesso e verificação:**
-  1. Acesse a página de cadastro de despesas através do link fornecido.
-  2. Preencha os campos obrigatórios do formulário com as informações da despesa.
-  3. Clique no botão de cadastro para enviar os dados.
-  4. Verifique se a despesa foi cadastrada com sucesso no banco de dados.
+1. Clone este repositório para o seu ambiente de desenvolvimento.
+2. Certifique-se de ter o ambiente de desenvolvimento ASP.NET Core configurado.
+3. Configure as credenciais do banco de dados MongoDB no arquivo `appsettings.json`.
+4. Execute o projeto e acesse as diferentes funcionalidades através das páginas HTML fornecidas.
 
-### Requisito Funcional 4: Visualização de Relatórios de Despesas
+### Considerações Finais
 
-#### Descrição
-Permite que os usuários visualizem relatórios detalhados de suas despesas cadastradas no sistema financeiro.
-
-#### Artefatos Criados
-- **Código-fonte da página de visualização de relatórios de despesas:** `relatorios_despesas.html`
-- **Script para recuperar e exibir os dados das despesas cadastradas:** `relatorios_despesas.js`
-- **Estrutura de dados:** Tabela `despesas` no banco de dados
-- **Instruções de acesso e verificação:**
-  1. Acesse a página de relatórios de despesas através do link fornecido.
-  2. Verifique se as despesas cadastradas são exibidas corretamente na página.
-
-Estes artefatos representam a implementação das funcionalidades do sistema financeiro, de acordo com os requisitos funcionais especificados. Certifique-se de adaptar esses artefatos às necessidades específicas do seu projeto e de seguir as melhores práticas de desenvolvimento de software.
+Este projeto serve como uma base para o desenvolvimento de um sistema financeiro mais completo e pode ser expandido com novas funcionalidades e melhorias de acordo com as necessidades do usuário. Certifique-se de revisar e ajustar o código e os artefatos de acordo com os requisitos específicos do seu projeto.
