@@ -33,7 +33,7 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 
  Vídeo da explicação da atividade está disponibilizado no YouTube:
  
- Vídeo etapa 2: https://youtu.be/IS4s6U_j4EI 
+ Vídeo etapa 2: https://youtu.be/IS4s6U_j4EI - Projeto Back End com MongoDB
 
 
 #### Cadastro de Categorias
