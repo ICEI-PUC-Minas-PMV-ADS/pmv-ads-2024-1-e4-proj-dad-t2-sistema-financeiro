@@ -71,6 +71,8 @@ Relacionamentos:
 
 ## Esquema Relacional
 
+![Modelo ER](img/modeloRelacional.png)
+
 Tabelas:
 - Despesa (despesa_id, categoria_id, sistema_id, usuario_id, descricao, valor)
 - Categoria (categoria_id, nome)
