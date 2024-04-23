@@ -81,7 +81,9 @@ Tabelas:
 
 ## Modelo Físico
 
-Entregaremos um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados MongoDB. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados que consta na pasta src\bd
+
+[Arquivo banco.sql](../src/bd/banco.sql)
 
 ## Tecnologias Utilizadas
 
