@@ -51,7 +51,7 @@ A arquitetura da solução foi cuidadosamente planejada para atender às necessi
 
 ## Diagrama de Classes
 
-![diagramaClasses](img\diagramaClasses.png)
+![diagramaClasses](img\DiagramaClasse.png)
 
 
 ## Modelo ER
