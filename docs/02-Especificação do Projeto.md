@@ -106,13 +106,7 @@ Usuário
 
 # Matriz de Rastreabilidade
 
-| Requisitos | Documentação de Especificação | Projeto de Interface | Diagrama de Casos de Uso | Matriz de Rastreabilidade |
-|------------|-------------------------------|----------------------|---------------------------|----------------------------|
-| RF-001     | X                             |                      | X                         | X                          |
-| RF-002     | X                             | X                    |                           | X                          |
-| RF-003     | X                             |                      | X                         | X                          |
-| RF-004     | X                             | X                    | X                         |                            |
-| RF-005     |                               | X                    |                           | X                          |
+![Matriz de rastreabilidade](img/Matriz_Rastreabilidade.PNG)
 
 # Gerenciamento de Projeto
 
