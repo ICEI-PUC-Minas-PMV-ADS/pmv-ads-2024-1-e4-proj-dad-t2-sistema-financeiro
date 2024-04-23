@@ -17,7 +17,7 @@ O sistema financeiro será composto pelos seguintes componentes:
 
 - **Linguagens**: C# para a API, JavaScript para o frontend (web e mobile).
 - **Frameworks**: ASP.NET Core para o backend, React para o frontend web, React Native para o frontend mobile.
-- **Banco de Dados**: MongoDB.
+- **Banco de Dados**: MongoDB, MySQL
 - **Ferramentas de Desenvolvimento**: Visual Studio para C#, Visual Studio Code para JavaScript.
 - **Ferramentas de Versionamento**: Git e GitHub.
 - 
