@@ -17,6 +17,9 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Estrutura de dados: Tabela `usuarios` no banco de dados
 
 #### Cadastro de Despesas
+## Responsável:
+
+## Samuel = Tela de despesa
 - Permite que os usuários cadastrem suas despesas no sistema financeiro.
 - Página de cadastro de despesas: `cadastro_despesa.html`
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
@@ -27,6 +30,9 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Página de visualização de relatórios de despesas: `relatorios_despesas.html`
 - Script para recuperar e exibir os dados das despesas cadastradas: `relatorios_despesas.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
+
+- Vídeo da explicação da atividade está disponibilizado no youtube:
+  Vídeo etapa 2: https://youtu.be/IS4s6U_j4EI 
 
 #### Cadastro de Categorias
 - Permite que os usuários cadastrem categorias para classificar suas despesas.
