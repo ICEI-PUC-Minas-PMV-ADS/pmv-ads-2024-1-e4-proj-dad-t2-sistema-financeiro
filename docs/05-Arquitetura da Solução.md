@@ -51,10 +51,12 @@ A arquitetura da solução foi cuidadosamente planejada para atender às necessi
 
 ## Diagrama de Classes
 
-![diagramaClasses](C:\Users\frede\OneDrive\Área de Trabalho\pmv-ads-2024-1-e4-proj-infra-t5-sistema-financeiro\docs\img\diagramaClasses.png)
+![diagramaClasses](img\diagramaClasses.png)
 
 
 ## Modelo ER
+
+![Modelo ER](img/modeloER.png)
 
 Entidades:
 - Despesa
@@ -71,7 +73,6 @@ Relacionamentos:
 - Uma Compra é associada a um SistemaFinanceiro
 - Uma Compra é associada a um UsuarioSistemaFinanceiro
 - Uma Compra pode ter vários Itens de Compra
-- Um Item de Compra está associado a uma Compra
 
 
 ## Esquema Relacional
