@@ -20,6 +20,9 @@ O sistema financeiro será composto pelos seguintes componentes:
 - **Banco de Dados**: MongoDB.
 - **Ferramentas de Desenvolvimento**: Visual Studio para C#, Visual Studio Code para JavaScript.
 - **Ferramentas de Versionamento**: Git e GitHub.
+- 
+- ![Diagrama de Arquitetura](img/arquitetura.png)
+
 
 ## Hospedagem
 
