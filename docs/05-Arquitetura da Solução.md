@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Nesta seção, vamos descrever a arquitetura da solução para o sistema financeiro, incluindo os principais componentes do sistema, as tecnologias utilizadas, o ambiente de hospedagem e as diretrizes de qualidade de software.
 
 ## Componentes da Solução
 
@@ -11,7 +11,7 @@ O sistema financeiro será composto pelos seguintes componentes:
 - **Frontend Web**: Interface de usuário acessível por navegadores web. Desenvolvido utilizando React.js.
 - **Frontend Mobile**: Interface de usuário acessível por dispositivos móveis. Desenvolvido utilizando React Native.
 - **Backend API**: Responsável por fornecer os dados para o frontend e executar a lógica de negócios. Desenvolvido em C# utilizando ASP.NET Core.
-- **Banco de Dados**: Utilizaremos o MongoDB, um banco de dados NoSQ, para armazenar os dados.
+- **Banco de Dados**: Armazenará os dados do sistema. Utilizaremos o MongoDB, um banco de dados NoSQL.
 
 ## Tecnologias Utilizadas
 
@@ -51,11 +51,10 @@ A arquitetura da solução foi cuidadosamente planejada para atender às necessi
 
 ## Diagrama de Classes
 
-
+![diagramaClasses](C:\Users\frede\OneDrive\Área de Trabalho\pmv-ads-2024-1-e4-proj-infra-t5-sistema-financeiro\docs\img\diagramaClasses.png)
 
 
 ## Modelo ER
-![Modelo ER](img/modeloER.png)
 
 Entidades:
 - Despesa
@@ -72,6 +71,7 @@ Relacionamentos:
 - Uma Compra é associada a um SistemaFinanceiro
 - Uma Compra é associada a um UsuarioSistemaFinanceiro
 - Uma Compra pode ter vários Itens de Compra
+- Um Item de Compra está associado a uma Compra
 
 
 ## Esquema Relacional
