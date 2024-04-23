@@ -6,25 +6,7 @@ Nesta seção, apresentaremos a visão geral da interação do usuário pelas te
 
 ## Diagrama de Fluxo
 
-+-----------------------+
-|   Tela de Login       |
-+-----------------------+
-           |
-           v
-+-----------------------+
-|   Dashboard Principal |
-+-----------------------+
-           |
-           v
-+-----------------------+
-|   Tela de Transações  |
-+-----------------------+
-           |
-           v
-+-----------------------+
-|   Tela de Perfil      |
-+-----------------------+
-
+![fluxogramaSistemaFinanceiro](img/fluxogramaSistemaFinanceiro.jpg)
 
 ## Wireframes
 
