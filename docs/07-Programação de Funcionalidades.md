@@ -31,8 +31,9 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Script para recuperar e exibir os dados das despesas cadastradas: `relatorios_despesas.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
 
-- Vídeo da explicação da atividade está disponibilizado no YouTube:
-  [Vídeo Etapa 2](https://youtu.be/IS4s6U_j4EI)
+ Vídeo da explicação da atividade está disponibilizado no YouTube:
+ 
+ Vídeo etapa 2: https://youtu.be/IS4s6U_j4EI 
 
 
 #### Cadastro de Categorias
