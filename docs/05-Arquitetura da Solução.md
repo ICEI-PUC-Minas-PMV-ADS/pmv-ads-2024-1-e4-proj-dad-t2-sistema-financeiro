@@ -63,17 +63,11 @@ Entidades:
 - Categoria
 - SistemaFinanceiro
 - UsuarioSistemaFinanceiro
-- Compra
-- ItemCompra
 
 Relacionamentos:
 - Uma Despesa pertence a uma Categoria
 - Uma Despesa é associada a um SistemaFinanceiro
 - Uma Despesa é associada a um UsuarioSistemaFinanceiro
-- Uma Compra é associada a um SistemaFinanceiro
-- Uma Compra é associada a um UsuarioSistemaFinanceiro
-- Uma Compra pode ter vários Itens de Compra
-
 
 ## Esquema Relacional
 
@@ -82,9 +76,6 @@ Tabelas:
 - Categoria (categoria_id, nome)
 - SistemaFinanceiro (sistema_id, nome)
 - UsuarioSistemaFinanceiro (usuario_id, nome)
-- Compra (compra_id, sistema_id, usuario_id, data)
-- ItemCompra (item_id, compra_id, descricao, quantidade, preco_unitario)
-
 
 ## Modelo Físico
 
