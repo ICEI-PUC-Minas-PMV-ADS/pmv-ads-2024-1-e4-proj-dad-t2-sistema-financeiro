@@ -23,6 +23,15 @@ O sistema financeiro será composto pelos seguintes componentes:
 - 
 - ![Diagrama de Arquitetura](img/arquitetura.png)
 
+ ## Refatoração
+
+ --Com a necessidade de se introduzir no projeto o teste de unidade, descobriu-se que a arquitetura utilizada é inadequada para tal (ver Plano de Testes de Software).
+
+Assim, tornou-se necessária a refatoração do código para o padrão de projeto Repositório, incluindo uma camada entre o bando de dados e o modelo de negócios.
+
+O novo esquema pode ser visto abaixo:
+
+
 
 ## Hospedagem
 
