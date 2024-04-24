@@ -87,10 +87,10 @@ Relacionamentos:
 ![Esquema Relacional](img/esquemaRelacional.png)
 
 Tabelas:
-- Despesa (despesa_id, categoria_id, sistema_id, usuario_id, descricao, valor)
-- Categoria (categoria_id, nome)
-- SistemaFinanceiro (sistema_id, nome)
-- UsuarioSistemaFinanceiro (usuario_id, nome)
+- Despesa (Id, Nome, Valor, Mes, Ano, TipoDespesa, DataCadastro, DataAlteracao, DataPagamento, DataVencimento, Pago, DespesaAtrasada, CategoriaId)
+- Categoria (Id, Nome, SistemaId)
+- SistemaFinanceiro (Id, Nome, Mes, Ano, DiaFechamento, GerarCopiaDespesa, MesCopia, AnoCopia)
+- UsuarioSistemaFinanceiro (Id, EmailUsuario, Administrador, SistemaAtual, SistemaId)
 
 ## Modelo Físico
 
