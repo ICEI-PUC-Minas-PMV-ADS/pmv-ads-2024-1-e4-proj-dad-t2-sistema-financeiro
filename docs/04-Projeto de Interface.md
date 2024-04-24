@@ -20,17 +20,25 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 
 ### Tela de Login
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d28e8ff1-a30d-43ce-bdd1-974151aa8b5c)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/43da3bec-655a-4c72-a21e-3c8532ad86eb)
 
-### Tela de recuperação de tela 
+
+### Tela de recuperação de senha
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/c5fff56f-2a3e-4db8-b9b7-971a2aee557a)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/dedf7557-0fae-45c4-b924-df1daa4ed24d)
+
 
 
 ### Tela de cadastro
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/4b8f7b1b-0577-4f50-8685-ea395a48ecea)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/354a2939-dbcf-448d-97f0-2725a1d32a35)
+
 
 ### Dashboard Principal
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/25d800da-7bc7-4e40-8db0-61a842ebe3b3)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/eb7e17f3-f3fd-43ad-a295-a23091883820)
+
 
 
 ### PROFILE 
