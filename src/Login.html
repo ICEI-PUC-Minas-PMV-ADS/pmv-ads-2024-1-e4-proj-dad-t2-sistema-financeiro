@@ -1,93 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carteira Financeira - Login</title>
+    <title>Carteira Financeira Login</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            background-color: #666666;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
-        .container {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-        }
-        h1 {
+
+        .header {
+            background-color: #333232;
             text-align: center;
+            height: 50px;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+
+        .logo {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .logo span {
+            font-size: 20px;
+            font-weight: bold;
             color: #333;
         }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #666;
+
+        .branding {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
+
+        .branding h1 {
+            margin: 0;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            background-color: #fff;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-        .password-toggle {
-            position: relative;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        label,
+        input,
+        button {
+            display: block;
             width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
         }
-        .password-toggle .toggle-password {
-            position: absolute;
-            top: 50%;
-            right: 5px;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-        input[type="submit"] {
-            width: 100%;
+
+        input {
+            border: 1px solid #ccc;
             padding: 10px;
+            text-align: left;
+        }
+
+        button {
+            cursor: pointer;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            padding: 10px;
+            position: relative;
+          
         }
-        input[type="submit"]:hover {
-            background-color: #45a049;
+
+        button span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #message {
+            color: red;
+            margin-bottom: 10px;
+            display: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Carteira Financeira - Login</h1>
-        <form id="loginForm">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Senha:</label>
-            <div class="password-toggle">
-                <input type="password" id="password" name="password" required>
-                <span class="toggle-password" onclick="togglePasswordVisibility()">
-                    <img src="eye-icon.png" alt="Toggle Password">
-                </span>
+    <div class="header">
+        <div class="branding">
+            <div class="logo">
+                <span>CF</span>
             </div>
-            <input type="submit" value="Entrar">
-        </form>
+            <h1>Carteira Financeira</h1>
+        </div>
     </div>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email"> Email :</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="password">Senha :</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit"><span>Login</span></button>
+        </form>
+        <p id="message"></p>
+        <p>Esqueceu sua senha?</p>
+        <p>Não possui cadastro? <a href="#" id="createAccount">Criar Conta</a></p>
+    </div>
     <script>
-        function togglePasswordVisibility() {
-            const passwordInput = document.getElementById('password');
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
+        document.getElementById('createAccount').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Cadastro não implementado nesta demonstração.');
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === 'email@address.com' && password === '********') {
+                alert('Login realizado com sucesso!');
             } else {
-                passwordInput.type = 'password';
+                document.getElementById('message').innerText = 'Email ou senha inválidos.';
+                document.getElementById('message').style.display = 'block';
             }
-        }
+        });
     </script>
 </body>
 </html>
