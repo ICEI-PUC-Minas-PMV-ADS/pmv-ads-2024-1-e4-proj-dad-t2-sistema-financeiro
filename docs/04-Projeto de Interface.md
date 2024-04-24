@@ -30,7 +30,7 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 
 
 ### Tela de cadastro
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/4b8f7b1b-0577-4f50-8685-ea395a48ecea)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/54af36b0-9af7-46e6-aee3-115fdc1bbc0d)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/354a2939-dbcf-448d-97f0-2725a1d32a35)
 
 
