@@ -31,6 +31,7 @@ Assim, tornou-se necessária a refatoração do código para o padrão de projet
 
 O novo esquema pode ser visto abaixo:
 
+- ![Diagrama de Arquitetura](img/arquitetura_v2.png)
 
 
 ## Hospedagem
