@@ -1,31 +1,48 @@
-CREATE TABLE Despesa 
-( 
- despesa_id INT PRIMARY KEY,  
- descricao VARCHAR(n),  
- valor FLOAT NOT NULL,  
- categoria_id INT,  
- usuario_id INT,  
- sistema_id INT,  
-); 
-
 CREATE TABLE Categoria 
 ( 
- categoria_id INT PRIMARY KEY,  
- nome VARCHAR(n) NOT NULL,  
+ Id INT PRIMARY KEY,  
+ Nome VARCHAR(n),  
+ SistemaId INT,  
 ); 
 
-CREATE TABLE Sistema 
+CREATE TABLE SistemaFinanceiro 
 ( 
- sistema_id INT PRIMARY KEY,  
- nome VARCHAR(n) NOT NULL,  
+ Id INT PRIMARY KEY,  
+ Nome VARCHAR(n),  
+ Mes INT,  
+ Ano INT,  
+ DiaFechamento INT,  
+ GerarCopiaDespesa BIT,  
+ MesCopia INT,  
+ AnoCopia INT,  
 ); 
 
-CREATE TABLE Usuario 
+CREATE TABLE UsuarioSistemaFinanceiro 
 ( 
- usuario_id INT PRIMARY KEY,  
- nome VARCHAR(n) NOT NULL,  
+ Id INT PRIMARY KEY,  
+ EmailUsuario VARCHAR(n),  
+ Administrador BIT,  
+ SistemaAtual BIT,  
+ SistemaId INT,  
 ); 
 
-ALTER TABLE Despesa ADD FOREIGN KEY(categoria_id) REFERENCES Despesa (categoria_id)
-ALTER TABLE Despesa ADD FOREIGN KEY(usuario_id) REFERENCES Despesa (usuario_id)
-ALTER TABLE Despesa ADD FOREIGN KEY(sistema_id) REFERENCES Despesa (sistema_id)
+CREATE TABLE Despesa 
+( 
+ Id INT PRIMARY KEY,  
+ Nome VARCHAR(n),  
+ Valor FLOAT,  
+ Mes INT,  
+ Ano INT,  
+ TipoDespesa VARCHAR(n),  
+ DataCadastro VARCHAR(n),  
+ DataAlteracao VARCHAR(n),  
+ DataPagamento VARCHAR(n),  
+ DataVencimento VARCHAR(n),  
+ Pago BIT,  
+ DespesaAtrasada BIT,  
+ CategoriaId INT,  
+); 
+
+ALTER TABLE Categoria ADD FOREIGN KEY(SistemaId) REFERENCES Categoria (SistemaId)
+ALTER TABLE UsuarioSistemaFinanceiro ADD FOREIGN KEY(SistemaId) REFERENCES Categoria (SistemaId)
+ALTER TABLE Despesa ADD FOREIGN KEY(CategoriaId) REFERENCES Categoria (CategoriaId)
