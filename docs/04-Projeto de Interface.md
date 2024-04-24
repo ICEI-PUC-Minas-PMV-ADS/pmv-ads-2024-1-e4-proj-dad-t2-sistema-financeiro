@@ -37,12 +37,15 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 ### Dashboard Principal
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/25d800da-7bc7-4e40-8db0-61a842ebe3b3)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/eb7e17f3-f3fd-43ad-a295-a23091883820)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/e3302d7f-be37-4f21-bc3b-ae5a9d2236d4)
+
 
 
 
 ### PROFILE 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/adb15a90-e20e-4be9-8a78-1a1c53d1dd94)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8d65352-4dad-44b4-9f38-d72331d2c8ac)
+
 
 
 
