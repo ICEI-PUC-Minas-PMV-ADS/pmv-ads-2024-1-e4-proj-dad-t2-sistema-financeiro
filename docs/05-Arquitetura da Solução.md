@@ -79,8 +79,8 @@ Entidades:
 
 Relacionamentos:
 - Uma Despesa pertence a uma Categoria
-- Uma Despesa é associada a um SistemaFinanceiro
-- Uma Despesa é associada a um UsuarioSistemaFinanceiro
+- Uma Categoria é associada a um SistemaFinanceiro
+- Um UsuarioSistemaFinanceiro é associado a um SistemaFinanceiro
 
 ## Esquema Relacional
 
