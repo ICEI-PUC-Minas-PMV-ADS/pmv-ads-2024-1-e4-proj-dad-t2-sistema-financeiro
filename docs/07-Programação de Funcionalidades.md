@@ -34,7 +34,7 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
  Vídeo da explicação da atividade está disponibilizado no YouTube:
  
  Vídeo etapa 2: https://youtu.be/qLx-NG-Mda8 - Projeto Back End com MongoDB
-
+ Vídeo etapa 2: https://youtu.be/S-ELnjHA54w  - teste tabela Sistema Financeiro - Lucas
 
 #### Cadastro de Categorias
 - Permite que os usuários cadastrem categorias para classificar suas despesas.
