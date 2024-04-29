@@ -1,71 +1,198 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Carteira Financeira</title>
+    <title>Carteira Financeira Cadastro</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        * {
             box-sizing: border-box;
         }
 
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 10px 20px;
-            cursor: pointer;
+        body {
+            background-color: rgb(199, 199, 199);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
-        input[type="submit"]:hover {
-            background-color: #0056b3;
+        .header {
+            background-color: #2EBA3C;
+            text-align: center;
+            height: 50px;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+
+        .logo {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .logo span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .branding {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .branding h1 {
+            margin: 0;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+            z-index: 1;
+            box-shadow: 0 0 10px rgb(0, 3, 0);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        label,
+        input,
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+          
+        }
+
+        button span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #message {
+            color: red;
+            margin-bottom: 10px;
+            display: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Carteira Financeira</h1>
-        <form action="#" method="post">
-            <input type="text" name="nome" placeholder="Nome" required><br>
-            <input type="email" name="email" placeholder="E-mail" required><br>
-            <input type="password" name="senha" placeholder="Senha" required><br>
-            <input type="password" name="confirmar_senha" placeholder="Confirmar Senha" required><br>
-            <input type="date" name="data_nascimento" placeholder="Data de Nascimento" required><br>
-            <input type="text" name="cpf" placeholder="CPF" required><br>
-            <input type="submit" value="Cadastrar">
-        </form>
+    <div class="header">
+        <div class="branding">
+            <div class="logo">
+                <span>CF</span>
+            </div>
+            <h1>Carteira Financeira</h1>
+        </div>
     </div>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form id="registerForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit"><span>Cadastrar</span></button>
+        </form>
+        <p id="message"></p>
+        <p>Esqueceu sua senha?</p>
+        <p>Não possui cadastro? <a href="#" id="createAccount">Criar Conta</a></p>
+    </div>
+    <script>
+        document.getElementById('createAccount').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Cadastro não implementado nesta demonstração.');
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (name === '' || email === '' || password === '' || confirmPassword === '') {
+                document.getElementById('message').innerText = 'Por favor, preencha todos os campos.';
+                document.getElementById('message').style.display = 'block';
+            } else if (password !== confirmPassword) {
+                document.getElementById('message').innerText = 'As senhas não coincidem.';
+                document.getElementById('message').style.display = 'block';
+            } else {
+                alert('Cadastro realizado com sucesso!');
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
 </body>
 </html>
-
