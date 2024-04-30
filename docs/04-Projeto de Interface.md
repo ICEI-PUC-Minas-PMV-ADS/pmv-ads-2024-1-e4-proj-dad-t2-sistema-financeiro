@@ -31,10 +31,15 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/dcc240f7-1511-451b-a269-64a5c2a0eb80)
 
 ### CADASTRO
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/8e2fec0c-fa2f-4d8b-bcaa-a5731766fb69)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/3ca91139-e3d8-4846-91a7-55de2766bf70)
 
 ### SISTEMA
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/724f6c41-9e7a-465c-b4cb-981eabc6555f)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/e50c9d82-8250-4db4-b31e-bd7f13b6004f)
+
+### Usuários
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/5f5677e7-dc88-439f-8d4c-2a934f2883dc)
+
+
 
 
 
