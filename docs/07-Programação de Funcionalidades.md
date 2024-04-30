@@ -37,6 +37,8 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
  
  - Vídeo etapa 2: https://youtu.be/S-ELnjHA54w  - teste tabela Sistema Financeiro - Lucas
 
+ - Vídeo etapa 2: https://youtu.be/zNdhYoLdm6M - Teste Usuário Sistema Financeiro - Frederico
+
 #### Cadastro de Categorias
 - Permite que os usuários cadastrem categorias para classificar suas despesas.
 - Controller para manipulação das categorias: `SistemaFinanceiroController.cs`
