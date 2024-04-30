@@ -41,7 +41,7 @@ Vídeo da explicação da atividade está disponibilizado no YouTube:
 
  - Vídeo etapa 2: https://youtu.be/zNdhYoLdm6M - Teste Usuário Sistema Financeiro - Frederico
  
- - Vídeo etapa 2:  - Teste Categorias Sistema Financeiro - Nicolas
+ - Vídeo etapa 2: https://youtu.be/on_2YBkPEiw - Teste Categorias Sistema Financeiro - Nicolas
 
 ### Como Utilizar o Projeto
 
