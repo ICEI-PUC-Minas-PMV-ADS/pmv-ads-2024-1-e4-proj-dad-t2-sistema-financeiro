@@ -40,6 +40,7 @@ Este processo envolve a geração de relatórios financeiros para análise.
 
 ## Tabelas do Banco de Dados
 
+### Requisito
 ### Despesa
 
 | Campo | Tipo | Descrição |
