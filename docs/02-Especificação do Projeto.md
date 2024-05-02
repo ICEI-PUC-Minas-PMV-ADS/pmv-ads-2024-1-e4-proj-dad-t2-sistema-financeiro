@@ -50,9 +50,6 @@ Este processo envolve a geração de relatórios financeiros para análise.
 | Categoria | Varchar | Categoria da despesa |
 | Descrição | Text | Descrição detalhada da despesa |
 
-## Requisitos
-# Requisitos
-
 ## Requisitos Funcionais (RF)
 
 | ID    | Descrição do Requisito                      | Prioridade |
