@@ -6,7 +6,7 @@ Nesta seção, apresentaremos a visão geral da interação do usuário pelas te
 
 ## Diagrama de Fluxo
 
-![fluxogramaSistemaFinanceiro](img/fluxogramaSistemaFinanceiro.jpg)
+
 
 ## Wireframes
 
