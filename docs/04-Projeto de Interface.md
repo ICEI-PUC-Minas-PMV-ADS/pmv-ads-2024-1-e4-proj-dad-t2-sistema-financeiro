@@ -15,26 +15,19 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 ### Tela de Login
 ![image](img/login.jpeg)
 
-### Tela de recuperação de senha
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/dedf7557-0fae-45c4-b924-df1daa4ed24d)
-
-### Tela de cadastro
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/354a2939-dbcf-448d-97f0-2725a1d32a35)
-
 ### Dashboard Principal
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/49090d5b-8f7c-4812-aa7f-ed099ed2a509)
+![image](img/dashboard.jpeg)
 
-### DESPESA
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/dcc240f7-1511-451b-a269-64a5c2a0eb80)
+### Tela do Sistema
+![image](img/sistema.jpeg)
 
-### CADASTRO
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/3ca91139-e3d8-4846-91a7-55de2766bf70)
+### Tela Categoria do Sistema
+![image](img/categoria.jpeg)
 
-### SISTEMA
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/e50c9d82-8250-4db4-b31e-bd7f13b6004f)
+### Tela Despesa do Sistema
+![image]img/despesa.jpeg)
 
-### Usuários
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/5f5677e7-dc88-439f-8d4c-2a934f2883dc)
+
 
 
 
