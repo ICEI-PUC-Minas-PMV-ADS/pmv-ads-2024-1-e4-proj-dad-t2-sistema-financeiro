@@ -17,21 +17,12 @@ O sistema financeiro será composto pelos seguintes componentes:
 
 - **Linguagens**: C# para a API, JavaScript para o frontend (web e mobile).
 - **Frameworks**: ASP.NET Core para o backend, React para o frontend web, React Native para o frontend mobile.
-- **Banco de Dados**: MongoDB, MySQL
+- **Banco de Dados**: MongoDB
 - **Ferramentas de Desenvolvimento**: Visual Studio para C#, Visual Studio Code para JavaScript.
 - **Ferramentas de Versionamento**: Git e GitHub.
 - 
-- ![Diagrama de Arquitetura](img/arquitetura.png)
+- ![Diagrama de Arquitetura](img/arquiteturaMongoDb.jpeg)
 
- ## Refatoração
-
-Com a necessidade de se introduzir no projeto o teste de unidade, descobriu-se que a arquitetura utilizada é inadequada para tal (ver Plano de Testes de Software).
-
-Assim, tornou-se necessária a refatoração do código para o padrão de projeto Repositório, incluindo uma camada entre o bando de dados e o modelo de negócios.
-
-O novo esquema pode ser visto abaixo:
-
-![Diagrama de Arquitetura](img/arquitetura_v2.png)
 
 
 ## Hospedagem
