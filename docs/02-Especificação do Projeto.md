@@ -40,6 +40,7 @@ Este processo envolve a geração de relatórios financeiros para análise.
 
 ## Tabelas do Banco de Dados
 
+### Requisito
 ### Despesa
 
 | Campo | Tipo | Descrição |
@@ -49,9 +50,6 @@ Este processo envolve a geração de relatórios financeiros para análise.
 | Data  | Date | Data da despesa |
 | Categoria | Varchar | Categoria da despesa |
 | Descrição | Text | Descrição detalhada da despesa |
-
-## Requisitos
-# Requisitos
 
 ## Requisitos Funcionais (RF)
 
