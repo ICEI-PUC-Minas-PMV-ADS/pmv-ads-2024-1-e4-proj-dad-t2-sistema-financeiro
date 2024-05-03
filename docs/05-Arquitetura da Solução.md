@@ -8,7 +8,7 @@ Nesta seção, vamos descrever a arquitetura da solução para o sistema finance
 
 O sistema financeiro será composto pelos seguintes componentes:
 
-- **Frontend Web**: Interface de usuário acessível por navegadores web. Desenvolvido utilizando React.js.
+- **Frontend Web**: Interface de usuário acessível por navegadores web. Desenvolvido utilizando Angular.
 - **Frontend Mobile**: Interface de usuário acessível por dispositivos móveis. Desenvolvido utilizando React Native.
 - **Backend API**: Responsável por fornecer os dados para o frontend e executar a lógica de negócios. Desenvolvido em C# utilizando ASP.NET Core.
 - **Banco de Dados**: Armazenará os dados do sistema. Utilizaremos o MongoDB, um banco de dados NoSQL.
@@ -16,7 +16,7 @@ O sistema financeiro será composto pelos seguintes componentes:
 ## Tecnologias Utilizadas
 
 - **Linguagens**: C# para a API, JavaScript para o frontend (web e mobile).
-- **Frameworks**: ASP.NET Core para o backend, React para o frontend web, React Native para o frontend mobile.
+- **Frameworks**: ASP.NET Core para o backend, Angular para o frontend web, React Native para o frontend mobile.
 - **Banco de Dados**: MongoDB
 - **Ferramentas de Desenvolvimento**: Visual Studio para C#, Visual Studio Code para JavaScript.
 - **Ferramentas de Versionamento**: Git e GitHub.
