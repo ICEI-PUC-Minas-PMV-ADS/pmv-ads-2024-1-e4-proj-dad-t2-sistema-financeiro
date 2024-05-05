@@ -26,18 +26,13 @@
    - Grupo de Usuários: Usuários do sistema.
    - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
 
-   5. **Cadastro de sistema financeiro:**
+ 5. **Cadastro de sistema financeiro:**
    - Descrição: Verificar se os usuários conseguem cadastrar seu sistema financeiro no sistema.
    - Funcionalidade Avaliada: Cadastro de sistema financeiro.
    - Grupo de Usuários: Usuários do sistema.
    - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-3. **Cadastro de Despesas:**
-   - Descrição: Verificar se os usuários conseguem cadastrar suas despesas no sistema.
-   - Funcionalidade Avaliada: Cadastro de Despesas.
-   - Grupo de Usuários: Usuários do sistema.
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
 
-7. **Visualização de Dashboard:**
+6. **Visualização de Dashboard:**
    - Descrição: Visualização de dashboard .
    - Funcionalidade Avaliada: Visualização de investimentos, despesas pagas, despesas a pagar e despesas atradas .
    - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
