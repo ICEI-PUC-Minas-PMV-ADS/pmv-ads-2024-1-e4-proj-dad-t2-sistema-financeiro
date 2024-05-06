@@ -4,6 +4,7 @@ using WebApiMongoDB.Services;
 
 namespace Puc_Sistema_Financeiro.Controllers
 {
+
     [Route("api/despesa")]
     [ApiController]
     public class DespesaController : ControllerBase

@@ -19,10 +19,11 @@ builder.Services.AddSingleton<SistemaFinanceiroService>();
 builder.Services.Configure<UsuarioSistemaFinanceiroDataBaseSettings>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddSingleton<UsuarioSistemaFinanceiroService>();
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddCors();
 
 var app = builder.Build();
 
@@ -31,6 +32,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(builder =>
+{
+    builder.AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader();
+});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

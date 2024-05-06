@@ -4,6 +4,7 @@ using WebApiMongoDB.Services;
 
 namespace WebApiMongoDB.Controllers
 {
+
     [Route("api/categoria")]
     [ApiController]
     public class CategoriaController : ControllerBase
