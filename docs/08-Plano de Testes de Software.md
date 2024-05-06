@@ -1,19 +1,43 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+## Cenários de Teste Selecionados
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+1. **Cadastro de Usuários:**
+   - Descrição: Verificar se novos usuários conseguem se cadastrar no sistema corretamente.
+   - Funcionalidade Avaliada: Cadastro de Usuários.
+   - Grupo de Usuários: Novos usuários.
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+2. **Login de Usuários:**
+   - Descrição: Testar se usuários cadastrados conseguem fazer login no sistema com sucesso.
+   - Funcionalidade Avaliada: Login de Usuários.
+   - Grupo de Usuários: Usuários cadastrados.
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+3. **Cadastro de Despesas:**
+   - Descrição: Verificar se os usuários conseguem cadastrar suas despesas no sistema.
+   - Funcionalidade Avaliada: Cadastro de Despesas.
+   - Grupo de Usuários: Usuários do sistema.
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+
+4. **Visualização de Relatórios de Despesas:**
+   - Descrição: Testar se os relatórios de despesas são exibidos corretamente para os usuários.
+   - Funcionalidade Avaliada: Visualização de Relatórios de Despesas.
+   - Grupo de Usuários: Usuários do sistema.
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+
+ 5. **Cadastro de sistema financeiro:**
+   - Descrição: Verificar se os usuários conseguem cadastrar seu sistema financeiro no sistema.
+   - Funcionalidade Avaliada: Cadastro de sistema financeiro.
+   - Grupo de Usuários: Usuários do sistema.
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+
+6. **Visualização de Dashboard:**
+   - Descrição: Visualização de dashboard .
+   - Funcionalidade Avaliada: Visualização de investimentos, despesas pagas, despesas a pagar e despesas atradas .
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+
+
+## Ferramentas de Testes Utilizadas
+
+Não foram utilizadas ferramentas específicas de testes neste projeto. Os testes foram realizados manualmente utilizando um navegador web para acessar a aplicação e verificar o comportamento das funcionalidades implementadas. O banco de dados de testes foi utilizado para garantir a integridade e consistência dos dados durante os testes.
