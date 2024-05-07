@@ -21,6 +21,11 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Página de cadastro de despesas: `cadastro_despesa.html`
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
+- 
+  Vídeo da explicação da atividade está disponibilizado no YouTube:
+ 
+   Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
+   Video etapa 3: https://youtu.be/9lc6o-Mj3PM - Projeto Front End Web  
 
 #### Visualização de Relatórios de Despesas
 - Permite que os usuários visualizem relatórios detalhados de suas despesas cadastradas no sistema financeiro.
