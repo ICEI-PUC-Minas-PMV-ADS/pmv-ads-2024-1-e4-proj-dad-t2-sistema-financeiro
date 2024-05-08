@@ -47,7 +47,7 @@ Considerando as diretrizes da norma ISO/IEC 25010, nossa equipe selecionou as se
 
 5. **Segurança**:
    - Métricas: Nível de vulnerabilidades identificadas, tempo médio para correção de vulnerabilidades.
-   - 
+     
 ## Considerações Finais
 
 A arquitetura da solução foi cuidadosamente planejada para atender às necessidades do sistema financeiro, garantindo um alto padrão de qualidade, desempenho e segurança. A utilização de tecnologias modernas e práticas recomendadas garantirá a eficiência e escalabilidade do sistema.
