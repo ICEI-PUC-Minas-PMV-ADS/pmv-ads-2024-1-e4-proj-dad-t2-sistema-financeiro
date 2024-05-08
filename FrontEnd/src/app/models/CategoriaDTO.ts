@@ -1,8 +1,6 @@
 export class CategoriaDTO
 {
-    Id: number;
-    Nome: string;
-    IdSistema:number;
-
-   
+    id: number;
+    nome: string;
+    sistemaId:number;
 }
