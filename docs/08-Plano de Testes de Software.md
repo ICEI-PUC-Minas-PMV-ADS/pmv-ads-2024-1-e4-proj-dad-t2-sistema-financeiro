@@ -26,6 +26,18 @@
    - Grupo de Usuários: Usuários do sistema.
    - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
 
+ 5. **Cadastro de sistema financeiro:**
+   - Descrição: Verificar se os usuários conseguem cadastrar seu sistema financeiro no sistema.
+   - Funcionalidade Avaliada: Cadastro de sistema financeiro.
+   - Grupo de Usuários: Usuários do sistema.
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+
+6. **Visualização de Dashboard:**
+   - Descrição: Visualização de dashboard .
+   - Funcionalidade Avaliada: Visualização de investimentos, despesas pagas, despesas a pagar e despesas atradas .
+   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+
+
 ## Ferramentas de Testes Utilizadas
 
 Não foram utilizadas ferramentas específicas de testes neste projeto. Os testes foram realizados manualmente utilizando um navegador web para acessar a aplicação e verificar o comportamento das funcionalidades implementadas. O banco de dados de testes foi utilizado para garantir a integridade e consistência dos dados durante os testes.

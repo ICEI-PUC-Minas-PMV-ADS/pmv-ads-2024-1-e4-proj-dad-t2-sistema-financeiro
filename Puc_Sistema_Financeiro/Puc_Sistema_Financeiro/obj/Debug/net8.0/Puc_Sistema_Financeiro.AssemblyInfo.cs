@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Puc_Sistema_Financeiro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+537546c7d44ff57f9e123389799c06f848065e77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+220617120f3a4cb31e60d505fb47c9a1ee4b34e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Puc_Sistema_Financeiro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Puc_Sistema_Financeiro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,30 +8,21 @@ Nesta seção, vamos descrever a arquitetura da solução para o sistema finance
 
 O sistema financeiro será composto pelos seguintes componentes:
 
-- **Frontend Web**: Interface de usuário acessível por navegadores web. Desenvolvido utilizando React.js.
+- **Frontend Web**: Interface de usuário acessível por navegadores web. Desenvolvido utilizando Angular.
 - **Frontend Mobile**: Interface de usuário acessível por dispositivos móveis. Desenvolvido utilizando React Native.
 - **Backend API**: Responsável por fornecer os dados para o frontend e executar a lógica de negócios. Desenvolvido em C# utilizando ASP.NET Core.
 - **Banco de Dados**: Armazenará os dados do sistema. Utilizaremos o MongoDB, um banco de dados NoSQL.
 
 ## Tecnologias Utilizadas
 
-- **Linguagens**: C# para a API, JavaScript para o frontend (web e mobile).
-- **Frameworks**: ASP.NET Core para o backend, React para o frontend web, React Native para o frontend mobile.
-- **Banco de Dados**: MongoDB, MySQL
-- **Ferramentas de Desenvolvimento**: Visual Studio para C#, Visual Studio Code para JavaScript.
+- **Linguagens**: C# para a API, Script para o frontend (web e mobile).
+- **Frameworks**: ASP.NET Core para o backend, Angular para o frontend web, React Native para o frontend mobile.
+- **Banco de Dados**: MongoDB
+- **Ferramentas de Desenvolvimento**: Visual Studio para C#, Visual Studio Code para Script.
 - **Ferramentas de Versionamento**: Git e GitHub.
-- 
-- ![Diagrama de Arquitetura](img/arquitetura.png)
+ 
+ ![Diagrama de Arquitetura](img/Arquitetura.png)
 
- ## Refatoração
-
-Com a necessidade de se introduzir no projeto o teste de unidade, descobriu-se que a arquitetura utilizada é inadequada para tal (ver Plano de Testes de Software).
-
-Assim, tornou-se necessária a refatoração do código para o padrão de projeto Repositório, incluindo uma camada entre o bando de dados e o modelo de negócios.
-
-O novo esquema pode ser visto abaixo:
-
-![Diagrama de Arquitetura](img/arquitetura_v2.png)
 
 
 ## Hospedagem
@@ -56,7 +47,7 @@ Considerando as diretrizes da norma ISO/IEC 25010, nossa equipe selecionou as se
 
 5. **Segurança**:
    - Métricas: Nível de vulnerabilidades identificadas, tempo médio para correção de vulnerabilidades.
-   - 
+     
 ## Considerações Finais
 
 A arquitetura da solução foi cuidadosamente planejada para atender às necessidades do sistema financeiro, garantindo um alto padrão de qualidade, desempenho e segurança. A utilização de tecnologias modernas e práticas recomendadas garantirá a eficiência e escalabilidade do sistema.
@@ -92,20 +83,14 @@ Tabelas:
 - SistemaFinanceiro (Id, Nome, Mes, Ano, DiaFechamento, GerarCopiaDespesa, MesCopia, AnoCopia)
 - UsuarioSistemaFinanceiro (Id, EmailUsuario, Administrador, SistemaAtual, SistemaId)
 
-## Modelo Físico
-
-Arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados que consta na pasta src\bd
-
-[Arquivo banco.sql](../src/bd/banco.sql)
-
 ## Tecnologias Utilizadas
 
 Para resolver o problema e implementar a solução do sistema financeiro, utilizaremos as seguintes tecnologias:
 
-- Linguagens: C# para a API, JavaScript para o frontend web e mobile.
+- Linguagens: C# para a API, Script para o frontend web e mobile.
 - Banco de Dados: MongoDB (NoSQL).
-- Frameworks: ASP.NET Core para a API, React para o frontend web, React Native para o frontend mobile.
-- IDEs: Visual Studio para desenvolvimento em C#, Visual Studio Code para desenvolvimento em JavaScript.
+- Frameworks: ASP.NET Core para a API, Angular para o frontend web, React Native para o frontend mobile.
+- IDEs: Visual Studio para desenvolvimento em C#, Visual Studio Code para desenvolvimento em Script.
 - Ferramentas de versionamento: Git e GitHub.
 
 ## Hospedagem

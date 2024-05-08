@@ -8,13 +8,20 @@
 
 João Silva tem 35 anos, é um empreendedor que administra sua própria empresa de consultoria financeira. Ele precisa de uma solução que o ajude a gerenciar suas finanças de forma eficiente e segura, incluindo despesas pessoais e relacionadas à empresa.
 
+### MARIA SANTOS 
+Maria Santos é uma estudante universitária de 22 anos que está lutando para gerenciar suas finanças pessoais enquanto cursa a faculdade. Ela precisa de uma solução que a ajude a controlar seus gastos, acompanhar suas despesas com educação e manter um orçamento equilibrado, tudo isso enquanto equilibra os estudos e o trabalho de meio período.
 
+### PEDRO OLIVEIRA 
+Pedro Oliveira é um profissional autônomo de 40 anos que trabalha como freelancer na área de design gráfico. Ele precisa de uma solução que o auxilie a acompanhar seus projetos em andamento, gerenciar suas despesas comerciais, como aquisição de softwares e equipamentos, e controlar suas finanças pessoais, garantindo que ele possa manter suas contas em dia e economizar para o futuro.
 ## Histórias de Usuários
 
 | EU COMO... | QUERO/PRECISO... | PARA... |
 |------------|-------------------|---------|
-| Usuário do sistema | Registrar despesas | Manter um registro das transações financeiras |
-| Administrador | Gerar relatórios financeiros | Analisar o desempenho financeiro da empresa |
+| joão Silva. | Registrar despesas. | Manter um registro das transações financeiras. |
+| João Silva. | Gerar relatórios financeiros. | Analisar o desempenho financeiro.  |
+| Maria Santos. | Controle de despesas. | Controlar o périodo de tempo em que mais teve consumo.|
+| Maria Santos. | Conhecer as catergias com que mais tem gastado. | Analisar seu consumo de materias de uma mesma categoria. |
+| Pedro Oliveira. | Rastrear seu consumo. | Analisar seus principais consumos. |
 
 ## Modelagem do Processo de Negócio
 
@@ -40,6 +47,7 @@ Este processo envolve a geração de relatórios financeiros para análise.
 
 ## Tabelas do Banco de Dados
 
+### Requisito
 ### Despesa
 
 | Campo | Tipo | Descrição |
@@ -49,9 +57,6 @@ Este processo envolve a geração de relatórios financeiros para análise.
 | Data  | Date | Data da despesa |
 | Categoria | Varchar | Categoria da despesa |
 | Descrição | Text | Descrição detalhada da despesa |
-
-## Requisitos
-# Requisitos
 
 ## Requisitos Funcionais (RF)
 

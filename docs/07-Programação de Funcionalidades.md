@@ -16,14 +16,16 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Script para validar e enviar dados do formulário de login: `login.js`
 - Estrutura de dados: Tabela `usuarios` no banco de dados
 
-#### Cadastro de Despesas
-## Responsável:
-
-## Samuel = Tela de despesa
+#### Samuel - Tela de despesa
 - Permite que os usuários cadastrem suas despesas no sistema financeiro.
 - Página de cadastro de despesas: `cadastro_despesa.html`
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
+- 
+  Vídeo da explicação da atividade está disponibilizado no YouTube:
+ 
+  - Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
+  - Video etapa 3: https://youtu.be/9lc6o-Mj3PM - Projeto Front End Web  
 
 #### Visualização de Relatórios de Despesas
 - Permite que os usuários visualizem relatórios detalhados de suas despesas cadastradas no sistema financeiro.
@@ -31,18 +33,20 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Script para recuperar e exibir os dados das despesas cadastradas: `relatorios_despesas.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
 
- Vídeo da explicação da atividade está disponibilizado no YouTube:
+#### Nicolas - Cadastro de Categorias
+- Permite que os usuários cadastrem categorias para classificar suas despesas.
+- Controller para manipulação das categorias: `SistemaFinanceiroController.cs`
+- Estrutura de dados: Tabela `categorias` no banco de dados
+
+Vídeo da explicação da atividade está disponibilizado no YouTube:
  
  - Vídeo etapa 2: https://youtu.be/qLx-NG-Mda8 - Projeto Back End com MongoDB
  
  - Vídeo etapa 2: https://youtu.be/S-ELnjHA54w  - teste tabela Sistema Financeiro - Lucas
 
  - Vídeo etapa 2: https://youtu.be/zNdhYoLdm6M - Teste Usuário Sistema Financeiro - Frederico
-
-#### Cadastro de Categorias
-- Permite que os usuários cadastrem categorias para classificar suas despesas.
-- Controller para manipulação das categorias: `SistemaFinanceiroController.cs`
-- Estrutura de dados: Tabela `categorias` no banco de dados
+ 
+ - Vídeo etapa 2: https://youtu.be/on_2YBkPEiw - Teste Categorias Sistema Financeiro - Nicolas
 
 ### Como Utilizar o Projeto
 
