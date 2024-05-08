@@ -97,6 +97,7 @@ export class SistemaComponent {
   ListaSistemasUsuario() {
     this.itemEdicao = null;
     this.tipoTela = 1;
+    console.log("🚀 ~ SistemaComponent ~ ListaSistemasUsuario ~ this.tipoTela:", this.tipoTela)
 
     this.sistemaService.ListaSistemasUsuario(this.authService.getEmailUser())
       .subscribe((response: Array<SistemaFinanceiroDTO>) => {

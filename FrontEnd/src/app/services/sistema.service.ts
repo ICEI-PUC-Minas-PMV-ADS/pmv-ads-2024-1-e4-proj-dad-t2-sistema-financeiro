@@ -21,7 +21,7 @@ export class SistemaService {
     }
 
     ListaSistemasUsuario(emailUsuario: string) {
-        return this.httpClient.get(`${this.baseURL}/sistema-financeiro/lista-sistemas-usuario?emailUsuario=${emailUsuario}`);
+        return this.httpClient.get(`${this.baseURL}/sistema-financeiro`);
     }
 
     CadastrarUsuarioNoSistema(idSistema: number, emailUsuario: string) {

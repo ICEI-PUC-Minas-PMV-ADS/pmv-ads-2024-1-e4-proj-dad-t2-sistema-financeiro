@@ -39,21 +39,18 @@ export class LoginComponent {
   }
 
 
-  loginUser() {
-
-    this.loginService.login(this.dadosForm["email"].value, this.dadosForm["senha"].value).subscribe(
-      token => {
-        this.authService.setToken(token);
-        this.authService.setEmailUser(this.dadosForm["email"].value);
-        this.authService.UsuarioAutenticado(true);
-        this.router.navigate(['/dashboard']);
-      },
-      err => {
-        alert('Ocorreu um erro');
-      }
-
-    )
-
+  async loginUser() {
+    console.log("cheguei aqui")
+  
+    try {
+      const token = await this.loginService.login(this.dadosForm["email"].value, this.dadosForm["senha"].value);
+      this.authService.setToken(token);
+      this.authService.setEmailUser(this.dadosForm["email"].value);
+      this.authService.UsuarioAutenticado(true);
+      await this.router.navigate(['/dashboard']);
+    } catch (err) {
+      alert('Ocorreu um erro');
+    }
   }
 
 

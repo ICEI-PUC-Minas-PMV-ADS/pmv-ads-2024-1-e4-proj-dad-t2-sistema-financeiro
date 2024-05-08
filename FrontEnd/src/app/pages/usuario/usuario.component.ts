@@ -65,16 +65,15 @@ export class UsuarioComponent {
 
  
 
-  ListaUsuariosUsuario() {
+  async ListaUsuariosUsuario() {
     this.itemEdicao = null;
     this.tipoTela = 1;
 
-    this.userService.listarUsuarios()
-      .subscribe((response: Array<UsuarioModel>) => {
-        this.tableListUsuarios = response;
-      }, (error) => console.error(error),
-        () => { })
-
+    try {
+      this.tableListUsuarios = await this.userService.listarUsuarios();
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   constructor(public menuService: MenuService, public formBuilder: FormBuilder,
@@ -108,43 +107,42 @@ export class UsuarioComponent {
     return this.UsuarioForm.controls;
   }
 
-  enviar() {
-    debugger
+  async enviar() {
     var dados = this.dadorForm();
+    console.log("🚀 ~ UsuarioComponent ~ enviar ~ dados:", dados)
 
     if (this.itemEdicao) {
+    console.log("🚀 ~ UsuarioComponent ~ enviar ~ this.itemEdicao:", this.itemEdicao)
 
       this.itemEdicao.CPF = dados["CPF"].value;
       this.itemEdicao.Email = dados["Email"].value;
       this.itemEdicao.Senha = dados["Senha"].value;
       
-      this.userService.atualizarUsuario(this.itemEdicao.UserId,this.itemEdicao.Email,"",this.itemEdicao.CPF)
-        .subscribe((response: UsuarioModel) => {
+      try {
+        let response = await this.userService.atualizarUsuario(this.itemEdicao.UserId,this.itemEdicao.Email,"",this.itemEdicao.CPF);
+        this.UsuarioForm.reset();
+        await this.ListaUsuariosUsuario();
+      } catch (error) {
+        console.error(error);
+      }
 
-          this.UsuarioForm.reset();
-          this.ListaUsuariosUsuario();
-
-        }, (error) => console.error(error),
-          () => { })
-
-
-    }
-    else {
+    } else {
 
       let item = new UsuarioModel();
+      console.log("🚀 ~ UsuarioComponent ~ enviar ~ item:", item)
       item.UserId = "";
       item.Email = dados["Email"].value;
       item.Senha = dados["Senha"].value;
       item.CPF = dados["CPF"].value;
     
-      this.userService.adicionarUsuario(item.Email,item.Senha,item.CPF)
-        .subscribe((response: UsuarioModel) => {
-
-          this.UsuarioForm.reset();
-              this.ListaUsuariosUsuario();        
-
-        }, (error) => console.error(error),
-          () => { })
+      try {
+        let response = await this.userService.adicionarUsuario(item.Email,item.Senha,item.CPF);
+        console.log("🚀 ~ UsuarioComponent ~ enviar ~ response:", response)
+        this.UsuarioForm.reset();
+        await this.ListaUsuariosUsuario();
+      } catch (error) {
+        console.error(error);
+      }
 
     }
 
@@ -156,6 +154,7 @@ export class UsuarioComponent {
 
     this.itemEdicao = item;
     this.tipoTela = 2;
+    console.log("🚀 ~ UsuarioComponent ~ edicao ~ this.tipoTela:", this.tipoTela)
 
     var dados = this.dadorForm();
     dados["CPF"].setValue(this.itemEdicao.CPF);
@@ -173,20 +172,18 @@ export class UsuarioComponent {
   textValid: string = "Campo Obrigatório!";
 
 
-  excluir(id: string) {
-    this.userService.deletarUsuario(id)
-      .subscribe((reponse: UsuarioModel) => {
+  async excluir(id: string) {
+    try {
+      let reponse = await this.userService.deletarUsuario(id);
+      console.log("🚀 ~ UsuarioComponent ~ excluir ~ reponse:", reponse)
 
-        if (reponse) {
-          this.edicao(this.itemEdicao)
-          this.emailUsuarioUsuario = "";
-        }
-
-      },
-        (error) => console.error(error),
-        () => {
-
-        })
+      if (reponse) {
+        this.edicao(this.itemEdicao)
+        this.emailUsuarioUsuario = "";
+      }
+    } catch (error) {
+      console.error(error);
+    }
   }
 
 

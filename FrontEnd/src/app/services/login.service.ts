@@ -1,4 +1,3 @@
-
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environment';
@@ -13,8 +12,11 @@ export class LoginService {
 
     private readonly baseUrl = environment["endPoint"];
 
-    login(Email: string, Senha: string) {
-        return this.httpClient.post<any>(`${this.baseUrl}/auth/login`, { Email: Email, Senha: Senha });
+    async login(Email: string, Senha: string) {
+        try {
+            return await this.httpClient.post<any>(`${this.baseUrl}/auth/login`, { Email: Email, Senha: Senha }).toPromise();
+        } catch (error) {
+            console.error(error);
+        }
     }
-
 }

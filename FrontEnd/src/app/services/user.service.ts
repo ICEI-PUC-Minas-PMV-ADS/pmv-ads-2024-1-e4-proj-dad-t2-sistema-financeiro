@@ -1,4 +1,3 @@
-
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environment';
@@ -14,22 +13,20 @@ export class UserService {
 
     private readonly baseUrl = environment["endPoint"];
 
-    adicionarUsuario(email: string, senha: string, cpf: string) {
-        return this.httpClient.post<any>(`${this.baseUrl}/AdicionaUsuario`, { email, senha, cpf });
-      }
-    
-      atualizarUsuario(id: string, email: string, senha: string, cpf: string) {
-        return this.httpClient.put<any>(`${this.baseUrl}/AtualizaUsuario/${id}`, { email, senha, cpf });
-      }
-    
-      deletarUsuario(id: string) {
-        return this.httpClient.delete<any>(`${this.baseUrl}/DeletaUsuario/${id}`);
-      }
-    
-      listarUsuarios() {
-        return this.httpClient.get<Array<UsuarioModel>>(`${this.baseUrl}/ListaUsuarios`);
-      }
-
-    
+    async adicionarUsuario(email: string, senha: string, cpf: string) {
+        return await this.httpClient.post<any>(`${this.baseUrl}/usuario-sistema-financeiro`, { email, senha, cpf }).toPromise();
+    }
+  
+    async atualizarUsuario(id: string, email: string, senha: string, cpf: string) {
+      return await this.httpClient.put<any>(`${this.baseUrl}/usuario-sistema-financeiro/${id}`, { email, senha, cpf }).toPromise();
+    }
+  
+    async deletarUsuario(id: string) {
+      return await this.httpClient.delete<any>(`${this.baseUrl}/usuario-sistema-financeiro/${id}`).toPromise();
+    }
+  
+    async listarUsuarios() {
+      return await this.httpClient.get<Array<UsuarioModel>>(`${this.baseUrl}/usuario-sistema-financeiro`).toPromise();
+    }
 
 }
