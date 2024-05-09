@@ -1,0 +1,147 @@
+<navbar></navbar>
+<sidebar></sidebar>
+
+
+<div *ngIf="tipoTela == 2" class="container-base">
+
+    <div class="content-page">
+        <div class="card-header">
+            <div class="card-title"> Cadastro de Despesa </div>
+            <div (click)="ListarDespesasUsuario()" class="card-menu"> Listagem de Despesas </div>
+
+        </div>
+
+        <form class="form-page" [formGroup]="despesaForm" (submit)="enviar()">
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Nome" formControlName="name" required />
+                    <label class="error-input" *ngIf="despesaForm.get('name')?.errors?.['required'] &&
+                    despesaForm.get('name')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Valor</label>
+                    <input type="number" name="valor" id="valor" placeholder="Valor" formControlName="valor" required />
+                    <label class="error-input" *ngIf="despesaForm.get('valor')?.errors?.['required'] &&
+                    despesaForm.get('valor')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Data de vencimento</label>
+                    <input type="date" name="data" id="data" placeholder="Data" formControlName="data" required />
+                    <label class="error-input" *ngIf="despesaForm.get('data')?.errors?.['required'] &&
+                    despesaForm.get('data')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+
+            <!-- <div class="row">
+                <div class="group-row">
+                    <label>Sistemas</label>                   
+                   <ng-select class="select-padrao"  formControlName="sistemaSelect" [(ngModel)]="sistemaSelect" [items]="listSistemas"  bindLabel="name"  [multiple]="false" [clearable]="false" 
+                   [searchable]="false"></ng-select>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Categoria</label>
+                    <ng-select class="select-padrao" formControlName="categoriaSelect" [(ngModel)]="categoriaSelect"
+                        [items]="listCategorias" bindLabel="name" [multiple]="false" [clearable]="false"
+                        [searchable]="false"></ng-select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="group-row">
+
+                    <mat-slide-toggle class="group-slide" [color]="color" [checked]="checked" [disabled]="disabled"
+                        (change)="handleChangePago($event)">
+                        Pago?
+                    </mat-slide-toggle>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="group-row">
+                    <input type="submit" value="Salvar" class="btn-primary" />
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div *ngIf="tipoTela == 1" class="container-base">
+
+    <div class="content-page">
+
+        <div class="header-info-2">
+            <div class="card-header">
+                <div class="card-title"> Listagem de Despesas </div>
+                <div (click)="cadastro()" class="card-menu"> Cadastro de Despesa </div>
+            </div>
+
+
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>Código</td>
+                        <td>Nome</td>
+                        <td>Ação</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="select-item" *ngFor="let item of tableListDespesas | paginate: config; let i = index"
+                        class="linha-table" [ngClass]="{'linha-cinza' : i % 2 == 0, 'linha-branca' : i % 2 !== 0}">
+
+                        <td>{{item.Id}}</td>
+                        <td>{{item.Nome}}</td>
+
+                        <td (click)="edicao(item.Id)"> Edit</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tabela-footer" *ngIf="paginacao && tableListDespesas">
+                <label class="mostrar">Mostrar</label>
+                <ng-select (change)="mudarItemsPorPage()" [(ngModel)]="itemsPorPagina" [clearable]="false"
+                    [searchable]="false" class="mostrar-drop">
+                    <ng-option [value]="10">10</ng-option>
+                    <ng-option [value]="50">50</ng-option>
+                    <ng-option [value]="100">100</ng-option>
+                </ng-select>
+
+                <div class="container-pagination">
+                    <pagination-controls id="{{this.id}}" previousLabel="Anterior" nextLabel="Próximo"
+                        [responsive]="true" (pageChange)="mudarPage($event)">
+                    </pagination-controls>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
