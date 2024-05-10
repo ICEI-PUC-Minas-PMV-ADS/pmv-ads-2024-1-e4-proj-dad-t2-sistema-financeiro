@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SistemaFinanceiroDTO } from 'src/app/models/SistemaFinanceiroDTO';
@@ -231,12 +232,12 @@ export class SistemaComponent {
         () => {
 
         })
+        
   }
 
   handleChangePago(item: any) {
     this.checked = item.checked as boolean;
   }
-
 
 
 
@@ -266,6 +267,34 @@ export class SistemaComponent {
 
         })
   }
+  async delete(item: SistemaFinanceiroDTO) {
+
+    console.log("delete")
+
+    this.itemEdicao = item;
+    this.tipoTela = 2;
+    console.log("🚀 ~ UsuarioComponent ~ edicao ~ this.tipoTela:", this.tipoTela)
+
+    var dados = this.dadorForm();
+    dados["name"].setValue(this.itemEdicao.nome);
+    dados["mes"].setValue(this.itemEdicao.mes);
+    dados["ano"].setValue(this.itemEdicao.ano);
+    dados["diaFechamento"].setValue(this.itemEdicao.diaFechamento);
+    this.checked = this.itemEdicao.gerarCopiaDespesa;
+    dados["mesCopia"].setValue(this.itemEdicao.mesCopia);
+    dados["anoCopia"].setValue(this.itemEdicao.anoCopia);
+   
+
+    try {
+       this.sistemaService.DeletarSistemaFinanceiro(this.itemEdicao.id,this.itemEdicao.nome,this.itemEdicao.ano,this.itemEdicao.mes,this.itemEdicao.diaFechamento) 
+      // console.log("🚀 ~ UsuarioComponent ~ enviar ~ response:", response)
+      // this.UsuarioForm.reset();
+      // await this.ListaUsuariosUsuario();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
 
 
   addUsuarioSistema() {
