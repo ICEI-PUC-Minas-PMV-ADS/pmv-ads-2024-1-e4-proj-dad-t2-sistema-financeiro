@@ -11,22 +11,22 @@ Nesta seção, apresentaremos a visão geral da interação do usuário pelas te
 Os wireframes são protótipos usados em design de interface para sugerir a estrutura de um site web e seus relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
 ### Tela de Login
-![image](img/login.jpeg)
+![image](img/TelaLoginNova.jpeg)
 
 ### Dashboard Principal
-![image](img/dashboard.jpeg)
+![image](img/TelaHomeNova.jpeg)
 
 ### Tela do Sistema
-![image](img/sistema.jpeg)
+![image](img/TelaSisteamNova.jpeg)
 
 ### Tela Categoria do Sistema
-![image](img/categoria.jpeg)
+![image](img/TelaCategoriaNova.jpeg)
 
 ### Tela Despesa do Sistema
-![image](img/despesa.jpeg)
+![image](img/TelaDespesaNova.jpeg)
 
 ### Tela Usuario do Sistema
-![image](img/Usuario.jpeg)
+![image](img/TelaSistemaNova.jpeg)
 
 
 
