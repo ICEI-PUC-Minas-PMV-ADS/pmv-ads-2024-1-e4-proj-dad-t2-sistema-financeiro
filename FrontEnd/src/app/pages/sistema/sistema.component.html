@@ -158,7 +158,7 @@
                                 <td>{{item.Id}}</td>
                                 <td>{{item.EmailUsuario}}</td>
             
-                                <td (click)="excluir(item.Id)" > Excluir</td> 
+                                <td (click)="excluir(item.id)" > Excluir</td> 
             
                             </tr>
                         </tbody>
@@ -207,10 +207,13 @@
             <table cellspacing="0" cellpadding="0">
                 <thead>
                     <tr>
-                        <!-- <td></td> -->
+                      
                         <td>Código</td>
                         <td>Nome</td>
                         <td>Ação</td>
+                        <td>dia fechamento</td>
+                        <td>ano</td>
+                        <td>mes</td>
 
                     </tr>
                 </thead>
@@ -220,8 +223,12 @@
 
                         <td>{{item.id}}</td>
                         <td>{{item.nome}}</td>
+                        <td>{{item.diaFechamento}}</td>
+                        <td>{{item.ano}}</td>
+                        <td>{{item.mes}}</td>
 
                         <td (click)="edicao(item.id)"> Edit</td>
+                        <td (click)="delete(item)"> Delete</td>
 
                     </tr>
                 </tbody>
