@@ -4,7 +4,6 @@ using Puc_Sistema_Financeiro.Services;
 
 namespace Puc_Sistema_Financeiro.Controllers
 {
-
     [Route("api/usuario-sistema-financeiro")]
     [ApiController]
     public class UsuarioSistemaFinanceiroController : ControllerBase
