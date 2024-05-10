@@ -26,7 +26,7 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 ![image](img/TelaDespesaNova.jpeg)
 
 ### Tela Usuario do Sistema
-![image](img/TelaSistemaNova.jpeg)
+![image](img/TelaUsuarioSistemaNova.jpeg)
 
 
 
