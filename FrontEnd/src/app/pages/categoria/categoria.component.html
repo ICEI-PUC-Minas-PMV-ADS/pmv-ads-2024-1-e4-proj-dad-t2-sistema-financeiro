@@ -78,7 +78,10 @@
                         <td>{{item.nome}}</td>
                         <td>{{item.sistemaId}}</td>
 
-                        <td (click)="edicao(item.id)" > Edit</td>
+                        <!-- <td (click)="edicao(item.id)" > Edit</td> -->
+                        <td (click)="edicao(item)"> Editar</td>
+                        <td (click)="excluir(item.id)"> Excluir</td>
+
 
                     </tr>
                 </tbody>

@@ -1,5 +1,6 @@
-export class CategoriaDTO {
-    id: number;
+export class CategoriaDTO
+{
+    id: string;
     nome: string;
-    sistemaId: number;
+    sistemaId:string;
 }

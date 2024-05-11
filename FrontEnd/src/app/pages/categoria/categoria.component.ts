@@ -101,7 +101,7 @@ export class CategoriaComponent {
   async ListarCategoriasUsuario() {
     try {
       this.tipoTela = 1;
-      const response: any = await this.categoriaService.ListarCategoriasUsuario();
+      const response: any = await this.categoriaService.ListarCategoriasUsuario(this.authService.getEmailUser());
       this.tableListCategoria = response;
       console.log("🚀 ~ CategoriaComponent ~ ListarCategoriasUsuario ~ this.tableListCategoria:", this.tableListCategoria)
     } catch (error) {
@@ -114,16 +114,18 @@ export class CategoriaComponent {
       var dados = this.dadorForm();
       if (this.itemEdicao) {
         this.itemEdicao.nome = dados["name"].value;
-        this.itemEdicao.sistemaId = parseInt(this.sistemaSelect.id)
-        // const response: CategoriaDTO = await this.categoriaService.AtualizarCategoria(this.itemEdicao);
+        //this.itemEdicao.sistemaId = parseInt(this.sistemaSelect.id)
+        this.itemEdicao.sistemaId = this.sistemaSelect.id
+        const response: CategoriaDTO = await this.categoriaService.AtualizarCategoria(this.itemEdicao.id, this.itemEdicao );
         this.categoriaForm.reset();
         await this.ListarCategoriasUsuario();
       } else {
         let item = new CategoriaDTO();
         item.nome = dados["name"].value;
-        item.id = 0;
-        item.sistemaId = parseInt(this.sistemaSelect.id)
-        //const response: CategoriaDTO = await this.categoriaService.AdicionarCategoria(item);
+        item.id = "";
+        //item.sistemaId = parseInt(this.sistemaSelect.id)
+        item.sistemaId = this.sistemaSelect.id
+        const response: CategoriaDTO = await this.categoriaService.AdicionarCategoria(item);
         this.categoriaForm.reset();
         await this.ListarCategoriasUsuario();
       }
@@ -132,7 +134,7 @@ export class CategoriaComponent {
     }
   }
 
-  async edicao(id: number) {
+  /* async edicao(id: number) {
     try {
       const reponse: any = await this.categoriaService.ObterCategoria(id);
       if (reponse) {
@@ -143,6 +145,29 @@ export class CategoriaComponent {
         dados["name"].setValue(this.itemEdicao.nome)
         this.ListaSistemasUsuario(reponse.IdSistema)
       }
+    } catch (error) {
+      console.error(error);
+    }
+  } */
+
+  async edicao(item: CategoriaDTO) {
+    try {
+       
+      this.itemEdicao = item;
+      this.tipoTela = 2;
+      var dados = this.dadorForm();
+      dados["name"].setValue(this.itemEdicao.nome)
+      dados["sistemaSelect"].setValue(this.itemEdicao.sistemaId)
+      
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  async excluir(id: string) {
+    try {
+      await this.categoriaService.ExcluirCategoria(id);
+      await this.ListarCategoriasUsuario();  
     } catch (error) {
       console.error(error);
     }
