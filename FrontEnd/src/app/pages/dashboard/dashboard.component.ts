@@ -26,18 +26,18 @@ export class DashboardComponent {
 
 
   CarregaGraficos() {
-    this.despesaService.CarregaGraficos(this.authService.getEmailUser())
-      .subscribe((response: any) => {
+    // this.despesaService.CarregaGraficos(this.authService.getEmailUser())
+    //   .subscribe((response: any) => {
 
-        debugger
-        this.objetoGrafico = response;
-      },
-        (error) => console.error(error),
-        () => {
+    //     debugger
+    //     this.objetoGrafico = response;
+    //   },
+    //     (error) => console.error(error),
+    //     () => {
 
-        }
+    //     }
 
-      )
+    //   )
 
   }
 

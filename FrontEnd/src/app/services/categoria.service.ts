@@ -22,9 +22,9 @@ export class CategoriaService {
         categoria)
     }
 
-    ListarCategoriasUsuario(emailUsuario:string)
+    ListarCategoriasUsuario()
     {
-        return  this.httpClient.get(`${this.baseURL}/ListarCategoriasUsuario?emailUsuario=${emailUsuario}`);       
+        return  this.httpClient.get(`${this.baseURL}/categoria`);       
     }
 
     ObterCategoria(id: number) {

@@ -101,7 +101,7 @@ export class CategoriaComponent {
   async ListarCategoriasUsuario() {
     try {
       this.tipoTela = 1;
-      const response: any = await this.categoriaService.ListarCategoriasUsuario(this.authService.getEmailUser());
+      const response: any = await this.categoriaService.ListarCategoriasUsuario();
       this.tableListCategoria = response;
       console.log("🚀 ~ CategoriaComponent ~ ListarCategoriasUsuario ~ this.tableListCategoria:", this.tableListCategoria)
     } catch (error) {

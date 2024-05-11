@@ -66,18 +66,16 @@ export class DespesaComponent {
   }
 
 
-  ListarDespesasUsuario() {
+  async ListarDespesasUsuario() {
     this.tipoTela = 1;
 
-    this.despesaService.ListarDespesasUsuario(this.authService.getEmailUser())
-      .subscribe((response: Array<DespesaDTO>) => {
-
-        this.tableListDespesas = response;
-
-      }, (error) => console.error(error),
-        () => { })
-
-  }
+    const response = await this.despesaService.ListarDespesas();
+    response.subscribe((data: Array<DespesaDTO>) => {
+        this.tableListDespesas = data;
+    }, (error) => {
+        console.error(error);
+    });
+}
 
 
   constructor(public menuService: MenuService, public formBuilder: FormBuilder,
@@ -125,46 +123,39 @@ export class DespesaComponent {
     return this.despesaForm.controls;
   }
 
-  enviar() {
-
+  async enviar() {
     var dados = this.dadorForm();
-
+  
     if (this.itemEdicao) {
-
-      this.itemEdicao.Nome = dados["name"].value;
-      this.itemEdicao.Valor = dados["valor"].value;
-      this.itemEdicao.Pago = this.checked;
-      this.itemEdicao.DataVencimento = dados["data"].value;
-      this.itemEdicao.IdCategoria = parseInt(this.categoriaSelect.id);
-
-     
-
-      this.despesaService.AtualizarDespesa(this.itemEdicao)
-        .subscribe((response: DespesaDTO) => {
-
-          this.despesaForm.reset();
-          this.ListarDespesasUsuario();
-
-        }, (error) => console.error(error),
-          () => { })
-
-    }
-    else {
+      this.itemEdicao.nome = dados["name"].value;
+      this.itemEdicao.valor = dados["valor"].value;
+      this.itemEdicao.pago = this.checked;
+      this.itemEdicao.dataVencimento = dados["data"].value;
+      this.itemEdicao.idCategoria = parseInt(this.categoriaSelect.id);
+  
+      try {
+        const response = await this.despesaService.AtualizarDespesa(this.itemEdicao);
+        this.despesaForm.reset();
+        this.ListarDespesasUsuario();
+      } catch (error) {
+        console.error(error);
+      }
+    } else {
       let item = new DespesaDTO();
-      item.Nome = dados["name"].value;
-      item.Valor = dados["valor"].value;
-      item.Pago = this.checked;
-      item.DataVencimento = dados["data"].value;
-      item.IdCategoria = parseInt(this.categoriaSelect.id);
-      item.TipoDespesa = 1;
-      this.despesaService.AdicionarDespesa(item)
-        .subscribe((response: DespesaDTO) => {
-
-          this.despesaForm.reset();
-          this.ListarDespesasUsuario();
-
-        }, (error) => console.error(error),
-          () => { })
+      item.nome = dados["name"].value;
+      item.valor = dados["valor"].value;
+      item.pago = this.checked;
+      item.dataVencimento = dados["data"].value;
+      item.idCategoria = parseInt(this.categoriaSelect.id);
+      item.tipoDespesa = 1;
+  
+      try {
+        const response = await this.despesaService.AdicionarDespesa(item);
+        this.despesaForm.reset();
+        this.ListarDespesasUsuario();
+      } catch (error) {
+        console.error(error);
+      }
     }
   }
 
@@ -176,7 +167,7 @@ export class DespesaComponent {
 
 
   ListarCategoriasUsuario(id: number = null) {
-    this.categoriaService.ListarCategoriasUsuario(this.authService.getEmailUser())
+    this.categoriaService.ListarCategoriasUsuario()
       .subscribe((reponse: Array<CategoriaDTO>) => {
 
         var listaCatagorias = [];
@@ -203,41 +194,38 @@ export class DespesaComponent {
 
   itemEdicao: DespesaDTO;
 
-  edicao(id: number) {
-    this.despesaService.ObterDespesa(id)
-      .subscribe((reponse: DespesaDTO) => {
+  async edicao(id: number) {
+    // try {
+    //   const reponse: DespesaDTO = await this.despesaService.AtualizarDespesa(id);
 
-        if (reponse) {
-          this.itemEdicao = reponse;
-          this.tipoTela = 2;
+    //     if (reponse) {
+    //       this.itemEdicao = reponse;
+    //       this.tipoTela = 2;
 
-          this.ListarCategoriasUsuario(reponse.IdCategoria);
+    //       this.ListarCategoriasUsuario(reponse.idCategoria);
 
-          var dados = this.dadorForm();
-          dados["name"].setValue(this.itemEdicao.Nome)
+    //       var dados = this.dadorForm();
+    //       dados["name"].setValue(this.itemEdicao.nome)
 
-          var dateToString = reponse.DataVencimento.toString();
-          var dateFull = dateToString.split('-');
-          var dayFull = dateFull[2].split('T');
-          var day = dayFull[0];
-          var month = dateFull[1];
-          var year = dateFull[0];
+    //       var dateToString = reponse.dataVencimento.toString();
+    //       var dateFull = dateToString.split('-');
+    //       var dayFull = dateFull[2].split('T');
+    //       var day = dayFull[0];
+    //       var month = dateFull[1];
+    //       var year = dateFull[0];
 
-          var dateInput = year + '-' + month + '-' + day;
+    //       var dateInput = year + '-' + month + '-' + day;
 
-          dados["data"].setValue(dateInput);
-          dados["valor"].setValue(reponse.Valor);
+    //       dados["data"].setValue(dateInput);
+    //       dados["valor"].setValue(reponse.valor);
 
-          this.checked = reponse.Pago;
+    //       this.checked = reponse.pago;
 
-        }
+    //     }
 
-      },
-        (error) => console.error(error),
-        () => {
-
-        })
+    //   )
+    // } catch (error) {
+    //   console.error(error);
+    // }
   }
-
-
 }
