@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Puc_Sistema_Financeiro.Models;
 using WebApiMongoDB.Services;
 
@@ -6,6 +7,7 @@ namespace Puc_Sistema_Financeiro.Controllers
 {
     [Route("api/despesa")]
     [ApiController]
+    [EnableCors("AllowAngularApp")]
     public class DespesaController : ControllerBase
     {
         private readonly DespesaService _despesaService;

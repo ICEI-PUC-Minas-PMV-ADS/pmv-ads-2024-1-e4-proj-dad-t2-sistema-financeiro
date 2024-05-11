@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Puc_Sistema_Financeiro.Models.Puc_Sistema_Financeiro.Models;
 using Puc_Sistema_Financeiro.Services;
 
@@ -6,6 +7,7 @@ namespace Puc_Sistema_Financeiro.Controllers
 {
     [Route("api/sistema-financeiro")]
     [ApiController]
+    [EnableCors("AllowAngularApp")]
     public class SistemaFinanceiroController : ControllerBase
     {
         private readonly SistemaFinanceiroService _sistemaFinanceiroService;

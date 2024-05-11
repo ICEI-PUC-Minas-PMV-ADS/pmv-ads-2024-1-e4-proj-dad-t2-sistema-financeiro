@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Puc_Sistema_Financeiro.Models;
 using WebApiMongoDB.Services;
 
@@ -6,6 +7,7 @@ namespace WebApiMongoDB.Controllers
 {
     [Route("api/categoria")]
     [ApiController]
+    [EnableCors("AllowAngularApp")]
     public class CategoriaController : ControllerBase
     {
         private readonly CategoriaService _categoriaService;
