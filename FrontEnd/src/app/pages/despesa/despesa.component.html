@@ -16,9 +16,9 @@
             <div class="row">
                 <div class="group-row">
                     <label>Nome</label>
-                    <input type="text" name="name" id="name" placeholder="Nome" formControlName="name" required />
-                    <label class="error-input" *ngIf="despesaForm.get('name')?.errors?.['required'] &&
-                    despesaForm.get('name')?.touched">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" formControlName="nome" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('nome')?.errors?.['required'] && despesaForm.get('nome')?.touched">
                         Campo Obrigatório!
                     </label>
                 </div>
@@ -28,8 +28,66 @@
                 <div class="group-row">
                     <label>Valor</label>
                     <input type="number" name="valor" id="valor" placeholder="Valor" formControlName="valor" required />
-                    <label class="error-input" *ngIf="despesaForm.get('valor')?.errors?.['required'] &&
-                    despesaForm.get('valor')?.touched">
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('valor')?.errors?.['required'] && despesaForm.get('valor')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Mês</label>
+                    <input type="number" name="mes" id="mes" placeholder="Mês" formControlName="mes" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('mes')?.errors?.['required'] && despesaForm.get('mes')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Ano</label>
+                    <input type="number" name="ano" id="ano" placeholder="Ano" formControlName="ano" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('ano')?.errors?.['required'] && despesaForm.get('ano')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Tipo Despesa</label>
+                    <input type="string" name="tipoDespesa" id="tipoDespesa" placeholder="Tipo Despesa"
+                        formControlName="tipoDespesa" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('tipoDespesa')?.errors?.['required'] && despesaForm.get('tipoDespesa')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Data Cadastro</label>
+                    <input type="string" name="dataCadastro" id="dataCadastro" placeholder="Data Cadastro"
+                        formControlName="dataCadastro" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('dataCadastro')?.errors?.['required'] && despesaForm.get('dataCadastro')?.touched">
+                        Campo Obrigatório!
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group-row">
+                    <label>Data Pagamento</label>
+                    <input type="string" name="dataPagamento" id="dataPagamento" placeholder="Data Pagamento"
+                        formControlName="dataPagamento" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('dataPagamento')?.errors?.['required'] && despesaForm.get('dataPagamento')?.touched">
                         Campo Obrigatório!
                     </label>
                 </div>
@@ -38,14 +96,14 @@
             <div class="row">
                 <div class="group-row">
                     <label>Data de vencimento</label>
-                    <input type="date" name="data" id="data" placeholder="Data" formControlName="data" required />
-                    <label class="error-input" *ngIf="despesaForm.get('data')?.errors?.['required'] &&
-                    despesaForm.get('data')?.touched">
+                    <input type="string" name="dataVencimento" id="dataVencimento" placeholder="Data"
+                        formControlName="dataVencimento" required />
+                    <label class="error-input"
+                        *ngIf="despesaForm.get('dataVencimento')?.errors?.['required'] && despesaForm.get('dataVencimento')?.touched">
                         Campo Obrigatório!
                     </label>
                 </div>
             </div>
-
 
             <!-- <div class="row">
                 <div class="group-row">
@@ -55,28 +113,36 @@
                 </div>
             </div> -->
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="group-row">
                     <label>Categoria</label>
-                    <ng-select class="select-padrao" formControlName="categoriaSelect" [(ngModel)]="categoriaSelect"
+                    <ng-select class="select-padrao" formControlName="categoriaId" [(ngModel)]="categoriaId"
                         [items]="listCategorias" bindLabel="name" [multiple]="false" [clearable]="false"
                         [searchable]="false"></ng-select>
                 </div>
-            </div>
-
+            </div> -->
 
             <div class="row">
                 <div class="group-row">
 
                     <mat-slide-toggle class="group-slide" [color]="color" [checked]="checked" [disabled]="disabled"
                         (change)="handleChangePago($event)">
-                        Pago?
+                        Despesa Atrasada?
                     </mat-slide-toggle>
 
                 </div>
             </div>
 
+            <div class="row">
+                <div class="group-row">
 
+                    <mat-slide-toggle class="group-slide" [color]="color" [checked]="checked" [disabled]="disabled"
+                        (change)="handleChangePago($event)">
+                        Despesa Paga?
+                    </mat-slide-toggle>
+
+                </div>
+            </div>
 
             <div class="row">
                 <div class="group-row">
@@ -105,21 +171,42 @@
                 <thead>
                     <tr>
                         <!-- <td></td> -->
-                        <td>Código</td>
                         <td>Nome</td>
+                        <td>Valor</td>
+                        <td>Mês</td>
+                        <td>Ano</td>
+                        <td>Tipo Despesa</td>
+                        <td>Data Cadastro</td>
+                        <td>Data Alteração</td>
+                        <td>Data Pagamento</td>
+                        <td>Data vencimento</td>
+                        <td>Pago</td>
+                        <td>Despesa Atrasada</td>
+                        <td>Categoria</td>
                         <td>Ação</td>
-
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="select-item" *ngFor="let item of tableListDespesas | paginate: config; let i = index"
                         class="linha-table" [ngClass]="{'linha-cinza' : i % 2 == 0, 'linha-branca' : i % 2 !== 0}">
 
-                        <td>{{item.id}}</td>
-                        <td>{{item.nome}}</td>
-
-                        <td (click)="edicao(item.id)"> Edit</td>
-
+                        <td>{{ item.nome}}</td>
+                        <td>{{ item.valor }}</td>
+                        <td>{{ item.mes }}</td>
+                        <td>{{ item.ano }}</td>
+                        <td>{{ item.tipoDespesa }}</td>
+                        <td>{{ item.dataCadastro }}</td>
+                        <td>{{ item.dataAlteracao }}</td>
+                        <td>{{ item.dataPagamento }}</td>
+                        <td>{{ item.dataVencimento }}</td>
+                        <td>{{ item.pago }}</td>
+                        <td>{{ item.despesaAtrasada }}</td>
+                        <td>{{ item.categoriaId }}</td>
+                        <td>
+                            <!-- <button (click)="edicao(item.id)">Editar</button> -->
+                            <button (click)="editar(item)">Editar</button>
+                            <button (click)="excluir(item.id)">Apagar</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

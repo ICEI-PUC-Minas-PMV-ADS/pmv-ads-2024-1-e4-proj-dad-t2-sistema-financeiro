@@ -1,15 +1,15 @@
 export class DespesaDTO {
-    id: number;
+    id: string;
     nome: string;
     valor: number;
     mes: number;
     ano: number;
-    tipoDespesa: number;
-    dataCadastro: Date;
-    dataAlteracao: Date;
-    dataPagamento: Date;
-    dataVencimento: Date;
+    tipoDespesa: string;
+    dataCadastro: string;
+    dataAlteracao: string;
+    dataPagamento: string;
+    dataVencimento: string;
     pago: boolean;
     despesaAtrasada: boolean;
-    idCategoria: number;
+    categoriaId: string;
 }

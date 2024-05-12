@@ -16,25 +16,59 @@ import { SistemaService } from 'src/app/services/sistema.service';
   styleUrls: ['./despesa.component.scss']
 })
 export class DespesaComponent {
-
-
   tipoTela: number = 1;// 1 listagem, 2 cadastro, 3 edição
   tableListDespesas: Array<DespesaDTO>;
   id: string;
-
   page: number = 1;
   config: any;
   paginacao: boolean = true;
-  itemsPorPagina: number = 10
+  itemsPorPagina: number = 10;
+  listSistemas = new Array<SelectModel>();
+  sistemaSelect = new SelectModel();
+  listCategorias = new Array<SelectModel>();
+  categoriaId = new SelectModel();
+  color = 'accent';
+  checked = false;
+  disabled = false;
+  despesaForm: FormGroup;
+
+  constructor(public menuService: MenuService, public formBuilder: FormBuilder,
+    public sistemaService: SistemaService, public authService: AuthService,
+    public categoriaService: CategoriaService,
+    public despesaService: DespesaService) {
+  }
+
+  ngOnInit() {
+    this.menuService.menuSelecionado = 4;
+    this.configpag();
+    this.ListarDespesasUsuario();
+    this.despesaForm = this.formBuilder.group
+      (
+        {
+          id: ['', [Validators.required]],
+          nome: ['', [Validators.required]],
+          valor: ['', [Validators.required]],
+          mes: ['', [Validators.required]],
+          ano: ['', [Validators.required]],
+          tipoDespesa: ['', [Validators.required]],
+          dataCadastro: ['', [Validators.required]],
+          dataAlteracao: ['', [Validators.required]],
+          dataPagamento: ['', [Validators.required]],
+          dataVencimento: ['', [Validators.required]],
+          pago: ['', [Validators.required]],
+          despesaAtrasada: ['', [Validators.required]],
+          categoriaId: ['', [Validators.required]],
+        }
+      )
+    // this.ListarCategoriasUsuario();
+  }
 
   configpag() {
     this.id = this.gerarIdParaConfigDePaginacao();
-
     this.config = {
       id: this.id,
       currentPage: this.page,
       itemsPerPage: this.itemsPorPagina
-
     };
   }
 
@@ -43,8 +77,7 @@ export class DespesaComponent {
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
     for (var i = 0; i < 10; i++) {
-      result += characters.charAt(Math.floor(Math.random() *
-        charactersLength));
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
   }
@@ -65,10 +98,8 @@ export class DespesaComponent {
     this.config.currentPage = this.page;
   }
 
-
   async ListarDespesasUsuario() {
     this.tipoTela = 1;
-
     const response = await this.despesaService.ListarDespesas();
     response.subscribe((data: Array<DespesaDTO>) => {
         this.tableListDespesas = data;
@@ -76,48 +107,6 @@ export class DespesaComponent {
         console.error(error);
     });
 }
-
-
-  constructor(public menuService: MenuService, public formBuilder: FormBuilder,
-    public sistemaService: SistemaService, public authService: AuthService,
-    public categoriaService: CategoriaService,
-    public despesaService: DespesaService) {
-  }
-
-  listSistemas = new Array<SelectModel>();
-  sistemaSelect = new SelectModel();
-
-
-  listCategorias = new Array<SelectModel>();
-  categoriaSelect = new SelectModel();
-
-  color = 'accent';
-  checked = false;
-  disabled = false;
-
-  despesaForm: FormGroup;
-
-  ngOnInit() {
-    this.menuService.menuSelecionado = 4;
-
-    this.configpag();
-    this.ListarDespesasUsuario();
-
-    this.despesaForm = this.formBuilder.group
-      (
-        {
-          name: ['', [Validators.required]],
-          valor: ['', [Validators.required]],
-          data: ['', [Validators.required]],
-          sistemaSelect: ['', [Validators.required]],
-          categoriaSelect: ['', [Validators.required]],
-        }
-      )
-
-
-    this.ListarCategoriasUsuario();
-  }
-
 
   dadorForm() {
     return this.despesaForm.controls;
@@ -131,7 +120,7 @@ export class DespesaComponent {
       this.itemEdicao.valor = dados["valor"].value;
       this.itemEdicao.pago = this.checked;
       this.itemEdicao.dataVencimento = dados["data"].value;
-      this.itemEdicao.idCategoria = parseInt(this.categoriaSelect.id);
+      this.itemEdicao.categoriaId = this.categoriaId.id;
   
       try {
         const response = await this.despesaService.AtualizarDespesa(this.itemEdicao);
@@ -142,90 +131,97 @@ export class DespesaComponent {
       }
     } else {
       let item = new DespesaDTO();
-      item.nome = dados["name"].value;
+
+      item.nome = dados["nome"].value;
       item.valor = dados["valor"].value;
+      item.mes = dados["mes"].value;
+      item.ano = dados["ano"].value;
+      item.tipoDespesa = dados["tipoDespesa"].value;
+      item.dataCadastro = dados["dataCadastro"].value;
+      item.dataAlteracao = dados["dataAlteracao"].value;
+      item.dataPagamento = dados["dataPagamento"].value;
+      item.dataVencimento = dados["dataVencimento"].value;
       item.pago = this.checked;
-      item.dataVencimento = dados["data"].value;
-      item.idCategoria = parseInt(this.categoriaSelect.id);
-      item.tipoDespesa = 1;
+      item.despesaAtrasada = this.checked;
+      item.categoriaId = dados["categoriaId"].value;
   
       try {
         const response = await this.despesaService.AdicionarDespesa(item);
-        this.despesaForm.reset();
-        this.ListarDespesasUsuario();
+        response.subscribe((data: Array<DespesaDTO>) => {
+          this.despesaForm.reset();
+          this.ListarDespesasUsuario();
+        })
       } catch (error) {
         console.error(error);
       }
     }
   }
 
-
   handleChangePago(item: any) {
     this.checked = item.checked as boolean;
   }
 
-
-
-  ListarCategoriasUsuario(id: number = null) {
-    this.categoriaService.ListarCategoriasUsuario()
-      .subscribe((reponse: Array<CategoriaDTO>) => {
-
-        var listaCatagorias = [];
-
-        reponse.forEach(x => {
-          var item = new SelectModel();
-          item.id = x.id.toString();
-          item.name = x.nome;
-          listaCatagorias.push(item);
-
-          if (id && id == x.id) {
-            this.categoriaSelect = item;
-          }
-
-        });
-
-        this.listCategorias = listaCatagorias;
-
-      }
-
-      )
+  async excluir(id: string) {
+    try {
+      let response = await this.despesaService.DeletarDespesa(id);
+      response.subscribe((data: Array<DespesaDTO>) => {
+        this.ListarDespesasUsuario();
+      })
+      console.log("🚀 ~ DespesaComponent ~ excluir ~ response:", response)
+    } catch (error) {
+      console.error(error);
+    }
   }
 
+  // BuscarCategoria() {
+  //   this.categoriaService.ListarCategoriasUsuario()
+  //     .subscribe((reponse: Array<CategoriaDTO>) => {
+
+  //       var listaCatagorias = [];
+
+  //       reponse.forEach(x => {
+  //         var item = new SelectModel();
+  //         item.id = x.id.toString();
+  //         item.name = x.nome;
+  //         listaCatagorias.push(item);
+
+  //         if (id && id == x.id) {
+  //           this.categoriaId = item;
+  //         }
+
+  //       });
+
+  //       this.listCategorias = listaCatagorias;
+
+  //     }
+
+  //     )
+  // }
 
   itemEdicao: DespesaDTO;
 
-  async edicao(id: number) {
-    // try {
-    //   const reponse: DespesaDTO = await this.despesaService.AtualizarDespesa(id);
+  async editar(valoresDespesa: any) {
+    console.log("🚀 ~ DespesaComponent ~ editar ~ valoresDespesa:", valoresDespesa)
+    this.tipoTela = 2;
 
-    //     if (reponse) {
-    //       this.itemEdicao = reponse;
-    //       this.tipoTela = 2;
+    this.despesaForm.get('nome').setValue(valoresDespesa.nome);
+    this.despesaForm.get('valor').setValue(valoresDespesa.valor);
+    this.despesaForm.get('mes').setValue(valoresDespesa.mes);
+    this.despesaForm.get('ano').setValue(valoresDespesa.ano);
+    this.despesaForm.get('tipoDespesa').setValue(valoresDespesa.tipoDespesa);
+    this.despesaForm.get('dataCadastro').setValue(valoresDespesa.dataCadastro);
+    this.despesaForm.get('dataPagamento').setValue(valoresDespesa.dataPagamento);
+    this.despesaForm.get('dataVencimento').setValue(valoresDespesa.dataVencimento);
 
-    //       this.ListarCategoriasUsuario(reponse.idCategoria);
-
-    //       var dados = this.dadorForm();
-    //       dados["name"].setValue(this.itemEdicao.nome)
-
-    //       var dateToString = reponse.dataVencimento.toString();
-    //       var dateFull = dateToString.split('-');
-    //       var dayFull = dateFull[2].split('T');
-    //       var day = dayFull[0];
-    //       var month = dateFull[1];
-    //       var year = dateFull[0];
-
-    //       var dateInput = year + '-' + month + '-' + day;
-
-    //       dados["data"].setValue(dateInput);
-    //       dados["valor"].setValue(reponse.valor);
-
-    //       this.checked = reponse.pago;
-
-    //     }
-
-    //   )
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    try {
+      const response = await this.despesaService.AtualizarDespesa(valoresDespesa);
+      response.subscribe((data: Array<DespesaDTO>) => {
+        this.tableListDespesas = data;
+       }, (error) => {
+           console.error(error);
+       });  
+    } catch (error) {
+      console.error(error);
+    }
   }
 }

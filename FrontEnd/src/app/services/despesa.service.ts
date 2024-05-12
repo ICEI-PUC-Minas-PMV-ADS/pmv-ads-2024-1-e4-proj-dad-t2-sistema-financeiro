@@ -25,9 +25,10 @@ export class DespesaService {
     }
     
     async AdicionarDespesa(despesa: DespesaDTO) {
-        console.log("🚀 ~ DespesaService ~ AdicionarDespesa ~ AdicionarDespesa:")
+        console.log("🚀 ~ DespesaService ~ AdicionarDespesa ~ despesa:", despesa)
         try {
             const response = await this.httpClient.post(`${this.baseURL}/despesa`, despesa);
+            console.log("🚀 ~ DespesaService ~ AdicionarDespesa ~ response:", response)
             return response;
         } catch (error) {
             console.error("Erro ao adicionar despesa:", error);
@@ -57,10 +58,21 @@ export class DespesaService {
         }
     }
     
-    async DeletarDespesa(emailUsuario: string) {
+    async DeletarDespesa(id: string) {
         console.log("🚀 ~ DespesaService ~ DeletarDespesa ~ DeletarDespesa:")
         try {
-            const response = await this.httpClient.delete(`${this.baseURL}/despesa`);
+            const response = await this.httpClient.delete(`${this.baseURL}/despesa/${id}`);
+            return response;
+        } catch (error) {
+            console.error("Erro ao deletar despesa:", error);
+            throw error;
+        }
+    }
+
+    async BuscarCategoria() {
+    console.log("🚀 ~ DespesaService ~ BuscarCategoria ~ BuscarCategoria:")
+        try {
+            const response = await this.httpClient.get(`${this.baseURL}/categoria`);
             return response;
         } catch (error) {
             console.error("Erro ao deletar despesa:", error);
