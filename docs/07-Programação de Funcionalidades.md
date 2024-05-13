@@ -26,11 +26,7 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 
 -  ![Diagrama de Arquitetura](img/despesa1.jpeg)
 -  ![Diagrama de Arquitetura](img/despesa2.jpeg)
--
--  O banco de dados MongoDB foi estruturado para armazenar informações sobre despesas. Cada documento na coleção "Despesas" contém os seguintes campos:
--  
-- ![Diagrama de Arquitetura](img/MGDB.png)
-- 
+
 -   Vídeo da explicação da atividade está disponibilizado no YouTube:
 
     Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
