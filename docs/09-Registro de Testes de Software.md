@@ -9,6 +9,8 @@ Durante os testes de software realizados no sistema, foram identificados diverso
 2. **Cadastro de Usuário:** O cadastro de novos usuários foi realizado sem problemas, e as informações foram corretamente armazenadas no sistema.
 3. **Adição de Despesa:** A funcionalidade de adição de despesa funcionou conforme o esperado, permitindo aos usuários registrar suas despesas de forma precisa.
 
+![Diagrama de Arquitetura](img/TesteUnitarioPuc.png)
+
 ### Pontos Fracos:
 1. **Validação de Campos:** Foi identificada uma falha na validação dos campos durante o cadastro de usuário, permitindo que campos obrigatórios fossem deixados em branco.
 2. **Resiliência a Falhas:** Em alguns casos, a aplicação não lidou adequadamente com falhas de conexão ou erros de servidor, resultando em experiências negativas para o usuário.
