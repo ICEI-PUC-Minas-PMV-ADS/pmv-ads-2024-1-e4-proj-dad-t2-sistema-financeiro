@@ -7,8 +7,16 @@ Durante os testes de software realizados no sistema, foram identificados diverso
 ### Pontos Fortes:
 1. **Funcionalidade de Login:** O processo de login na aplicação se mostrou eficiente e confiável, autenticando os usuários corretamente.
 2. **Cadastro de Usuário:** O cadastro de novos usuários foi realizado sem problemas, e as informações foram corretamente armazenadas no sistema.
-3. **Adição de Despesa:** A funcionalidade de adição de despesa funcionou conforme o esperado, permitindo aos usuários registrar suas despesas de forma precisa.
-4. 
+
+3. **Teste de Mapeamento da Despesa:**
+
+Neste teste, verificamos se a instância da classe Despesa é corretamente mapeada com os valores esperados. São avaliados atributos como identificador, nome, valor, tipo de despesa, datas de cadastro, pagamento e vencimento, além de flag de pagamento e atraso, e o identificador da categoria.
+
+Teste de Atributos Bson:
+
+Neste segundo teste, confirmamos se os atributos da classe Despesa estão corretamente decorados com os atributos Bson necessários para a serialização correta no MongoDB. Verificamos a presença dos atributos BsonId para o identificador, BsonElement para nome e tipo de despesa, e BsonRepresentation para as datas de cadastro, pagamento e vencimento.
+
+![Diagrama de Arquitetura](img/TesteUnitario3.png)
 ![Diagrama de Arquitetura](img/TesteUnitario2.png)
 ![Diagrama de Arquitetura](img/TesteUnitarioPuc.png)
 
