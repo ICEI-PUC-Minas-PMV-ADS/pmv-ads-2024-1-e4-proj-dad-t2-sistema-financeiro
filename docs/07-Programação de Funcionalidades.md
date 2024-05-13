@@ -21,9 +21,8 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Página de cadastro de despesas: `cadastro_despesa.html`
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
-- 
-- # Captura de Tela do Swagger
-O Swagger é uma ferramenta utilizada para documentar e testar APIs RESTful. Abaixo está uma captura de tela do Swagger para este projeto, mostrando as rotas disponíveis e os parâmetros necessários para cada operação:
+
+  O Swagger é uma ferramenta utilizada para documentar e testar APIs RESTful. Abaixo está uma captura de tela do Swagger para este projeto, mostrando as rotas disponíveis e os parâmetros necessários para cada operação:
 
 -  ![Diagrama de Arquitetura](img/despesa1.jpeg)
 -  ![Diagrama de Arquitetura](img/despesa2.jpeg)
@@ -32,9 +31,9 @@ O Swagger é uma ferramenta utilizada para documentar e testar APIs RESTful. Aba
 -  
 - ![Diagrama de Arquitetura](img/MGDB.png)
 - 
-  # Vídeo da explicação da atividade está disponibilizado no YouTube:
+-   Vídeo da explicação da atividade está disponibilizado no YouTube:
 
-  - Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
+    Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
   - Video etapa 3: https://youtu.be/9lc6o-Mj3PM - Projeto Front End Web
   - Video etapa 4: https://youtu.be/SIq9oDMEK_Y - Projeto Front End Mobile React Native
 
