@@ -22,6 +22,9 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
 - 
+-  ![Diagrama de Arquitetura](img/despesa1.jpeg)
+-  ![Diagrama de Arquitetura](img/despesa2.jpeg)
+- 
   Vídeo da explicação da atividade está disponibilizado no YouTube:
  
   - Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
