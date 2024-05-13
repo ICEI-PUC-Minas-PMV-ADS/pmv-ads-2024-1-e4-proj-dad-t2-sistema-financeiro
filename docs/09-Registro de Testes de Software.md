@@ -8,7 +8,8 @@ Durante os testes de software realizados no sistema, foram identificados diverso
 1. **Funcionalidade de Login:** O processo de login na aplicação se mostrou eficiente e confiável, autenticando os usuários corretamente.
 2. **Cadastro de Usuário:** O cadastro de novos usuários foi realizado sem problemas, e as informações foram corretamente armazenadas no sistema.
 3. **Adição de Despesa:** A funcionalidade de adição de despesa funcionou conforme o esperado, permitindo aos usuários registrar suas despesas de forma precisa.
-
+4. 
+![Diagrama de Arquitetura](img/TesteUnitario2.png)
 ![Diagrama de Arquitetura](img/TesteUnitarioPuc.png)
 
 ### Pontos Fracos:
