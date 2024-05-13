@@ -21,32 +21,19 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Página de cadastro de despesas: `cadastro_despesa.html`
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
-- ## Captura de Tela do Swagger
-
+- 
+- # Captura de Tela do Swagger
 O Swagger é uma ferramenta utilizada para documentar e testar APIs RESTful. Abaixo está uma captura de tela do Swagger para este projeto, mostrando as rotas disponíveis e os parâmetros necessários para cada operação:
 
 -  ![Diagrama de Arquitetura](img/despesa1.jpeg)
 -  ![Diagrama de Arquitetura](img/despesa2.jpeg)
 -
 -  O banco de dados MongoDB foi estruturado para armazenar informações sobre despesas. Cada documento na coleção "Despesas" contém os seguintes campos:
-
-- **_id:** Identificador único da despesa.
-- **Nome:** Nome da despesa.
-- **Valor:** Valor da despesa.
-- **Mes:** Mês da despesa.
-- **Ano:** Ano da despesa.
-- **TipoDespesa:** Tipo da despesa.
-- **DataCadastro:** Data de cadastro da despesa.
-- **DataAlteracao:** Data da última alteração na despesa.
-- **DataPagamento:** Data de pagamento da despesa.
-- **DataVencimento:** Data de vencimento da despesa.
-- **Pago:** Indica se a despesa foi paga.
-- **DespesaAtrasada:** Indica se a despesa está atrasada.
-- **CategoriaId:** Identificador da categoria à qual a despesa está associada.
-- ![Diagrama de Arquitetura](img/MGBD.png)
+-  
+- ![Diagrama de Arquitetura](img/MGDB.png)
 - 
-  #### Vídeo da explicação da atividade está disponibilizado no YouTube:
- 
+  # Vídeo da explicação da atividade está disponibilizado no YouTube:
+
   - Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
   - Video etapa 3: https://youtu.be/9lc6o-Mj3PM - Projeto Front End Web
   - Video etapa 4: https://youtu.be/SIq9oDMEK_Y - Projeto Front End Mobile React Native
