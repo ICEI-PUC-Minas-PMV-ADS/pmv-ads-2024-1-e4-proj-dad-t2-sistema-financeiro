@@ -39,10 +39,18 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Script para recuperar e exibir os dados das despesas cadastradas: `relatorios_despesas.js`
 - Estrutura de dados: Tabela `despesas` no banco de dados
 
+
 #### Nicolas - Cadastro de Categorias
 - Permite que os usuários cadastrem categorias para classificar suas despesas.
 - Controller para manipulação das categorias: `SistemaFinanceiroController.cs`
 - Estrutura de dados: Tabela `categorias` no banco de dados
+
+  ### Lucas - Cadastro de sistema financeiro
+
+  - Permite que o usuario cadastre seus sistemas financeiro
+  - Página de visualização de relatórios de despesas: `sistemafinacneiro.html`
+  - Permite o controle dos gastos a partir da data em que foi adicionada
+  - Video demonstração da tela sistema financeiro : https://youtu.be/s3d6eqiZs_I
 
 Vídeo da explicação da atividade está disponibilizado no YouTube:
  
