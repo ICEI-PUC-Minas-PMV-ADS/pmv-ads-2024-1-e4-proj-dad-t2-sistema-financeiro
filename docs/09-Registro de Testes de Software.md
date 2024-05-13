@@ -16,7 +16,7 @@ Teste de Atributos Bson:
 
 Neste segundo teste, confirmamos se os atributos da classe Despesa estão corretamente decorados com os atributos Bson necessários para a serialização correta no MongoDB. Verificamos a presença dos atributos BsonId para o identificador, BsonElement para nome e tipo de despesa, e BsonRepresentation para as datas de cadastro, pagamento e vencimento.
 
-![Diagrama de Arquitetura](img/TesteUnitario3.png)
+![Diagrama de Arquitetura](img/TestUnitario3.png)
 ![Diagrama de Arquitetura](img/TesteUnitario2.png)
 ![Diagrama de Arquitetura](img/TesteUnitarioPuc.png)
 
