@@ -9,42 +9,42 @@ import { SistemaFinanceiroDTO } from '../models/SistemaFinanceiroDTO';
 })
 
 export class SistemaService {
-    private apiUrl = 'https://localhost:7154/api/sistema-financeiro';
+    
 
-    constructor(private http: HttpClient) {}
+    constructor(private httpClient: HttpClient) {}
 
     private readonly baseURL = environment["endPoint"];
+    async AdicionarSistemaFinanceiro(sistemaFinanceiro: SistemaFinanceiroDTO) {
+        return await this.httpClient
+          .post<SistemaFinanceiroDTO>(`${this.baseURL}/sistema-financeiro`, sistemaFinanceiro)
+          .toPromise();
+      } 
 
-    AdicionarSistemaFinanceiro(sistemaFinanceiro: SistemaFinanceiroDTO) {
-        return this.http.post<SistemaFinanceiroDTO>(`${this.baseURL}/sistema-financeiro`,sistemaFinanceiro)
-    }
-   
-    ListaSistemasUsuario(emailUsuario: string) {
-        return this.http.get(`${this.baseURL}/sistema-financeiro`);
+      ListaSistemasUsuario(emailUsuario: string) {
+        return this.httpClient.get(`${this.baseURL}/sistema-financeiro`);
     }
 
-    DeletarSistemaFinanceiro(id:any, nome:any, mes:any, ano:any, diaFechamento:any) {
-        return this.http.delete<any>(`${this.baseURL}/sistema-financeiro/${id}`).toPromise();
+    DeletarSistemaFinanceiro(id:any, nome:any, mes:any, ano:any, diaFechamento:any, mesCopia:any, anoCopia:any) {
+        return this.httpClient.delete<any>(`${this.baseURL}/sistema-financeiro/${id}`).toPromise();
     }
 
     CadastrarUsuarioNoSistema(idSistema: number, emailUsuario: string) {
-        return this.http.post<any>(`${this.baseURL}/usuario-sistema-financeiro/cadastrar-usuario-sistema?idSistema=${idSistema}&emailUsuario=${emailUsuario}`, null)
+        return this.httpClient.post<any>(`${this.baseURL}/usuario-sistema-financeiro/cadastrar-usuario-sistema?idSistema=${idSistema}&emailUsuario=${emailUsuario}`, null)
     }
 
     ExecuteCopiaDespesasSistemafinanceiro() {
-        return this.http.post<any>(`${this.baseURL}/ExecuteCopiaDespesasSistemafinanceiro`, null)
+        return this.httpClient.post<any>(`${this.baseURL}/ExecuteCopiaDespesasSistemafinanceiro`, null)
     }
 
 
     ObterSistemaFinanceiro(id: number) {
-        return this.http.get(`${this.baseURL}/sistema-financeiro/obter-sistema-financeiro?id=${id}`);
+        return this.httpClient.get(`${this.baseURL}/sistema-financeiro/obter-sistema-financeiro?id=${id}`);
     }
 
-    AtualizarSistemaFinanceiro(sistemaFinanceiro: SistemaFinanceiroDTO) {
-        return this.http.put<SistemaFinanceiroDTO>(`${this.baseURL}/sistema-financeiro/atualizar-sistema-financeiro`,
-            sistemaFinanceiro)
+    async AtualizarSistemaFinanceiro(id: any, sistemaFinanceiro: SistemaFinanceiroDTO) {
+    
+        return await this.httpClient
+          .put<SistemaFinanceiroDTO>(`${this.baseURL}/ssitema-financeiro/${id}`, sistemaFinanceiro)
+          .toPromise();
     }
-
-
-
 }
