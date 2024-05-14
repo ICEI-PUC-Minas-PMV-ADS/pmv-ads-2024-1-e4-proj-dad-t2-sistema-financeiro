@@ -17,7 +17,14 @@ export class SistemaComponent {
 
   tipoTela: number = 1;// 1 listagem, 2 cadastro, 3 edição
   tableListSistemas: Array<SistemaFinanceiroDTO>;
-  id: string;
+  id?: any;
+  nome?:any;
+  mes?:any;
+  ano?:any;
+  diaFechamento?:any;
+  mesCopia?:any;
+  anoCopia?:any;
+
 
   page: number = 1;
   config: any;
@@ -144,64 +151,38 @@ export class SistemaComponent {
     return this.sistemaForm.controls;
   }
 
-  enviar() {
-    var dados = this.dadorForm();
-
-    if (this.itemEdicao) {
-
-      this.itemEdicao.nome = dados["name"].value;
-      this.itemEdicao.mes = dados["mes"].value;
-      this.itemEdicao.ano = dados["ano"].value;
-      this.itemEdicao.diaFechamento = dados["diaFechamento"].value;
-      this.itemEdicao.gerarCopiaDespesa = this.checked;
-      this.itemEdicao.mesCopia = dados["mesCopia"].value;
-      this.itemEdicao.anoCopia = dados["anoCopia"].value;
+  async enviar() {
+    try {
+      var dados = this.dadorForm();
+      if (this.itemEdicao) {
+        this.itemEdicao.nome = dados["name"].value;
+        this.itemEdicao.mes = dados["mes"].value;
+        this.itemEdicao.ano = dados["ano"].value;
+        this.itemEdicao.diaFechamento = dados["diaFechamento"].value;
+        this.itemEdicao.mesCopia = dados["mesCopia"].value;
+        this.itemEdicao.anoCopia = dados["anoCopia"].value;
 
 
+        const response: SistemaFinanceiroDTO = await this.sistemaService.AtualizarSistemaFinanceiro(this.itemEdicao.id,this.itemEdicao);
+        this.sistemaForm.reset();
+        await this.ListaSistemasUsuario();
+      } else {
+        let item = new SistemaFinanceiroDTO();
+        item.nome = dados["name"].value;
+        item.mes = dados["mes"].value;
+        item.ano = dados["ano"].value;
+        item.diaFechamento = dados["diaFechamento"].value;
+        item.mesCopia = dados["mesCopia"].value;
+        item.anoCopia = dados["anoCopia"].value;
+       
 
-      this.sistemaService.AtualizarSistemaFinanceiro(this.itemEdicao)
-        .subscribe((response: SistemaFinanceiroDTO) => {
-
-          this.sistemaForm.reset();
-          this.ListaSistemasUsuario();
-
-        }, (error) => console.error(error),
-          () => { })
-
-
+        const response: SistemaFinanceiroDTO = await this.sistemaService.AdicionarSistemaFinanceiro(item);
+        this.sistemaForm.reset();
+        await this.ListaSistemasUsuario();
+      }
+    } catch (error) {
+      console.error(error);
     }
-    else {
-
-      let item = new SistemaFinanceiroDTO();
-      item.nome = dados["name"].value;
-
-      item.id = 0;
-      item.mes = dados["mes"].value;
-      item.ano = dados["ano"].value;
-      item.diaFechamento = dados["diaFechamento"].value;
-      item.gerarCopiaDespesa = this.checked;
-      item.mesCopia = dados["mesCopia"].value;
-      item.anoCopia = dados["anoCopia"].value;
-
-      this.sistemaService.AdicionarSistemaFinanceiro(item)
-        .subscribe((response: SistemaFinanceiroDTO) => {
-
-          this.sistemaForm.reset();
-
-          this.sistemaService.CadastrarUsuarioNoSistema(response.id, this.authService.getEmailUser())
-            .subscribe((response: any) => {
-
-              this.ListaSistemasUsuario();
-
-            }, (error) => console.error(error),
-              () => { })
-
-        }, (error) => console.error(error),
-          () => { })
-
-    }
-
-
   }
 
   itemEdicao: SistemaFinanceiroDTO;
@@ -215,6 +196,7 @@ export class SistemaComponent {
           this.tipoTela = 2;
 
           var dados = this.dadorForm();
+          
           dados["name"].setValue(this.itemEdicao.nome);
           dados["mes"].setValue(this.itemEdicao.mes);
           dados["ano"].setValue(this.itemEdicao.ano);
@@ -252,21 +234,7 @@ export class SistemaComponent {
       })
   }
 
-  excluir(id: number) {
-    this.usuarioSistemaFinanceiro.DeleteUsuarioSistemaFinanceiro(id)
-      .subscribe((reponse: SistemaFinanceiroDTO) => {
-
-        if (reponse) {
-          this.edicao(this.itemEdicao.id)
-          this.emailUsuarioSistema = "";
-        }
-
-      },
-        (error) => console.error(error),
-        () => {
-
-        })
-  }
+  
   async delete(item: SistemaFinanceiroDTO) {
 
     console.log("delete")
@@ -286,7 +254,7 @@ export class SistemaComponent {
    
 
     try {
-       this.sistemaService.DeletarSistemaFinanceiro(this.itemEdicao.id,this.itemEdicao.nome,this.itemEdicao.ano,this.itemEdicao.mes,this.itemEdicao.diaFechamento) 
+       this.sistemaService.DeletarSistemaFinanceiro(this.itemEdicao.id,this.itemEdicao.nome,this.itemEdicao.ano,this.itemEdicao.mes,this.itemEdicao.diaFechamento,this.itemEdicao.mesCopia,this.itemEdicao.anoCopia) 
       // console.log("🚀 ~ UsuarioComponent ~ enviar ~ response:", response)
       // this.UsuarioForm.reset();
       // await this.ListaUsuariosUsuario();
