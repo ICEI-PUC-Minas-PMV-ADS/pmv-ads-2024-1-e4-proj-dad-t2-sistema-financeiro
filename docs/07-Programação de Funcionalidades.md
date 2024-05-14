@@ -46,12 +46,19 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Estrutura de dados: Tabela `categorias` no banco de dados
 - Video demonstração da tela categorias (Etapa 3): https://youtu.be/PfHTr_ELdyo
 
-  ### Lucas - Cadastro de sistema financeiro
+### Lucas - Cadastro de sistema financeiro
 
-  - Permite que o usuario cadastre seus sistemas financeiro
-  - Página de visualização de relatórios de despesas: `sistemafinacneiro.html`
-  - Permite o controle dos gastos a partir da data em que foi adicionada
-  - Video demonstração da tela sistema financeiro (Etapa 3): https://youtu.be/s3d6eqiZs_I
+- Permite que o usuario cadastre seus sistemas financeiro
+- Página de visualização de relatórios de despesas: `sistemafinacneiro.html`
+- Permite o controle dos gastos a partir da data em que foi adicionada
+- Video demonstração da tela sistema financeiro (Etapa 3): https://youtu.be/s3d6eqiZs_I
+
+### Frederico - Cadastro de Despesas
+
+- Permite que o usuario cadastre suas despesas
+- Página de visualização de relatórios de despesas: `despesas.html`
+- Permite o controle das depesas que foram feitas
+- Video demonstração da tela sistema financeiro (Etapa 3): https://youtu.be/4iJbRaAcqH0
 
 Vídeo da explicação da atividade está disponibilizado no YouTube:
  
