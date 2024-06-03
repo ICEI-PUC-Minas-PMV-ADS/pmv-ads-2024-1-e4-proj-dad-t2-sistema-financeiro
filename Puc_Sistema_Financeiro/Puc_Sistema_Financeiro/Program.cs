@@ -5,14 +5,11 @@ using Microsoft.AspNetCore.Cors;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.Configure<CategoriaDataBaseSettings>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddSingleton<CategoriaService>();
 
-
 builder.Services.Configure<DespesaDataBaseSettings>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddSingleton<DespesaService>();
-
 
 builder.Services.Configure<SistemaFinanceiroDataBaseSettings>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddSingleton<SistemaFinanceiroService>();
@@ -20,26 +17,33 @@ builder.Services.AddSingleton<SistemaFinanceiroService>();
 builder.Services.Configure<UsuarioSistemaFinanceiroDataBaseSettings>(builder.Configuration.GetSection("ConnectionStrings"));
 builder.Services.AddSingleton<UsuarioSistemaFinanceiroService>();
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngularApp",
+    options.AddPolicy("AllowAngularAndReactNativeApps",
         builder =>
         {
-            builder.WithOrigins("http://localhost:4200") // Substitua pela URL do seu aplicativo Angular
-                   .AllowAnyMethod()
-                   .AllowAnyHeader();
+            builder.WithOrigins(
+                "http://localhost:4200", // URL do aplicativo Angular
+                "http://192.168.1.2:8081" // URL do aplicativo React Native
+            )
+            .AllowAnyMethod()
+            .AllowAnyHeader();
         });
+});
+
+builder.WebHost.UseKestrel(options =>
+{
+    options.Listen(System.Net.IPAddress.Any, 7154);
 });
 
 var app = builder.Build();
 
 app.UseRouting();
-app.UseCors("AllowAngularApp");
+app.UseCors("AllowAngularAndReactNativeApps");
 
 if (app.Environment.IsDevelopment())
 {
@@ -47,7 +51,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
