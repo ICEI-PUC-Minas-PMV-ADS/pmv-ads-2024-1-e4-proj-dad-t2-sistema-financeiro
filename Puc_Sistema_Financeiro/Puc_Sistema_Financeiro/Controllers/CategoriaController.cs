@@ -7,7 +7,7 @@ namespace WebApiMongoDB.Controllers
 {
     [Route("api/categoria")]
     [ApiController]
-    [EnableCors("AllowAngularApp")]
+    [EnableCors("AllowAngularAndReactNativeApps")]
     public class CategoriaController : ControllerBase
     {
         private readonly CategoriaService _categoriaService;

@@ -7,7 +7,7 @@ namespace Puc_Sistema_Financeiro.Controllers
 {
     [Route("api/usuario-sistema-financeiro")]
     [ApiController]
-    [EnableCors("AllowAngularApp")]
+    [EnableCors("AllowAngularAndReactNativeApps")]
     public class UsuarioSistemaFinanceiroController : ControllerBase
     {
         private readonly UsuarioSistemaFinanceiroService _usuarioService;

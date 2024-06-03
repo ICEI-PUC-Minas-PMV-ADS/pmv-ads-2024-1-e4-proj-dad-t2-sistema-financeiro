@@ -7,7 +7,7 @@ namespace Puc_Sistema_Financeiro.Controllers
 {
     [Route("api/despesa")]
     [ApiController]
-    [EnableCors("AllowAngularApp")]
+    [EnableCors("AllowAngularAndReactNativeApps")]
     public class DespesaController : ControllerBase
     {
         private readonly DespesaService _despesaService;
