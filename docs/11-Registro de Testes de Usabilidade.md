@@ -25,11 +25,13 @@ Este registro contém as evidências dos testes de usabilidade realizados, bem c
 - **Resultado:** A aplicação se adaptou bem a diferentes tamanhos de tela e dispositivos. Os usuários não relataram problemas de responsividade durante os testes.
 
 ## Conclusão
-Com base nos resultados dos testes de usabilidade, identificamos pontos fortes e áreas de melhoria na interface de usuário da aplicação. Os pontos positivos incluem a clareza da interface e a facilidade de uso dos recursos. As áreas de melhoria incluem aprimoramentos na navegação e no formulário de cadastro.
+Com base nos resultados dos testes de usabilidade, identificamos pontos fortes e melhorias que eram necessarias para que o usuário final tivesse uma boa experiencia. Os pontos positivos incluem a clareza da interface e a facilidade de uso dos recursos. As áreas de melhoria incluem aprimoramentos na navegação e no formulário de cadastro.
 
 ## Melhorias Propostas
-Com base nos relatos dos usuários e nos resultados dos testes, as seguintes melhorias serão implementadas nas próximas iterações do desenvolvimento:
+Com base nos relatos dos usuários e nos resultados dos testes, as seguintes melhorias foram implementadas :
 - Ajustes na navegação para facilitar o acesso a determinadas funcionalidades.
 - Atualização do formulário de cadastro com instruções mais claras e uma interface mais intuitiva.
 - Investigação sobre a inclusão de feedbacks sonoros para usuários com deficiência visual.
-
+- Cores chamativas para valores visando identifcar os gastos de forma clara.
+- Adição de uma barra de navegação para que pudesse navegar entre todas as paginas.
+  
