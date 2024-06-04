@@ -1,6 +1,6 @@
 # Apresentação do Projeto
 
-## Título: Sistema de Gerenciamento Financeiro
+## Título: controle financeiro.
 
 ![Logo do Projeto](caminho_para_logo.png)
 
