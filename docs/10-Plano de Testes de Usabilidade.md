@@ -1,12 +1,12 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade é essencial para avaliar a qualidade da interface com o usuário da aplicação interativa. Este plano de testes define os casos de teste que serão executados para garantir que a interface seja intuitiva, eficiente e satisfatória para os usuários.
+O teste de usabilidade é essencial para avaliar a qualidade da interface com o usuário da aplicação interativa. Para validar nosso aplicativo pedimos para que alguns conhecidos pudessem testar e nos dizer quais seriam suas impressões ao utilizar o aplicativo tanto mobile quanto o web. 
 
 ## Objetivo
-O objetivo deste plano de testes é garantir que a interface de usuário da aplicação atenda aos padrões de usabilidade esperados, proporcionando uma experiência positiva para os usuários finais.
+O objetivo deste plano de testes é garantir uma satisfação maior do usuario, proporcionando uma experiência positiva e satisfatoria aos usuários finais.
 
 ## Metodologia
-Os testes de usabilidade serão realizados por membros da equipe de desenvolvimento e por usuários representativos do público-alvo da aplicação. Serão utilizadas técnicas de observação direta, questionários e entrevistas para coletar feedbacks qualitativos sobre a usabilidade da interface.
+Os testes de usabilidade serão realizados por membros da equipe e por voluntarios que seraão o publico alvo. Foram utilizadas técnicas de observação direta, questionários e entrevistas para coletar feedbacks qualitativos sobre a usabilidade da interface.
 
 ## Casos de Teste
 A seguir estão os principais casos de teste que serão executados durante os testes de usabilidade:
@@ -16,7 +16,7 @@ A seguir estão os principais casos de teste que serão executados durante os te
    - Testar a eficiência do menu de navegação e dos links de redirecionamento.
 
 2. **Clareza e Organização:**
-   - Avaliar a clareza e organização dos elementos na página, como menus, botões e campos de entrada.
+   - Avaliar se a organização das paginas ocorreu de forma facil e claro para entendimento de todos .
    - Verificar se as informações estão apresentadas de forma clara e concisa.
 
 3. **Facilidade de Uso:**
