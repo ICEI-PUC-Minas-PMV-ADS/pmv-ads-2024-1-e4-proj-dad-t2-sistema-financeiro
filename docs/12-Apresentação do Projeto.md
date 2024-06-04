@@ -17,7 +17,7 @@
 
 ## Objetivo do Projeto
 
-- O Sistema de Gerenciamento Financeiro tem como objetivo oferecer uma solução eficiente para o controle financeiro pessoal e empresarial. Através de uma interface intuitiva e funcionalidades avançadas, buscamos proporcionar uma experiência positiva para os usuários, ajudando-os a gerir suas finanças de forma mais organizada e eficaz.
+- O Controle Financeiro tem como objetivo oferecer uma solução eficiente. Através de uma interface intuitiva e funcionalidades avançadas, buscamos proporcionar uma experiência positiva para os usuários, ajudando-os a gerir suas finanças de forma mais organizada e eficaz.
 
 ---
 
