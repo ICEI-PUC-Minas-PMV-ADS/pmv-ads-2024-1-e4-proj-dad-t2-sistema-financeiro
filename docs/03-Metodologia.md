@@ -36,9 +36,9 @@ A equipe está organizada conforme a metodologia Scrum, com a seguinte divisão 
 - Scrum Master: Leonardo
 - Equipe de Desenvolvimento:
   - Lucas Delmasquio Silva
-  - Samuel Ferreira de Oliveira
+
   - Frederico Gonçalves da Silva Junior
-  - Nicolas
+  - Nicolas Patrick
 
 
 ### Processo
