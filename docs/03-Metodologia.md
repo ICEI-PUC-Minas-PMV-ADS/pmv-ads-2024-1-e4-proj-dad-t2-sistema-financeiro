@@ -29,7 +29,12 @@ Além disso, as gerências de tags, merges, commits e branches são realizadas c
 
 ### Divisão de Papéis
 
-### Divisão de Papéis
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+
+A equipe está organizada da seguinte maneira:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/6dbc164f-1d3b-4ef4-a3ea-f18bdb109c46)
+
 
 A equipe está organizada conforme a metodologia Scrum, com a seguinte divisão de papéis:
 
