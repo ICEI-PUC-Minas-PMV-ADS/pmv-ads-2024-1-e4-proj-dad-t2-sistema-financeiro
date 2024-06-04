@@ -42,28 +42,23 @@ Para abordar os pontos fracos identificados durante os testes, o grupo pretende 
 ## IMAGENS DOS TESTES 
  A baixo teremos uma breve demonstração das nossas telas e suas funcionalidades, vale ressaltar que nossas telas ja se encontram com os cruds aonde podemos adicionar, excluir e editar as informações.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/a2b8f2af-4b65-4194-a3e3-11070105f76c) apresentando erro.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/a2b8f2af-4b65-4194-a3e3-11070105f76c)
 
 
- ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/641fa280-2ec7-4807-869a-6a9e8097224e)  cadadstrado com sucesso.
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/641fa280-2ec7-4807-869a-6a9e8097224e)  
 
- : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/747007dc-e5b0-4bba-bb40-b19de6c8f338) apresentando erro.
+ : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/747007dc-e5b0-4bba-bb40-b19de6c8f338) 
 
   
- ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f08376f6-ec1a-45d1-8147-f26d02f9304a) login realizado com sucesso.
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f08376f6-ec1a-45d1-8147-f26d02f9304a) .
 
- ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8605300-23ad-4074-ac12-f15ce6ba541d). Despesa adicionada
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8605300-23ad-4074-ac12-f15ce6ba541d).
+ 
+ ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/c52a7c9e-c9ed-48ae-bce8-08ce8e94ee9a) 
 
- ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/c52a7c9e-c9ed-48ae-bce8-08ce8e94ee9a) categoria adicionada
+: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8f54f95-2f45-46e3-b4e7-6a042471f142). 
 
-: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8f54f95-2f45-46e3-b4e7-6a042471f142). forma de pagamento adicionada
-
- :![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/61668eb4-18ea-4a82-b3db-7aaff5dcdae9). Usuario adicionado.
-
-
-
-
-
+ :![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/61668eb4-18ea-4a82-b3db-7aaff5dcdae9).
 
 
 
