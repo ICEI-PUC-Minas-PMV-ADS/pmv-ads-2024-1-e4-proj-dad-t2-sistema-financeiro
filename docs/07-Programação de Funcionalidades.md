@@ -27,11 +27,6 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 -  ![Diagrama de Arquitetura](img/despesa1.jpeg)
 -  ![Diagrama de Arquitetura](img/despesa2.jpeg)
 
--   Vídeo da explicação da atividade está disponibilizado no YouTube:
-
-    Video etapa 2: https://youtu.be/oc-NHYFxGlI - Projeto Back End com MongoDb
-  - Video etapa 3: https://youtu.be/9lc6o-Mj3PM - Projeto Front End Web
-  - Video etapa 4: https://youtu.be/SIq9oDMEK_Y - Projeto Front End Mobile React Native
 
 #### Visualização de Relatórios de Despesas
 - Permite que os usuários visualizem relatórios detalhados de suas despesas cadastradas no sistema financeiro.
@@ -61,8 +56,6 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Video demonstração da tela sistema financeiro (Etapa 3): https://youtu.be/4iJbRaAcqH0
 
 Vídeo da explicação da atividade está disponibilizado no YouTube:
- 
- - Vídeo etapa 2: https://youtu.be/qLx-NG-Mda8 - Projeto Back End com MongoDB
  
  - Vídeo etapa 2: https://youtu.be/S-ELnjHA54w  - teste tabela Sistema Financeiro - Lucas
  - Vídeo etapa 4 : https://youtu.be/F7TrGf4wnMk - teste mobiel telas home, login , e despesa -Lucas
