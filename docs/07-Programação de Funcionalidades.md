@@ -16,7 +16,7 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 - Script para validar e enviar dados do formulário de login: `login.js`
 - Estrutura de dados: Tabela `usuarios` no banco de dados
 
-#### - Tela de despesa
+#### Tela de despesa
 - Permite que os usuários cadastrem suas despesas no sistema financeiro.
 - Página de cadastro de despesas: `cadastro_despesa.html`
 - Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
