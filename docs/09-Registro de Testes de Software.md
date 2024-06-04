@@ -43,18 +43,22 @@ Para abordar os pontos fracos identificados durante os testes, o grupo pretende 
  A baixo teremos uma breve demonstração das nossas telas e suas funcionalidades, vale ressaltar que nossas telas ja se encontram com os cruds aonde podemos adicionar, excluir e editar as informações.
 
 1.Tela cadastro : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/a2b8f2af-4b65-4194-a3e3-11070105f76c) apresentando erro.
+
+
 2.Tela cadastro : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/641fa280-2ec7-4807-869a-6a9e8097224e)  cadadstrado com sucesso.
 
 3. tela de login : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/747007dc-e5b0-4bba-bb40-b19de6c8f338) apresentando erro.
-4. Tela de login : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f08376f6-ec1a-45d1-8147-f26d02f9304a) login realizado com sucesso.
 
-5. Tela de despesa : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8605300-23ad-4074-ac12-f15ce6ba541d). Despesa adicionada
+  
+5. Tela de login : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f08376f6-ec1a-45d1-8147-f26d02f9304a) login realizado com sucesso.
 
-6. Tela de categoria : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/c52a7c9e-c9ed-48ae-bce8-08ce8e94ee9a) categoria adicionada
+6. Tela de despesa : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8605300-23ad-4074-ac12-f15ce6ba541d). Despesa adicionada
 
-7. Tela forma de pagamento : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8f54f95-2f45-46e3-b4e7-6a042471f142). forma de pagamento adicionada
+7. Tela de categoria : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/c52a7c9e-c9ed-48ae-bce8-08ce8e94ee9a) categoria adicionada
 
-8. Tela usuarios :![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/61668eb4-18ea-4a82-b3db-7aaff5dcdae9). Usuario adicionado.
+8. Tela forma de pagamento : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d8f54f95-2f45-46e3-b4e7-6a042471f142). forma de pagamento adicionada
+
+9. Tela usuarios :![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/61668eb4-18ea-4a82-b3db-7aaff5dcdae9). Usuario adicionado.
 
 
 
