@@ -39,7 +39,7 @@ Para abordar os pontos fracos identificados durante os testes, o grupo pretende 
 5. Funcionalidades de despesa : O usuario adiciona sua despesa  aonde é possivel ele adicioanr valores, data da compra, data do vencimento, metodo de pagamento entre outros.
 6. Funcionalidade de usuarios : O usuario pode adicionar outra pessoas para que  adicionar suas depesas.
 
-#IMAGENS DOS TESTES 
+## IMAGENS DOS TESTES 
  A baixo teremos uma breve demonstração das nossas telas e suas funcionalidades, vale ressaltar que nossas telas ja se encontram com os cruds aonde podemos adicionar, excluir e editar as informações.
 
 1.**Tela cadastro** : ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/a2b8f2af-4b65-4194-a3e3-11070105f76c) apresentando erro.
