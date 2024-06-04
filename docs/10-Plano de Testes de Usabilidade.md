@@ -28,8 +28,10 @@ A seguir estão os principais casos de teste que serão executados durante os te
 
 5. **Responsividade:**
    - Testar a responsividade da aplicação em diferentes dispositivos e tamanhos de tela, garantindo uma experiência consistente em todos os dispositivos.
+  
+6. **Público alvo :**
+   - Foi feito um estudo nos comportamentos dos usuários ao utilizar o aplicativo para idenficarmos se era uma ferramenta que atendia o público alvo.
 
 ## Ferramentas
-Serão utilizadas ferramentas de gravação de tela, questionários online e software de análise de usabilidade para coletar e analisar os resultados dos testes.
 
-Com base nos resultados dos testes de usabilidade, serão identificados pontos de melhoria na interface de usuário da aplicação, que serão implementados nas próximas iterações do desenvolvimento.
+Foi utilizado fórmulario simples com algumas perguntar visando que os usuários pudessem relatar as falhas e dar um feedback do app sem que houvesse nenhum tipo de constragimento.
