@@ -32,10 +32,16 @@
    - Grupo de Usuários: Usuários do sistema.
    - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
 
-6. **Visualização de Dashboard:**
-   - Descrição: Visualização de dashboard .
-   - Funcionalidade Avaliada: Visualização de investimentos, despesas pagas, despesas a pagar e despesas atradas .
+6. **Cadastro categorias :**
+   - Descrição: Verificar se os usuarios consegue realizar o cadastro das saus categorias de despesas .
+   - Funcionalidade Avaliada: cadastro de categoria  .
    - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
+  
+7. **Cadastro metodo de pagamento :**
+   - Descrição: Verificar se os usuarios consegue realizar o cadastro dos seus metodos de pagamento  .
+   - Funcionalidade Avaliada: cadastro de pagamento  .
+   - Ferramentas Utilizadas: Navegador web, mobile .
+
 
 
 ## Ferramentas de Testes Utilizadas
