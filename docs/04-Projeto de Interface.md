@@ -12,7 +12,7 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 
 ### Projeto Web
 ### Tela de Login
-![image](img/TelaLoginNova.jpeg)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/d9acda2b-3943-4ac4-a2e8-561510dbf936)
 
 ### Dashboard Principal
 ![image](img/TelaHomeNova.jpeg)
@@ -31,10 +31,7 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 
 ### Projeto Mobile
 ### Tela de Login
-![image](img/TelaLoginMobileNova.png)
-
-### Dashboard Principal
-![image](img/TelaHomeMobileNova.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/0924fbec-f6d6-4689-b7e9-f5aab5b30055)
 
 ### Tela de Forma de pagamento 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/feb32c06-2428-4b75-b623-32b887a7072b)
