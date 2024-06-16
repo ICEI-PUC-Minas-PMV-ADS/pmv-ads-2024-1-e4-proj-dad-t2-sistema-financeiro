@@ -36,7 +36,7 @@ Os wireframes são protótipos usados em design de interface para sugerir a estr
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/feb32c06-2428-4b75-b623-32b887a7072b)
 
 ### Tela Categoria do Sistema
-![image](img/TelaCategoriaMobileNova.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f9fb2289-b772-4737-9e9c-1dfda3322473)
 
 ### Tela Despesa do Sistema
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/a8502101-fc59-41e0-8f6f-65574c15ce69)
