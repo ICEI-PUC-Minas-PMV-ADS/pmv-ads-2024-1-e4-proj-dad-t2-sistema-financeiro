@@ -1,49 +1,43 @@
 # Plano de Testes de Software
 
-## Cenários de Teste Selecionados
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
-1. **Cadastro de Usuários:**
-   - Descrição: Verificar se novos usuários conseguem se cadastrar no sistema corretamente.
-   - Funcionalidade Avaliada: Cadastro de Usuários.
-   - Grupo de Usuários: Novos usuários.
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-
-2. **Login de Usuários:**
-   - Descrição: Testar se usuários cadastrados conseguem fazer login no sistema com sucesso.
-   - Funcionalidade Avaliada: Login de Usuários.
-   - Grupo de Usuários: Usuários cadastrados.
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-
-3. **Cadastro de Despesas:**
-   - Descrição: Verificar se os usuários conseguem cadastrar suas despesas no sistema.
-   - Funcionalidade Avaliada: Cadastro de Despesas.
-   - Grupo de Usuários: Usuários do sistema.
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-
-4. **Visualização de Relatórios de Despesas:**
-   - Descrição: Testar se os relatórios de despesas são exibidos corretamente para os usuários.
-   - Funcionalidade Avaliada: Visualização de Relatórios de Despesas.
-   - Grupo de Usuários: Usuários do sistema.
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-
- 5. **Cadastro de sistema financeiro:**
-   - Descrição: Verificar se os usuários conseguem cadastrar seu sistema financeiro no sistema.
-   - Funcionalidade Avaliada: Cadastro de sistema financeiro.
-   - Grupo de Usuários: Usuários do sistema.
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-
-6. **Cadastro categorias :**
-   - Descrição: Verificar se os usuarios consegue realizar o cadastro das saus categorias de despesas .
-   - Funcionalidade Avaliada: cadastro de categoria  .
-   - Ferramentas Utilizadas: Navegador web, banco de dados de testes.
-  
-7. **Cadastro metodo de pagamento :**
-   - Descrição: Verificar se os usuarios consegue realizar o cadastro dos seus metodos de pagamento  .
-   - Funcionalidade Avaliada: cadastro de pagamento  .
-   - Ferramentas Utilizadas: Navegador web, mobile .
-
-
-
-## Ferramentas de Testes Utilizadas
-
-Não foram utilizadas ferramentas específicas de testes neste projeto. Os testes foram realizados manualmente utilizando um navegador web para acessar a aplicação e verificar o comportamento das funcionalidades implementadas. O banco de dados de testes foi utilizado para garantir a integridade e consistência dos dados durante os testes.
+ 
+| **Caso de Teste** | **Criar conta** 	|
+| :---: | :--- |
+| Requisito Associado |  - Permitir ao usuário gerenciar seu cadastro na plataforma; <br> - Realizar a validação de credenciais do usuário. |
+| Objetivo do Teste | Verificar se o usuário consegue se cadastrar na aplicação. |
+| Passos |  - Clicar em "Cadastrar";  <br> - Preencher os campos obrigatórios (CPF, nome, e-mail, data de nascimento e senha); <br> - Clicar em "Salvar". |
+|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|Critério de Falha | - O usuário não consegue concluir o cadastro, e aparece na tela mostrando algum campo com preenchimento obrigatório. |
+|  	|  	|
+| **Caso de Teste** | **Efetuar login** |
+| Requisito Associado | - Permitir ao usuário realizar o login na plataforma. |
+| Objetivo do Teste | - Verificar se o usuário consegue fazer o login. |
+| Passos |  - Preencher os dados de login cadastrado ( nome e senha) ; <br> - Clicar em "Entrar". |
+|Critério de Êxito | - O usuário consegue fazer o login. |
+|Critério de Falha | - O usuário não consegue fazer o login, e a aplicação retorna uma mensagem de erro: "Email e/ou senha incorreta". |
+|  	|  	|
+| **Caso de Teste** | ** Adicionar despesas ** |
+| Requisito Associado |  - Permitir a busca e adição de despesas cadastradas pelo usuário  . |
+| Objetivo do Teste | - Verificar se o usuário consegue adionar suas depsesas  . |
+|Critério de Êxito | - A aplicação vai retornar um lista de despesas salvas. |
+|Critério de Falha | - A aplicação retorna uma mensagem de erro: " Preencha todos os campos corretamente  ". |
+| 	|  	|
+| **Caso de Teste** | ** Adicionar categorias  ** |
+| Requisito Associado |  - Permitir a busca e adicionar  categorias cadastradas pelo usuário  que serão usadas na tela de despesa . |
+| Objetivo do Teste | - Verificar se o usuário consegue adionar suas categorias  . |
+|Critério de Êxito | - A aplicação vai retornar um lista de categorias salvas. |
+|Critério de Falha | - A aplicação retorna uma mensagem de erro: " Preencha todos os campos corretamente  ". |
+| 	|  	|
+| **Caso de Teste** | ** Adicionar forma de pagamento  ** |
+| Requisito Associado |  - Permitir a busca e adicionar  formas de pagamento cadastradas pelo usuário que serão usadas na tela de despesa . |
+| Objetivo do Teste | - Verificar se o usuário consegue adionar suas formas de pagemento  . |
+|Critério de Êxito | - A aplicação vai retornar um lista de forma de pagamento salvas. |
+|Critério de Falha | - A aplicação retorna uma mensagem de erro: " Preencha todos os campos corretamente  ". |
+| 	|  	|
+| **Caso de Teste** | ** Adicionar usuários  ** |
+| Requisito Associado |  - Permitir a busca e adicionar usuários . |
+| Objetivo do Teste | - Verificar se o usuário consegue adicionar e editar os usuários cadastrados   . |
+|Critério de Êxito | - A aplicação vai retornar um lista de usuarios salvas. |
+|Critério de Falha | - A aplicação retorna uma mensagem de erro: " Preencha todos os campos corretamente  ". |
