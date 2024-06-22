@@ -1,6 +1,5 @@
 # Plano de Testes de Usabilidade
-
-O teste de usabilidade é essencial para avaliar a qualidade da interface com o usuário da aplicação interativa. Para validar nosso aplicativo pedimos para que alguns conhecidos pudessem testar e nos dizer quais seriam suas impressões ao utilizar o aplicativo tanto mobile quanto o web. 
+Para o projeto Controle Financeiro serão aplicados o modelos de teste de usabilidade: Avaliação funcional (feito pelo usuário acompanhado por desenvolvedores). Como os testes de usabilidade visam avaliar a interface e identificar possíveis problemas na interação do sistema.
 
 **Avaliação Funcional (feita pelo usuário que faz transações – casos de uso)**
 
