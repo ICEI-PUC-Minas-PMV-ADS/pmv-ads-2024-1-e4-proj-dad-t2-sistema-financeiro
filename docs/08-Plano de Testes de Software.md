@@ -7,7 +7,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | :---: | :--- |
 | Requisito Associado |  - Permitir ao usuário gerenciar seu cadastro na plataforma; <br> - Realizar a validação de credenciais do usuário. |
 | Objetivo do Teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos |  - Clicar em "Cadastrar";  <br> - Preencher os campos obrigatórios (CPF, nome, e-mail, data de nascimento e senha); <br> - Clicar em "Salvar". |
+| Passos |  - Clicar em "Cadastrar";  <br> - Preencher os campos obrigatórios ( nome, e-mail, e senha); <br> - Clicar em "Salvar". |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |Critério de Falha | - O usuário não consegue concluir o cadastro, e aparece na tela mostrando algum campo com preenchimento obrigatório. |
 |  	|  	|
