@@ -10,6 +10,9 @@ Nesta seção, apresentaremos a visão geral da interação do usuário pelas te
 
 Os wireframes são protótipos usados em design de interface para sugerir a estrutura de um site web e seus relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/529261cc-081d-46c0-8fe9-0cebfe34d483)
+
+
 ### Projeto Web
 ### Tela de Login
 
