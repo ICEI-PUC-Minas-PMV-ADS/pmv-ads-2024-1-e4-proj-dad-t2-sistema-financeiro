@@ -7,7 +7,7 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 #### Cadastro de Usuários
 - Permite que novos usuários se cadastrem no sistema financeiro.
 - Página de cadastro de usuários: `cadastro_usuario.html`
-- Script para validar e enviar dados do formulário de cadastro de usuários: `cadastro_usuario.js`
+- Script para validar e enviar dados do formulário de cadastro de usuários: `cadastro.js`
 - Estrutura de dados: Tabela `usuarios` no banco de dados
 
 #### Login de Usuários
