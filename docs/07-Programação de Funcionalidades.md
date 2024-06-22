@@ -4,28 +4,18 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 
 ### Funcionalidades Implementadas
 
-#### Cadastro de Usuários
-- Permite que novos usuários se cadastrem no sistema financeiro.
-- Página de cadastro de usuários: `cadastro_usuario.html`
-- Script para validar e enviar dados do formulário de cadastro de usuários: `cadastro.js`
-- Estrutura de dados: Tabela `usuarios` no banco de dados
+# Programação de Funcionalidades
 
-#### Login de Usuários
-- Permite que usuários cadastrados façam login no sistema financeiro.
-- Página de login: `login.html`
-- Script para validar e enviar dados do formulário de login: `login.js`
-- Estrutura de dados: Tabela `usuarios` no banco de dados
+|ID    | Descrição do Requisito  | Artefato(s) produzido(s) | Responsável(eis) |
+|------|-----------------------------------------|----|----|
+|RF-01| Permitir ao usuário gerenciar seu cadastro na plataforma. |Cadastro.js| Lucas |
+|RF-02| Permitir ao usuário realizar o login na plataforma. | Login.js |Lucas |
+|RF-03| Realizar a validação de credenciais do usuário. | Login.js | Nicolas |
+|RF-04| Permitir a busca e adição de despesas. |  Despesa.js | Lucas |
+|RF-05| Permitir a busca e adição de categorias. | Categoria.js | Frederico |
+|RF-06| Permitir a busca e adição de formas de pagamento. | FormaPagamento,js | Nicolas |
+|RF-07| Permitir a busca e adição de usuários. | usuários.js | Frederico |
 
-#### Tela de despesa
-- Permite que os usuários cadastrem suas despesas no sistema financeiro.
-- Página de cadastro de despesas: `cadastro_despesa.html`
-- Script para validar e enviar dados do formulário de cadastro de despesas: `cadastro_despesa.js`
-- Estrutura de dados: Tabela `despesas` no banco de dados
-
-  O Swagger é uma ferramenta utilizada para documentar e testar APIs RESTful. Abaixo está uma captura de tela do Swagger para este projeto, mostrando as rotas disponíveis e os parâmetros necessários para cada operação:
-
--  ![Diagrama de Arquitetura](img/despesa1.jpeg)
--  ![Diagrama de Arquitetura](img/despesa2.jpeg)
 
 
 #### Visualização de Relatórios de Despesas
