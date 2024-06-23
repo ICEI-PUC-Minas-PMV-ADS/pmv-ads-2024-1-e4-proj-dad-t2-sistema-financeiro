@@ -15,7 +15,7 @@ O sistema financeiro será composto pelos seguintes componentes:
  
 
  ## Arquitetura Distribuida
-A arquitetura distribuída adotada para o sistema financeiro permite que cada microsserviço, como Sistema Financeiro, Categoria, Despesa e Usuário, seja desenvolvido, implantado e escalado independentemente. Essa abordagem facilita a manutenção e a evolução contínua do sistema. A API de Gateway atua como uma camada de abstração entre os clientes e os microsserviços, simplificando o acesso aos recursos e garantindo a segurança e o controle das solicitações. Além disso, cada microsserviço possui seu próprio banco de dados, garantindo a segregação de dados e permitindo uma melhor escalabilidade e desempenho.
+A arquitetura distribuída adotada para o sistema financeiro permite que cada microsserviço, como Categoria, Despesa, FormaPagamento e Usuário, seja desenvolvido, implantado e escalado independentemente. Essa abordagem facilita a manutenção e a evolução contínua do sistema. A ApiGateway atua como uma camada de abstração entre os clientes e os microsserviços, simplificando o acesso aos recursos e garantindo a segurança e o controle das solicitações. Além disso, cada microsserviço possui seu próprio banco de dados, garantindo a segregação de dados e permitindo uma melhor escalabilidade e desempenho.
 
 ![Diagrama de Arquitetura](img/Arquitetura2.png) 
 
@@ -50,25 +50,27 @@ Considerando as diretrizes da norma ISO/IEC 25010, nossa equipe selecionou as se
 ![Modelo ER](img/modeloER3.png)
 
 Entidades:
-- Despesa
 - Categoria
-- SistemaFinanceiro
-- UsuarioSistemaFinanceiro
+- Despesa
+- FormaPagamento
+- Usuario
 
 Relacionamentos:
-- Uma Despesa pertence a uma Categoria
-- Uma Categoria é associada a um SistemaFinanceiro
-- Um UsuarioSistemaFinanceiro é associado a um SistemaFinanceiro
+- Uma Categoria está associada a Despesa.
+- Uma Despesa pertence a uma Categoria.
+- Uma Categoria é associada a uma FormaPagamento.
+- FormaPagamento está associada a despesa.
+- Um Usuario é associado a uma FormaPagamento.
 
 ## Esquema Relacional
 
 ![Esquema Relacional](img/esquemaRelacional.png)
 
 Tabelas:
-- Despesa (Id, Nome, Valor, Mes, Ano, TipoDespesa, DataCadastro, DataAlteracao, DataPagamento, DataVencimento, Pago, DespesaAtrasada, CategoriaId)
-- Categoria (Id, Nome, SistemaId)
-- SistemaFinanceiro (Id, Nome, Mes, Ano, DiaFechamento, GerarCopiaDespesa, MesCopia, AnoCopia)
-- UsuarioSistemaFinanceiro (Id, EmailUsuario, Administrador, SistemaAtual, SistemaId)
+- Categoria (Id, Nome)
+- Despesa (Id, Nome, Valor, DataCompra, DataVencimento, StatusPago, FormaPagamendoId, CategoriaId)
+- FormaPagamento (Id, Nome, Descricao)
+- Usuario (Id, Nome, Email, Senha,)
 
 ## Tecnologias Utilizadas
 
