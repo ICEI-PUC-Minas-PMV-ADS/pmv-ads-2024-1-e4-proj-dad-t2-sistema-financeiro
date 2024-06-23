@@ -1,0 +1,43 @@
+<p-card class="formularioUsuario" *ngIf="visualizarFormulario">
+  <header>INFORMAÇÕES USUÁRIO</header>
+  <form #usuarioForm="ngForm">
+    <div>
+      <label for="nome">Nome:  </label>
+      <input pInputText type="text" id="nome" name="nome" [(ngModel)]="usuarioSelecionado.nome" required autofocus disabled/>
+    </div>
+    <div>
+      <label for="email">Email:  </label>
+      <input pInputText type="text" id="email" name="email" [(ngModel)]="usuarioSelecionado.email" required disabled/>
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="confirmarExclusao(usuarioSelecionado)">Deletar</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit" (click)="telaAlterarUsuario(usuarioSelecionado)">Atualizar</p-button>
+    </div>
+  </form>
+</p-card>
+
+<p-card class="formularioUsuario" *ngIf="!visualizarFormulario">
+  <header>ATUALIZAR INFORMAÇÕES</header>
+  <form #usuarioFormUpdate="ngForm" (ngSubmit)="atualizarUsuario(usuarioFormUpdate)">
+    <div>
+      <label for="nomeUpdate">Nome:  </label>
+      <input pInputText type="text" id="nomeUpdate" name="nomeUpdate" [(ngModel)]="usuarioSelecionado.nome" required autofocus/>
+    </div>
+    <div>
+      <label for="emailUpdate">Email:  </label>
+      <input pInputText type="text" id="emailUpdate" name="emailUpdate" [(ngModel)]="usuarioSelecionado.email" required/>
+    </div>
+    <div>
+      <label for="senhaUpdate">Senha:  </label>
+      <input pInputText type="password" id="senhaUpdate" name="senhaUpdate" [(ngModel)]="usuarioSelecionado.senha" required/>
+    </div>
+    <div>
+      <label for="confirmacaoSenha">Confirmar senha:  </label>
+      <input pInputText type="password" id="confirmacaoSenha" name="confirmacaoSenha" [(ngModel)]="usuarioSelecionado.confirmacaoSenha" required/>
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="telaInicial()">Cancelar</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit">Salvar</p-button>
+    </div>
+  </form>
+</p-card>

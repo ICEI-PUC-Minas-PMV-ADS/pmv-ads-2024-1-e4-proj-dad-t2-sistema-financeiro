@@ -1,0 +1,107 @@
+<main>
+  <p-card class="cardTabelaDespesa" *ngIf="visualizarFormulario">
+    <header>INFORMAÇÕES DESPESAS</header>
+    <p-button [raised]="true" severity="success" size="small" (click)="telaAdicionarDespesa()">ADICIONAR NOVA DESPESA
+    </p-button>
+
+    <div class="tabelaDespesa">
+      <p-table styleClass="p-datatable-gridlines" [value]="tabelaDespesa" styleClass="p-datatable-striped"
+        [autoLayout]="true" [tableStyle]="{ 'min-width': '60rem', 'min-heigth': '180rem' }" [paginator]="true"
+        [rows]="10">
+        <ng-template pTemplate="header">
+          <tr>
+            <th class="center">Valor</th>
+            <th class="center">Nome</th>
+            <th class="center">Data Compra</th>
+            <th class="center">Data Vencimento</th>
+            <th class="center">Categoria</th>
+            <th class="center">Forma Pagamento</th>
+            <th class="center">Status</th>
+            <th class="center">Opções</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-tabelaDados>
+          <tr>
+            <td>{{ tabelaDados.valor }}</td>
+            <td>{{ tabelaDados.nome }}</td>
+            <td>{{ tabelaDados.dataCompra | date : "dd/MM/yyyy" }}</td>
+            <td>{{ tabelaDados.dataVencimento | date : "dd/MM/yyyy" }}</td>
+            <td>{{ tabelaDados.nomeCategoria }}</td>
+            <td>{{ tabelaDados.nomeFormaPagamento }}</td>
+            <td>
+              <span *ngIf="tabelaDados.statusPago; else naoPago">Pago</span>
+              <ng-template #naoPago>Não pago</ng-template>
+            </td>
+            <td>
+              <p-button [raised]="true" size="small" type="button" (click)="telaAlterarDespesa(tabelaDados)">Alterar
+              </p-button>
+              <p-button [raised]="true" severity="danger" size="small" type="button"
+                (click)="deletarDespesa(tabelaDados)">Deletar</p-button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </p-card>
+
+  <p-card class="formularioDespesa" *ngIf="!visualizarFormulario">
+    <header>
+      {{ adicionarAtualizar ? "ADICIONAR DESPESA" : "ATUALIZAR DESPESA" }}
+    </header>
+    <form #despesaForm="ngForm" (ngSubmit)="
+        adicionarAtualizar
+          ? criarDespesa(despesaForm.value)
+          : atualizarDespesa(despesaForm.value)
+      ">
+      <input type="hidden" name="id" [(ngModel)]="despesaSelecionada.id" />
+      <div>
+        <label for="valor">Valor: </label>
+        <input pInputText type="number" id="valor" name="valor" required [(ngModel)]="despesaSelecionada.valor"
+          autofocus />
+      </div>
+      <div>
+        <label for="nome">Descrição: </label>
+        <input pInputText type="text" id="nome" name="nome" required [(ngModel)]="despesaSelecionada.nome" />
+      </div>
+      <div>
+        <label for="dataCompra">Data da Compra: </label>
+        <input pInputText type="date" id="dataCompra" name="dataCompra" required
+          [(ngModel)]="despesaSelecionada.dataCompra" />
+      </div>
+      <div>
+        <label for="dataVencimento">Data do Pagamento: </label>
+        <input pInputText type="date" id="dataVencimento" name="dataVencimento" required
+          [(ngModel)]="despesaSelecionada.dataVencimento" />
+      </div>
+      <div>
+        <label for="categoria">Categoria: </label>
+        <select pInputText name="categoriaId" id="categoria" required [(ngModel)]="despesaSelecionada.categoriaId">
+          <option *ngFor="let cat of categoria" [value]="cat.id">
+            {{ cat.nome }}
+          </option>
+        </select>
+      </div>
+      <div>
+        <label for="idFormaPagamento">Forma de Pagamento: </label>
+        <select pInputText name="formaPagamentoId" id="pagamento" required
+          [(ngModel)]="despesaSelecionada.formaPagamentoId">
+          <option *ngFor="let forma of formaPagamento" [value]="forma.id">
+            {{ forma.nome }}
+          </option>
+        </select>
+      </div>
+      <div>
+        <label for="statusPago">Status do Pagamento: </label>
+        <select pInputText name="statusPago" id="statusPago" required [(ngModel)]="despesaSelecionada.statusPago">
+          <option value="true">Pago</option>
+          <option value="false">Não pago</option>
+        </select>
+      </div>
+      <div class="botoes">
+        <p-button [raised]="true" severity="danger" size="small" type="button" (click)="telaInicial()">Sair</p-button>
+        <p-button [raised]="true" severity="success" size="small" type="submit">
+          {{ adicionarAtualizar ? "Salvar" : "Atualizar" }}</p-button>
+      </div>
+    </form>
+  </p-card>
+</main>

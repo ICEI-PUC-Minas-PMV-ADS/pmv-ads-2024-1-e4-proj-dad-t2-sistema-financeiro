@@ -1,0 +1,42 @@
+<p-card class="cardTabelaCategoria" *ngIf="visualizarFormulario">
+  <header>INFORMAÇÕES SOBRE CATEGORIA</header>
+  <p-button [raised]="true" severity="success" size="small" (click)="telaAdicionarCategoria()">ADICIONAR CATEGORIA
+  </p-button>
+  <div class="tabelaCategoria">
+    <p-table styleClass="p-datatable-gridlines p-datatable-striped" [value]="categorias" [autoLayout]="true"
+      [tableStyle]="{ 'min-width': '30rem', 'min-heigth': '180rem' }" [paginator]="true" [rows]="10">
+      <ng-template pTemplate="header">
+        <tr>
+          <th class="center">Nome</th>
+          <th class="center">Opções</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-categoria>
+        <tr>
+          <td>{{ categoria.nome }}</td>
+          <td>
+            <p-button [raised]="true" size="small" type="button" (click)="telaAlterarCategoria(categoria)">Alterar
+            </p-button>
+            <p-button [raised]="true" severity="danger" size="small" type="button"
+              (click)="deletarCategoria(categoria)">Deletar</p-button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</p-card>
+<p-card class="formularioCategoria" *ngIf="!visualizarFormulario">
+  <header>
+    {{ adicionarAtualizar ? "ADICIONAR CATEGORIA" : "ALTERAR CATEGORIA" }}
+  </header>
+  <form #categoriaForm="ngForm" (ngSubmit)="criarOuAtualizarCategoria(categoriaForm)">
+    <div>
+      <label for="nome">Nome: </label>
+      <input pInputText type="text" id="nome" name="nome" [(ngModel)]="categoriaSelecionada.nome" required autofocus />
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="telaInicial()">Sair</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit">Salvar</p-button>
+    </div>
+  </form>
+</p-card>

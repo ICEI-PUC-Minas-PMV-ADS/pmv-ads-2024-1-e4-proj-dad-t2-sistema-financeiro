@@ -1,0 +1,44 @@
+<p-card class="cardTabelaPagamento" *ngIf="visualizarFormulario">
+  <header>INFORMAÇÕES SOBRE FORMA DE PAGAMENTO</header>
+  <p-button [raised]="true" severity="success" size="small" (click)="telaAdicionarPagamento()">ADICIONAR NOVA FORMA DE PAGAMENTO</p-button>
+  <div class="tabelaPagamento">
+    <p-table styleClass="p-datatable-gridlines" [value]="pagamento" styleClass="p-datatable-striped" [autoLayout]="true"
+      [tableStyle]="{ 'min-width': '30rem' , 'min-heigth': '180rem'}" [paginator]="true"
+      [rows]="10">
+      <ng-template pTemplate="header">
+        <tr>
+          <th class="center">Nome</th>
+          <th class="center">Descrição</th>
+          <th class="center">Opções</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-pagamento>
+        <tr>
+          <td>{{ pagamento.nome }}</td>
+          <td>{{ pagamento.descricao }}</td>
+          <td>
+            <p-button [raised]="true" size="small" type="button" (click)="telaAlterarPagamento(pagamento)">Alterar</p-button>
+            <p-button [raised]="true" severity="danger" size="small" type="button" (click)="deletarPagamento(pagamento)">Deletar</p-button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</p-card>
+<p-card class="formularioPagamento"  *ngIf="!visualizarFormulario">
+  <header>{{ adicionarAtualizar ? 'ADICIONAR FORMA DE PAGAMENTO' : 'ATUALIZAR FORMA DE PAGAMENTO' }}</header>
+  <form #pagamentoForm="ngForm" (ngSubmit)="criarOuAtualizarPagamento(pagamentoForm)">
+    <div>
+      <label for="nome">Nome:  </label>
+      <input pInputText type="text" id="nome" name="nome" [(ngModel)]="pagamentoSelecionado.nome" required autofocus/>
+    </div>
+    <div>
+      <label for="descricao">Descrição:  </label>
+      <input pInputText type="text" id="descricao" name="descricao" [(ngModel)]="pagamentoSelecionado.descricao" required/>
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="telaInicial()">Sair</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit">{{ adicionarAtualizar ? 'Salvar' : 'Atualizar' }}</p-button>
+    </div>
+  </form>
+</p-card>

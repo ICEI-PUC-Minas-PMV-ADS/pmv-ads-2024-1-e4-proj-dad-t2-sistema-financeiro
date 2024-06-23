@@ -1,0 +1,13 @@
+<header [ngClass]="{'hide': (!auth)}">
+  <ul>
+    <li class="primeiroItem"><a routerLink="/despesa">Despesas</a></li>
+    <li><a routerLink="/forma-pagamento">Forma de Pagamento</a></li>
+    <li><a routerLink="/categoria">Categoria</a></li>
+    <li><a routerLink="/usuario">Usuário</a></li>
+    <li class="ultimoItem"><a (click)="logout()">Sair</a></li>
+    <!-- <li class="ultimoItem"><a routerLink="/login">Sair</a></li> -->
+  </ul>
+</header>
+<main [ngClass]="{'show': !logged}">
+  <router-outlet></router-outlet>
+</main>

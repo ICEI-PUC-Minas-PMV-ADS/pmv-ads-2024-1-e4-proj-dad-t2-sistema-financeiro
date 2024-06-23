@@ -1,0 +1,33 @@
+.formularioUsuario {
+  display: flex;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 0 2rem;
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+  }
+}

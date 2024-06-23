@@ -1,0 +1,60 @@
+<p-card class="formularioUsuario"  *ngIf="viewLogin">
+  <header>ÁREA DE LOGIN</header>
+  <form #usuarioForm="ngForm" (ngSubmit)="onSubmit(usuarioForm)">
+    <div>
+      <label for="email">Email:  </label>
+      <input pInputText type="text" id="email" name="email" [(ngModel)]="usuarioForm.value.email" required autofocus/>
+    </div>
+    <div>
+      <label for="senha">Senha:  </label>
+      <input pInputText type="password" id="senha" name="senha" [(ngModel)]="usuarioForm.value.senha" required/>
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="toggleView('esqueceuSenha')">Esqueceu Senha</p-button>
+      <p-button [raised]="true" size="small" type="button" (click)="toggleView('criarConta')">Criar Conta</p-button>
+    </div>
+    <div class="center" >
+      <p-button [raised]="true" severity="success" size="small" type="submit" (click)="toggleView('login')">Entrar na Conta</p-button>
+    </div>
+  </form>
+</p-card>
+
+<p-card class="formularioUsuario"  *ngIf="viewCriarConta">
+  <header>CRIAR CONTA</header>
+  <form #usuarioForm="ngForm" (ngSubmit)="onSubmit(usuarioForm)">
+    <div>
+      <label for="nome">Nome:  </label>
+      <input pInputText type="text" id="nome" name="nome" [(ngModel)]="usuarioForm.value.nome" required autofocus/>
+    </div>
+    <div>
+      <label for="email">Email:  </label>
+      <input pInputText type="text" id="email" name="email" [(ngModel)]="usuarioForm.value.email" required/>
+    </div>
+    <div>
+      <label for="senha">Senha:  </label>
+      <input pInputText type="password" id="senha" name="senha" [(ngModel)]="usuarioForm.value.senha" required/>
+    </div>
+    <div>
+      <label for="senha">Confirmar Senha:  </label>
+      <input pInputText type="password" id="senha" name="senha" [(ngModel)]="usuarioForm.value.senha" required/>
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="toggleView('login')">Cancelar</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit" (click)="toggleView('login')">Criar</p-button>
+    </div>
+  </form>
+</p-card>
+
+<p-card class="formularioUsuario" *ngIf="viewEsqueceuSenha">
+  <header>ESQUECEU SENHA</header>
+  <form #usuarioForm="ngForm" (ngSubmit)="onSubmit(usuarioForm)">
+    <div>
+      <label for="email">Email:  </label>
+      <input pInputText type="text" id="email" name="email" required autofocus/>
+    </div>
+    <div class="botoes">
+      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="toggleView('login')">Cancelar</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit" (click)="toggleView('login')">Enviar</p-button>
+    </div>
+  </form>
+</p-card>

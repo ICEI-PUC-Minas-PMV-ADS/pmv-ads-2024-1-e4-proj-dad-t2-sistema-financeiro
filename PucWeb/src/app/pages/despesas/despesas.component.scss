@@ -1,0 +1,54 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+
+.center {
+  text-align: center;
+}
+
+.cardTabelaDespesa,
+.formularioDespesa {
+  display: flex;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.cardTabelaDespesa {
+  p-button {
+    padding-left: 2rem;
+  }
+
+  .tabelaDespesa {
+    padding: 2rem;
+  }
+}
+
+.formularioDespesa {
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
