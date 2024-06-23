@@ -76,13 +76,13 @@ Para resolver o problema e implementar a solução do sistema financeiro, utiliz
 
 - Linguagens: C# para a API, Script para o frontend web e mobile.
 - Banco de Dados: MongoDB (NoSQL).
-- Frameworks: ASP.NET Core para a API, Angular para o frontend web, React Native para o frontend mobile.
+- Frameworks: ASP.NET Core 8.0 para a API, Angular para o frontend web, React Native para o frontend mobile.
 - IDEs: Visual Studio para desenvolvimento em C#, Visual Studio Code para desenvolvimento em Script.
 - Ferramentas de versionamento: Git e GitHub.
 
 ## Hospedagem
 
-A aplicação será hospedada em um servidor na nuvem, como o Azure para a API e o GitHub Pages para o frontend web.
+A API Gateway está hospedada em um servidor privado (WindowsServer, rodando via IIS) na nuvem, no endereço: "[apigateway.criadoresdesoftware.com.br:5000](https://apigateway.criadoresdesoftware.com.br:5000)".
 
 ## Considerações Finais
 
