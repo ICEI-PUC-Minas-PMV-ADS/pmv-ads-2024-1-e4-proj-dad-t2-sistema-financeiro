@@ -18,7 +18,7 @@ Este projeto consiste em um sistema financeiro desenvolvido em ASP.NET Core, uti
 
 
 
-#### Visualização de Relatórios de Despesas
+#### Visualização  de Despesas
 - Permite que os usuários visualizem relatórios detalhados de suas despesas cadastradas no sistema financeiro.
 - Página de visualização de relatórios de despesas: `relatorios_despesas.html`
 - Script para recuperar e exibir os dados das despesas cadastradas: `relatorios_despesas.js`
