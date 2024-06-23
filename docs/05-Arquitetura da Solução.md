@@ -60,7 +60,6 @@ Relacionamentos:
 - Uma Despesa pertence a uma Categoria.
 - Uma Categoria é associada a uma FormaPagamento.
 - FormaPagamento está associada a despesa.
-- Um Usuario é associado a uma FormaPagamento.
 
 ## Esquema Relacional
 
