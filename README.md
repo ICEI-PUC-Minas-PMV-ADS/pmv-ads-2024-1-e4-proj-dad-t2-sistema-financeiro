@@ -33,5 +33,6 @@ O projeto "Controle Financeiro" tem como objetivo desenvolver uma aplicação ab
 
 # Apresentação
 
-- [Apresentação da solução]
+Link do vídeo - Apresentação projeto PUC-Minas. Grupo Sistema Financeiro: https://youtu.be/p9HZVvj3g0U
+
 
