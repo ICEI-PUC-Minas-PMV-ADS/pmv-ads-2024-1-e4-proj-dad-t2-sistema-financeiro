@@ -1,6 +1,7 @@
 import { Usuario } from './../../models/usuario';
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../service/login.service'
+import { UsuarioService } from '../../service/usuario.service';
  
 @Component({
   selector: 'app-login',
@@ -13,9 +14,11 @@ export class LoginComponent implements OnInit{
   viewEsqueceuSenha: boolean = false;
   usuarios: Usuario[] = [];
   submitted = false;
+  acaoAtual: string = 'login';
 
   constructor(
     private loginService: LoginService,
+    private usuarioService: UsuarioService,
   ) { }
 
   ngOnInit(): void {
@@ -39,9 +42,14 @@ export class LoginComponent implements OnInit{
 
   async onSubmit(form: any) {
     try {
-      const resposta = await this.loginService.login(form.value.email, form.value.senha).toPromise();
-      this.submitted = true;
-      this.viewLogin = !this.viewLogin;
+      if (this.acaoAtual === 'criarConta') {
+        const resposta = await this.usuarioService.criarUsuario(form.value);
+        alert('Conta criada com sucesso!');
+        this.toggleView('login');
+      } else if (this.acaoAtual === 'login') {
+        const resposta = await this.loginService.login(form.value.email, form.value.senha).toPromise();
+        this.submitted = true;
+      }
     } catch (error) {
       alert(error);
     }

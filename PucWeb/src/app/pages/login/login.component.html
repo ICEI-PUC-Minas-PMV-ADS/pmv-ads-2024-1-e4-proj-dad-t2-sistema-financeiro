@@ -10,10 +10,7 @@
       <input pInputText type="password" id="senha" name="senha" [(ngModel)]="usuarioForm.value.senha" required/>
     </div>
     <div class="botoes">
-      <p-button [raised]="true" severity="danger" size="small" type="button" (click)="toggleView('esqueceuSenha')">Esqueceu Senha</p-button>
       <p-button [raised]="true" size="small" type="button" (click)="toggleView('criarConta')">Criar Conta</p-button>
-    </div>
-    <div class="center" >
       <p-button [raised]="true" severity="success" size="small" type="submit" (click)="toggleView('login')">Entrar na Conta</p-button>
     </div>
   </form>
@@ -35,12 +32,12 @@
       <input pInputText type="password" id="senha" name="senha" [(ngModel)]="usuarioForm.value.senha" required/>
     </div>
     <div>
-      <label for="senha">Confirmar Senha:  </label>
-      <input pInputText type="password" id="senha" name="senha" [(ngModel)]="usuarioForm.value.senha" required/>
+      <label for="confirmarSenha">Confirmar Senha:  </label>
+      <input pInputText type="password" id="confirmarSenha" name="confirmarSenha" required/>
     </div>
     <div class="botoes">
       <p-button [raised]="true" severity="danger" size="small" type="button" (click)="toggleView('login')">Cancelar</p-button>
-      <p-button [raised]="true" severity="success" size="small" type="submit" (click)="toggleView('login')">Criar</p-button>
+      <p-button [raised]="true" severity="success" size="small" type="submit">Criar</p-button>
     </div>
   </form>
 </p-card>

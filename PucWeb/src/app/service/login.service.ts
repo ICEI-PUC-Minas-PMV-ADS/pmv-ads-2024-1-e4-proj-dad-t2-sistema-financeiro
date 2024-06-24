@@ -13,8 +13,7 @@ export class LoginService {
   private loginUrl = `${this.apiUrl}/login`;
   private logged: boolean = false;
   private authToken: string | null = null;
-  private userId: string | null = null; // Adicionado para armazenar o ID do usuário
-
+  private userId: string | null = null;
   constructor(private http: HttpClient, private router: Router) { }
 
   setToken(token: string): void {
@@ -25,13 +24,12 @@ export class LoginService {
     return this.authToken || localStorage.getItem('authToken');
   }
 
-  setUserId(id: string): void { // Método para definir o ID do usuário
+  setUserId(id: string): void {
     this.userId = id;
-    console.log("🚀 ~ LoginService ~ setUserId ~ this.userId:", this.userId)
-    localStorage.setItem('userId', id); // Armazena o ID do usuário no localStorage
+    localStorage.setItem('userId', id);
   }
   
-  getUserId(): string | null { // Método para obter o ID do usuário
+  getUserId(): string | null {
     return this.userId || localStorage.getItem('userId');
   }
 
@@ -41,10 +39,9 @@ export class LoginService {
         tap(response => {
           if (response.status === 200) {
             const token = response.body.token;
-            console.log("🚀 ~ LoginService ~ login ~ response.body:", response.body)
-            const userId = response.body.userId; // Supondo que o ID do usuário esteja na resposta
+            const userId = response.body.userId;
             this.setToken(token);
-            this.setUserId(userId); // Define o ID do usuário
+            this.setUserId(userId);
             this.logged = true;
             this.router.navigate(['/despesa']);
           }
@@ -71,9 +68,9 @@ export class LoginService {
 
   logout(): void {
     localStorage.removeItem('authToken');
-    localStorage.removeItem('userId'); // Remove o ID do usuário do localStorage
+    localStorage.removeItem('userId');
     this.authToken = null;
-    this.userId = null; // Limpa o ID do usuário
+    this.userId = null;
     this.logged = false;
     this.router.navigate(['/login']);
   }

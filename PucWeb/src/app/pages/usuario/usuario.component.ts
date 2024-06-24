@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../../service/usuario.service';
 import { Usuario } from '../../models/usuario';
 import { NgForm } from '@angular/forms';
+import { LoginService } from '../../service/login.service';
 
 @Component({
   selector: 'app-usuario',
@@ -9,14 +10,18 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./usuario.component.scss'],
 })
 export class UsuarioComponent implements OnInit {
-  usuario: Usuario[] = [];
+  usuario: Usuario = { id: '', nome: '', email: '', senha: '' };
   usuarioSelecionado: any = { id: '', nome: '', email: '', senha: '', confirmarSenha: ''};
   usuarioBackup: Usuario = { id: '', nome: '', email: '', senha: '' };
   visualizarFormulario: boolean = true;
   senhaTemp: string = '';
   confirmacaoSenhaTemp: string = '';
+  idUsuario: string = '';
 
-  constructor(private usuarioService: UsuarioService) {}
+  constructor(
+    private usuarioService: UsuarioService,
+    private loginService: LoginService,
+  ) {}
 
   ngOnInit() {
     this.getUsuarios();
@@ -24,8 +29,9 @@ export class UsuarioComponent implements OnInit {
 
   async getUsuarios() {
     try {
-      this.usuario = await this.usuarioService.getUsuarios();
-      this.usuarioSelecionado = this.usuario[0];
+      this.idUsuario = this.loginService.getUserId() || '';
+      this.usuario = await this.usuarioService.getUsuario(this.idUsuario);
+      this.usuarioSelecionado = this.usuario;
       this.usuarioSelecionado.senha = '';
     } catch (error) {
       console.error("Erro ao obter usuários", error);
@@ -78,9 +84,8 @@ export class UsuarioComponent implements OnInit {
   }
 
   validarSenha(form: NgForm): boolean {
-    console.log("🚀 ~ UsuarioComponent ~ validarSenha ~ form:", form.value)
     const senha = form.value.senhaUpdate;
-    const confirmacaoSenha = form.value.confirmacaoSenha; // Certifique-se de adicionar um campo "confirmacaoSenha" no seu formulário HTML
+    const confirmacaoSenha = form.value.confirmacaoSenha;
     if (senha !== confirmacaoSenha) {
       alert('A senha e a confirmação de senha não são iguais.');
       return false;

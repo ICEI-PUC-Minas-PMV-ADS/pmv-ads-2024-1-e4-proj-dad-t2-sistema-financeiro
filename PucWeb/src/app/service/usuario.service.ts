@@ -43,6 +43,19 @@ export class UsuarioService {
     }
   }
 
+  async criarUsuario(usuario: Usuario): Promise<Usuario> {
+    try {
+      const response = await this.http.post<Usuario>(this.apiUrl, usuario, { headers: this.getHeaders() }).toPromise();
+      if (!response) {
+        throw new Error('Não foi possível criar o usuário. Resposta indefinida.');
+      }
+      return response;
+    } catch (error) {
+      console.error('Erro ao criar o usuário', error);
+      throw error;
+    }
+  }
+
   async updateUsuario(id: string, nome: string, email: string, senha: string): Promise<Usuario> {
     const usuario: Usuario = { id, nome, email, senha };
     try {
