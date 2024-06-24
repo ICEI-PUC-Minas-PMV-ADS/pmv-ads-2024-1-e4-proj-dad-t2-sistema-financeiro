@@ -68,7 +68,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
   - Emulador da aplicação: Android Studio, NPM;
   - Ferramentas de comunicação: Whatsapp, Teams;
   - Gerenciamento do projeto: GitHub Projects e MS Project;
-  - Ferramentas de desenho de tela (*wireframing*): MarvelAPP, Heflo;
-  - Ferramentas para diagramas (conceitual e lógico): Diagrams.net, Astah, Lucid Charts, BRMW.
+  - Ferramentas de desenho de tela (*wireframing*): Figma;
+  - Ferramentas para diagramas (conceitual e lógico): Lucid Charts.
 
   O editor de código foi escolhido pelo grupo pois é o mais prático e acessível para os integrantes, além de facilitar a alternação de quem está editando o código e salvando diretamente no repositório através do GitHub Desktop. Tem um bom dicionário de erros no código e permite acompanhar alterações em tempo real através do navegador.
