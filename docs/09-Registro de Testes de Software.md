@@ -51,15 +51,16 @@ Abaixo, temos uma breve demonstração das nossas telas e suas funcionalidades. 
 
 Abaixo, temos uma breve demonstração das nossas telas e suas funcionalidades. Vale ressaltar que nossas telas já se encontram com os CRUDs, onde podemos adicionar, excluir e editar as informações.
 
-![telacriarconta](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\telacriarconta.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/a4ae7944-42d7-400f-ae47-e149e86cd628)
 
-![atualização usuário](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\atualização usuário.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/44337bf5-1c73-4cf7-b22c-af381866922a)
 
-![cadastrocategoria](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\cadastrocategoria.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/cbd68290-b22d-4935-9fb0-9fe26a904a9b)
 
-![cadastroformapagamento](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\cadastroformapagamento.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/7ade23ce-dca5-4846-a6ce-56347e45d9e2)
 
-![cadastrodespesa](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\cadastrodespesa.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/615a9b5d-57eb-412d-a606-5c4930e7adbf)
+
 
 ## Desafios
 
