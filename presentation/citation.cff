@@ -1,0 +1,19 @@
+message: Please cite this software using these metadata.
+title: Sistema Financeiro
+authors:
+  - family-names: Teixeira Da Silva
+    given-names: Nicolas Patrick
+  - family-names: Gonçalves da Silva Junior
+    given-names: Frederico
+  - family-names: Delmasquio Silva
+    given-names: Lucas
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vilela Cardoso
+    given-names: Leonardo
+keywords:
+  - Gestão
+  - Financeiro
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro 
+version: 1.0.0
+date-released: 2023-10-31
