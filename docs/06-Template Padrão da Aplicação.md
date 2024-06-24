@@ -8,23 +8,23 @@ O Template Padráo pode ser entendido como o Layout padrão da aplicação que s
 
 ### Tela de Login
 
-### ![login](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\login.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/9f30b09b-fd99-4ee3-bdcd-945c0afce46e)
 
 ### Tela Forma de Pagamento
 
-![forma pagamento](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\forma pagamento.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/20e0dee9-677f-4d88-9f68-13a73dc173d7)
 
 ### Tela Categoria do Sistema
 
-![categoria](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\categoria.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/f671fb74-0fb7-47d6-bb33-d88a2bff6aee)
 
 ### Tela Despesa do Sistema
 
-![despesa](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\despesa.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/4e49cf0d-91d3-4363-9b01-d25a7a9fa17a)
 
 ### Tela Usuário do Sistema
 
-![usuario](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\usuario.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/018a63b9-9c7b-4622-bc9d-915a9358e9bb)
 
 ### Projeto Mobile
 
