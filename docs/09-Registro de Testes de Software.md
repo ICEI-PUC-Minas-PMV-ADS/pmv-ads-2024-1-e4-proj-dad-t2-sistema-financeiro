@@ -12,15 +12,16 @@
 
 Abaixo, temos uma breve demonstração das nossas telas e suas funcionalidades, onde podemos adicionar, excluir e editar as informações.
 
-![testeapi (1)](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\testeapi (1).JPG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/31af8e4e-fb74-4c0c-a0b3-2b8466e9c3ea)
 
-![testeapi (2)](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\testeapi (2).JPG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/12d44164-614f-4390-bb35-595044c1d0f3)
 
-![testeapi (3)](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\testeapi (3).JPG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/814e0b2a-09c4-467b-a162-ace0b50f84d1)
 
-![testeapi1.JPG (1)](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\testeapi1.JPG (1).JPG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/c0285bb3-09c1-45df-b965-98e98a4da27b)
 
-![testeapi1.JPG (2)](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\testeapi1.JPG (2).JPG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/6d31a207-baaf-4b93-8891-8458e97c4c8f)
+
 
 ## Testes Realizados no Mobile
 
