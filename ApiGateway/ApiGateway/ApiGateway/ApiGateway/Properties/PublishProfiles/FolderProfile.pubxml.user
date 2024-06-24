@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Documentos\ApiGateway\ApiGateway\ApiGateway\ApiGateway\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-06-21T17:21:17.6758393Z;True|2024-06-21T00:46:35.9309031-03:00;True|2024-06-21T00:19:14.3815640-03:00;True|2024-06-20T23:53:54.0401930-03:00;True|2024-06-20T01:41:28.2665988-03:00;True|2024-06-20T01:24:57.7956722-03:00;True|2024-06-20T00:26:04.9934498-03:00;True|2024-06-17T15:09:37.0454079-03:00;True|2024-06-17T11:40:14.6013800-03:00;True|2024-06-17T11:21:53.6216471-03:00;True|2024-06-17T11:12:04.8521082-03:00;True|2024-06-14T19:32:37.3045827-03:00;True|2024-06-14T19:29:26.2310138-03:00;True|2024-06-14T19:20:36.8815627-03:00;True|2024-06-13T15:57:23.8482929-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

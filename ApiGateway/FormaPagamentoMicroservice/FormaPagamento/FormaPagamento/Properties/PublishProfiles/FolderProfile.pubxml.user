@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Documentos\ApiGateway\FormaPagamentoMicroservice\FormaPagamento\FormaPagamento\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-06-23T19:43:34.1272263Z;True|2024-06-23T16:39:23.4282432-03:00;True|2024-06-22T15:20:35.3160377-03:00;True|2024-06-20T03:03:49.2089955-03:00;True|2024-06-20T00:27:56.8741443-03:00;True|2024-06-17T15:23:45.0296264-03:00;True|2024-06-14T19:17:23.6591457-03:00;True|2024-06-14T09:01:07.9117350-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

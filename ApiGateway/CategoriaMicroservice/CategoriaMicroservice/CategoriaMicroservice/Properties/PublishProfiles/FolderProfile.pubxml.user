@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Documentos\ApiGateway\CategoriaMicroservice\CategoriaMicroservice\CategoriaMicroservice\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-06-23T19:12:28.9730748Z;True|2024-06-23T15:59:42.1185310-03:00;True|2024-06-23T15:13:58.8954637-03:00;True|2024-06-23T14:14:14.4295824-03:00;True|2024-06-22T15:09:21.5426065-03:00;True|2024-06-22T14:50:33.4654009-03:00;True|2024-06-22T14:45:02.0949533-03:00;True|2024-06-20T03:00:50.3490215-03:00;True|2024-06-20T00:26:35.6573325-03:00;True|2024-06-17T11:30:53.6129689-03:00;True|2024-06-17T02:18:41.8281047-03:00;True|2024-06-17T01:54:47.7807181-03:00;True|2024-06-17T01:10:45.9500940-03:00;True|2024-06-14T19:12:49.5589420-03:00;True|2024-06-14T19:10:56.4891699-03:00;True|2024-06-14T08:33:01.6489088-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

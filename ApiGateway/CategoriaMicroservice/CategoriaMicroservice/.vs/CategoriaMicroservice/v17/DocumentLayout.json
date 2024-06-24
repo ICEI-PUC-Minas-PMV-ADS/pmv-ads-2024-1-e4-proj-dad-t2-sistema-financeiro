@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documentos\\ApiGateway\\CategoriaMicroservice\\CategoriaMicroservice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68528726-5ABA-4C34-9661-28145B3B8CEC}|CategoriaMicroservice\\CategoriaMicroservice.csproj|d:\\documentos\\apigateway\\categoriamicroservice\\categoriamicroservice\\categoriamicroservice\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68528726-5ABA-4C34-9661-28145B3B8CEC}|CategoriaMicroservice\\CategoriaMicroservice.csproj|solutionrelative:categoriamicroservice\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68528726-5ABA-4C34-9661-28145B3B8CEC}|CategoriaMicroservice\\CategoriaMicroservice.csproj|d:\\documentos\\apigateway\\categoriamicroservice\\categoriamicroservice\\categoriamicroservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68528726-5ABA-4C34-9661-28145B3B8CEC}|CategoriaMicroservice\\CategoriaMicroservice.csproj|solutionrelative:categoriamicroservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documentos\\ApiGateway\\CategoriaMicroservice\\CategoriaMicroservice\\CategoriaMicroservice\\Program.cs",
+              "RelativeDocumentMoniker": "CategoriaMicroservice\\Program.cs",
+              "ToolTip": "D:\\Documentos\\ApiGateway\\CategoriaMicroservice\\CategoriaMicroservice\\CategoriaMicroservice\\Program.cs",
+              "RelativeToolTip": "CategoriaMicroservice\\Program.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:13:22.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "D:\\Documentos\\ApiGateway\\CategoriaMicroservice\\CategoriaMicroservice\\CategoriaMicroservice\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "CategoriaMicroservice\\Controllers\\CategoriaController.cs",
+              "ToolTip": "D:\\Documentos\\ApiGateway\\CategoriaMicroservice\\CategoriaMicroservice\\CategoriaMicroservice\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "CategoriaMicroservice\\Controllers\\CategoriaController.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAADwv3UAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T06:16:44.785Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

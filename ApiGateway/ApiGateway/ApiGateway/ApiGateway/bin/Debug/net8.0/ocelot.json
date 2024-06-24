@@ -1,0 +1,103 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/despesa",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/despesa",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/despesa/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/despesa/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forma-pagamento",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/forma-pagamento",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/forma-pagamento/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/forma-pagamento/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuario",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/usuario",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usuario/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/usuario/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/categoria",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/categoria",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/categoria/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "apigateway.criadoresdesoftware.com.br",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/categoria/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://apigateway.criadoresdesoftware.com.br:5000"
+  }
+}
