@@ -22,7 +22,7 @@ A gestão do código fonte do projeto é baseada no conteúdo proporcionado na o
 
 Para o controle de versão, utilizamos o Git como ferramenta principal, hospedando o repositório no GitHub. A configuração do projeto no Git foi feita com a seguinte estrutura de branches:
 
-![branchs](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\branchs.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/7322ae11-5c2c-46dc-af38-031d150ef9ab)
 
 **As ramificações podem ser descritas como:**
 
@@ -54,7 +54,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 ● DONE: Esta lista representa os cartões que já foram executados, avaliados e dados como feito.
 
-![kanban](C:\Users\Fred\Desktop\puc\pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro\docs\img\kanban.PNG)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/6fd4fbf3-bb9e-4729-b09a-1557ecca668a)
 
 - ### Processo
 
