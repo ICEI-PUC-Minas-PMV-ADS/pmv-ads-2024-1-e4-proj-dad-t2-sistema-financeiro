@@ -5,7 +5,7 @@ O projeto "Controle Financeiro" tem como objetivo desenvolver uma aplicação ab
 
 ## Integrantes
 - Lucas Delmasquio Silva
-- Frederico Gonçalves da Silva Junior.
+- Frederico Gonçalves da Silva Junior
 - Nicolas Patrick Teixeira Da Silva
 
 ## Orientador
@@ -33,4 +33,5 @@ O projeto "Controle Financeiro" tem como objetivo desenvolver uma aplicação ab
 
 # Apresentação
 
-- [Apresentação da solução](presentation/README.md)
+- [Apresentação da solução]
+
