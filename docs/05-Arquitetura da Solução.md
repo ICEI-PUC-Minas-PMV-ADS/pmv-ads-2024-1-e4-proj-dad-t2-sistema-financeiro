@@ -42,12 +42,12 @@ Considerando as diretrizes da norma ISO/IEC 25010, nossa equipe selecionou as se
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](img/DiagramaClasse.png)
+![Diagrama de Classes](img/DiagramaDeClasses.png)
 
 
 ## Modelo ER
 
-![Modelo ER](img/modeloER3.png)
+![Modelo ER](img/modeloER.png)
 
 Entidades:
 - Categoria
@@ -63,7 +63,7 @@ Relacionamentos:
 
 ## Esquema Relacional
 
-![Esquema Relacional](img/esquemaRelacional.png)
+![Esquema Relacional](img/EsquemaRelacional.png)
 
 Tabelas:
 - Categoria (Id, Nome)
