@@ -4,7 +4,7 @@ Nesta seção, apresentaremos a visão geral da interação do usuário pelas te
 
 ## Diagrama de Fluxo
 
-![Diagrama de Arquitetura](img/DiagramaFluxoSistemaFinanceiro.png)
+![Diagrama de Arquitetura](img/Fluxograma.png)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-sistema-financeiro/assets/114113443/529261cc-081d-46c0-8fe9-0cebfe34d483)
 
