@@ -47,7 +47,7 @@ Considerando as diretrizes da norma ISO/IEC 25010, nossa equipe selecionou as se
 
 ## Modelo ER
 
-![Modelo ER](img/modeloER.png)
+![Modelo ER](img/modeloER4.png)
 
 Entidades:
 - Categoria
